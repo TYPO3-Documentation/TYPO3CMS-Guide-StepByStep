@@ -71,3 +71,8 @@ The final result should look something like this:
 Now that you have overridden a content element's Fluid template, you might like to:
 
 * [Add custom CSS Styles to a Fluid Template](../../40FrontendDevelopment/40AddCustomJavaScriptAndCSS/AddCustomCssStylesToAFluidTemplate.md)
+
+## Resources
+
+* [Create a custom content element type](https://docs.typo3.org/permalink/t3coreapi:adding-your-own-content-elements)
+* [Overriding the default templates of content elements](https://docs.typo3.org/permalink/t3sitepackage:content-element-rendering)
