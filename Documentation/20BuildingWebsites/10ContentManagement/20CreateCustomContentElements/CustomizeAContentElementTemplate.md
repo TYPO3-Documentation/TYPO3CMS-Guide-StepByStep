@@ -1,5 +1,7 @@
 # Customize a content element template
 
+#TYPO3v13 #Beginner #ContentElements #Frontend #Fluid
+
 TYPO3 is modular by design and organizes content on a page as blocks, called content elements. You can customize how content elements are displayed on your website by overriding the default template.
 
 ## Learning objective
