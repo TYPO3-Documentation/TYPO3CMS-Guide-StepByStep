@@ -1,4 +1,7 @@
 # 📝 Contribute a Step-by-Step Guide
 
-*No content yet.*
-*No content yet.*
+Use the template and dive in
+
+
+
+

@@ -33,12 +33,11 @@ In this step-by-step guide you will {describe what the learner will accomplish}.
    
 Watch this video to follow along with the steps below.
 
-<  **Scope check time**
-
-Don't start writing until you have a clear scope.
-
-If you're unsure about the goal, the audience, or the prerequisites — go back and fix it now. Writing the task section without a solid scope will lead to frustration when you’re deep in the details.
-
+>  **Scope check time**
+>
+> Don't start writing until you have a clear scope.
+> 
+> If you're unsure about the goal, the audience, or the prerequisites — go back and fix it now. Writing the task section without a solid scope will lead to frustration when you’re deep in > the details.
 >
 
 ## {Task name}
@@ -67,6 +66,8 @@ If you're unsure about the goal, the audience, or the prerequisites — go back 
    {Optional: Code sample or screenshot that helps the learner complete this step.}  
    {Optional: Expected outcome.}  
 2. {Write the next step. Start with a verb.}
+
+{For Project guides, use this section to link to existing step-by-step guides}
 
 ## Summary
 
