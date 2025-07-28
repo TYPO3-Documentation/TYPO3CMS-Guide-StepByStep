@@ -1,0 +1,3 @@
+# Template
+
+*No content yet.*
