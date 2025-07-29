@@ -1,10 +1,8 @@
 # Guides Registry
 
-The full list of step-by-step guides.
+The full list of step-by-step guides. See [How to Place Guides in the Registry Structure](../90Contribute/20ContributorGuide/50PlaceGuidesInTheStructure/Index.md) to add a new guide.
 
-💡 Written a new guide and not sure where to add it? See [How to Place Guides in the Registry Structure](../90Contribute/20ContributorGuide/50PlaceGuidesInTheStructure/Index.md)
-
-#### Getting Started
+### Getting Started
 
 **Installation**
 
@@ -33,7 +31,7 @@ The full list of step-by-step guides.
 - [Customize Templates](../10GettingStarted/40SitePackages/30CustomizeTemplates/Index.md)
 - [Implement Your Design](../10GettingStarted/40SitePackages/40ImplementYourDesign/Index.md)
 
-#### Building Websites
+### Building Websites
 
 **Content Management**
 
@@ -63,7 +61,7 @@ The full list of step-by-step guides.
 - [Implement Frontend User Registration](../20BuildingWebsites/40FrontendDevelopment/30ImplementFrontendUserRegistration/Index.md)
 - [Add Custom Java Script and CSS](../20BuildingWebsites/40FrontendDevelopment/40AddCustomJavaScriptAndCSS/Index.md)
 
-#### Advanced Implementation
+### Advanced Implementation
 
 **Extension Development**
 
@@ -93,7 +91,7 @@ The full list of step-by-step guides.
 - [Containerization with Docker](../30AdvancedImplementation/40DeploymentAndDevOps/30ContainerizationWithDocker/Index.md)
 - [Kubernetes Deployment](../30AdvancedImplementation/40DeploymentAndDevOps/40KubernetesDeployment/Index.md)
 
-#### Maintenance and Security
+### Maintenance and Security
 
 **Regular Maintenance**
 
