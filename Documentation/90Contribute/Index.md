@@ -5,7 +5,6 @@ We’re building a library of hands-on, task-focused tutorials to help learners 
 This section explains how to contribute a guide to the TYPO3 Step-by-Step project. Whether you're documenting your favorite workflow or covering a commonly requested feature, you’ll use a shared structure that keeps things clear and consistent for learners.
 
 You’ll find:
-- Guidance on choosing a topic
 - The official writing template
 - A detailed contributor guide that walks you through every section
 
