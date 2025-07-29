@@ -21,7 +21,7 @@ We welcome contributions from TYPO3 users of all backgrounds — editors, integr
 👉 To get started:
 1. Read the [Contributor Guide](Documentation/90Contribute/20ContributorGuide/Index.md).
 2. Copy the [Template](Documentation/90Contribute/10Template/Index.md).
-3. Add your guide to the right folder (see [How to Place Guides in the Registry Structure](Documentation/90Contribute/20ContributorGuide/50PlaceGuidesInTheStructure.md) for help).
+3. Add your guide to the right folder (see [How to Place Guides in the Registry Structure](Documentation/90Contribute/30UnderstandingTheStructure/20PlaceGuidesInTheStructure.md) for help).
 4. Open a Pull Request — or ask for help in your draft!
 
 
