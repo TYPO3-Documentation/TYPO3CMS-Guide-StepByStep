@@ -1,6 +1,6 @@
 # How to Place Guides in the Registry Structure
 
-This guide is for writers who create **step-by-step guides** and discover new step-by-step content that does not yet exist in the [Guide Registry](../../../80GuidesRegistry/Index.md).
+This guide is for writers who create **step-by-step guides** and discover new step-by-step content that does not yet exist in the [Guide Registry](../../80GuidesRegistry/Index.md).
 
 Finding the right place for a new guide is not always easy. You might find that no place in the structure seems to fit well, or you might find multiple places to place the new guide. The guide you’re reading was created for these corner cases to help you make an informed decision. 
 
@@ -69,11 +69,11 @@ Enter this step after you have completed a draft of the new guide. Review the fo
 
 We would recommend having someone else go through these questions as part of a peer review process. A fresh perspective from another reviewer can help to spot overlooked details and provide additional insights about the placement.
 
-## Common Placement Scenarios and Solutions {#common-placement-scenarios-and-solutions}
+## Common Placement Scenarios and Solutions
 
 This section provides additional guidance for cases that refuse to get classified through the classification steps. Most likely, your guide idea matches one of the following scenarios:
 
-### Scenario A: "This could fit in multiple places" {#scenario-a:-"this-could-fit-in-multiple-places"}
+### Scenario A: "This could fit in multiple places" 
 
 The content of your guide appears to be applicable to multiple categories of the guide structure.
 
@@ -137,7 +137,7 @@ Let’s walk through how we might evaluate and place a step-by-step guide that d
 
 ### Scenario
 
-This guide could easily fall into [Scenario A — multiple placements are possible](#scenario-a:-"this-could-fit-in-multiple-places").
+This guide could easily fall into [Scenario A — multiple placements are possible](#scenario-a-this-could-fit-in-multiple-places).
 
 The deciding factor may be user intent: someone focused on increasing social visibility will look in SEO & Routing, not template customization.
 

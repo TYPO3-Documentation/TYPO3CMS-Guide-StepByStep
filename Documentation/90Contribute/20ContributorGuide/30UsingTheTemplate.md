@@ -104,7 +104,7 @@ This section makes up the bulk of the guide. This is where you take the learner 
 They may look easy, but there’s a real art to writing an effective step.   
 Before you start writing, break down your learning objective into logical chunks. Long procedures overwhelm readers, but well-structured chunks allow people to pause, see their progress, and celebrate small successes as they work toward the final goal. You might separate tasks by backend/frontend, by module, by UI/file system interactions, by screen, or by different stages in an overall workflow.
 
-Once you've identified your chunks, give each one a clear name \- these will be your headings in the task section. Always start task headings with a verb.
+Once you've identified your chunks, give each one a clear name - these will be your headings in the task section. Always start task headings with a verb.
 
 If you're wrestling with too many chunks and find yourself using headings like "Part 1," "Part 2," you're likely writing a project guide - even if it started as a regular step-by-step guide. See the [project guide section](20WhatAreProjectGuides.md)for more information.
 
@@ -121,11 +121,11 @@ If not, break it up. Just like code, your guide should follow the [single-respon
 
 #### Tips for writing steps
 
-* Each numbered step should describe one action. Provide minimal explanation of actions in the most basic language possible. Use the ELI5 principle (“Explain like I’m five \[years old\]”).   
+* Each numbered step should describe one action. Provide minimal explanation of actions in the most basic language possible. Use the ELI5 principle (“Explain like I’m five years old”).   
 * Present information in a logical sequence. For example:  
   * ✅ On the File menu, choose Print.   
   * ❌ Choose Print from the File menu.  
-* Use [links](https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Reference/ReStructuredText/Links/Index.html#how-to-document-hyperlinks) generously to abstract detail. Link to more detailed explanation, term definitions, supplementary information for context or conceptual material. For example, “We always do x before y because… (link to other material for more detail).” See [References within guides](https://docs.google.com/document/d/180tYApHdsnPvmym8t1JW3As55-k3uYH3eK2UP-yggT8/edit?tab=t.0#heading=h.h71vjdz5fe6z).   
+* Use [links](https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Reference/ReStructuredText/Links/Index.html#how-to-document-hyperlinks) generously to abstract detail. Link to more detailed explanation, term definitions, supplementary information for context or conceptual material. For example, “We always do x before y because… (link to other material for more detail).” 
 * Include [code blocks](https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Reference/ReStructuredText/Code/Codeblocks.html#writing-rest-codeblocks-with-syntax-highlighting) (follow [code example rules](https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Reference/CodingGuidelines/Index.html#cgl-code)) and [screenshots](https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Advanced/GuidelinesForImages.html#guidelines-for-images) where appropriate.  
 * Use the [API link conventions](https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/Reference/ReStructuredText/Links/Api.html#links-api) to pop-up context about PHP classes.  
 * Use [admonitions](https://docs.typo3.org/permalink/h2document:md-cheat-sheet-admonitions) where appropriate: hints, tips, notes, warning, etc.  
@@ -162,15 +162,15 @@ H2 Create a page based on the new page type
 
 1. In the backend, go to the Pages module and click…
 
-**Example \- Project guide: Fully modular**
+**Example - Project guide: Fully modular**
 
 In this example, each of the numbered steps link to pre-existing step-by-step guides.
 
 H2 Create a multilingual website 
 
-1. Set up multiple languages \[link to guide\]  
-2. Translate content into other languages \[link to guide\]  
-3. Manage language fallbacks \[link to guide\]
+1. [Set up multiple languages](../../20BuildingWebsites/20MultilingualWebsites/10SetUpMultipleLanguages/Index.md) 
+2. [Translate content into other languages](../../20BuildingWebsites/20MultilingualWebsites/20TranslateContent/Index.md)
+3. [Manage language fallbacks](../../20BuildingWebsites/20MultilingualWebsites/30ManageLanguageFallbacks/Index.md)
 
 #### Tips for when you have too many steps {#tips-for-when-you-have-too-many-steps}
 
@@ -185,20 +185,20 @@ Lengthy tutorials with too many steps are overwhelming. Remember the  [single-re
      3. Click "Get Extensions" in the module frame.  
   2. Do the next thing
 
-* **Tables** \- When steps involve filling in fields with specific values, rather than using a step per field, you can use one step with a two-column table. This works especially well for configuration screens or form inputs. Example:  
+* **Tables** - When steps involve filling in fields with specific values, rather than using a step per field, you can use one step with a two-column table. This works especially well for configuration screens or form inputs. Example:  
   Configure the file mount as follows:
 
-| Field | Value |
-| :---- | :---- |
-| Label | Member area |
-| Storage | fileadmin |
-| Folder | /members/ |
+   | Field | Value |
+   | :---- | :---- |
+   | Label | Member area |
+   | Storage | fileadmin |
+   | Folder | /members/ |
 
-* **Screenshots** \- Rather than using multiple steps to describe a complex screen, you can use a screenshot. For intuitive interfaces, your step might simply be, “Complete the form as shown in the image below.”
+* **Screenshots** - Rather than using multiple steps to describe a complex screen, you can use a screenshot. For intuitive interfaces, your step might simply be, “Complete the form as shown in the image below.”
 
-* **Code blocks with comments** \- Instead of separate steps for each line of code modification, you might be able to use a single code block with clear inline comments explaining each change.
+* **Code blocks with comments** - Instead of separate steps for each line of code modification, you might be able to use a single code block with clear inline comments explaining each change.
 
-* **Create a short step-by-step guide** \- If a complex sub-procedure is reusable across tutorials, consider moving it to a separate step-by-step guide and linking to it instead of including all steps inline.
+* **Create a short step-by-step guide** - If a complex sub-procedure is reusable across tutorials, consider moving it to a separate step-by-step guide and linking to it instead of including all steps inline.
 
 #### Resist the urge to explain everything
 
@@ -222,7 +222,7 @@ Write a short statement (1-2 sentences) that summarizes what has just been taugh
 Describe (and admire, in a mild way) what your learner has accomplished.
 
 **Examples**   
-Congratulations\! You now know how to install and activate new extensions. 
+Congratulations! You now know how to install and activate new extensions. 
 
 Congratulations, your website is now available in two languages\! Your editors can manually translate your content, and your website visitors can switch between languages.
 
@@ -249,7 +249,7 @@ Now that you have some experience with extensions, you can continue to add funct
 
 This section is optional but highly recommended. Link to material with opportunities for learners to expand their understanding. 
 
-Related material might include TYPO3 guides or documentation, web pages, blog posts, community or forum discussions, videos, etc. See [Dig Deeper sections](https://docs.google.com/document/d/180tYApHdsnPvmym8t1JW3As55-k3uYH3eK2UP-yggT8/edit?tab=t.0#heading=h.df16gw8hw88s) 
+Related material might include TYPO3 guides or documentation, web pages, blog posts, community or forum discussions, videos, etc. 
 
 **Example** 
 

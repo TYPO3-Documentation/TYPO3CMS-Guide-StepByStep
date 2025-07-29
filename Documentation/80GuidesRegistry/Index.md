@@ -1,6 +1,6 @@
 # Guides Registry
 
-The full list of step-by-step guides. See [How to Place Guides in the Registry Structure](../90Contribute/20ContributorGuide/50PlaceGuidesInTheStructure/Index.md) to add a new guide.
+The full list of step-by-step guides. See [How to Place Guides in the Registry Structure](../90Contribute/20ContributorGuide/50PlaceGuidesInTheStructure.md) to add a new guide.
 
 ### Getting Started
 
