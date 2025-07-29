@@ -1,8 +1,25 @@
 # Using the template to create a guide
 
-When you create a step-by-step guide or a project guide for TYPO3, you must use the [step-by-step guide template](../10Template). Here we explain each section in detail and provide example text to help you.
+When you create a step-by-step guide or a project guide for TYPO3, you must use the [step-by-step guide template](../10Template/Index.md). Here we explain each section in detail and provide example text to help you.
 
-**📝 [Create a new step-by-step guide using the template](../10Template)**
+**📝 [Create a new step-by-step guide using the template](../10Template/Index.md)**
+
+## Contents
+- [Titles](#titles)
+- [About the Conceptual Overview section](#about-the-conceptual-overview-section)
+- [About the Learning Objective section](#about-the-learning-objective-section)
+- [About the Prerequisites section](#about-the-prerequisites-section)
+- [About the Video section](#about-the-video-section)
+- [About the Task section](#about-the-task-section)
+  - [Key principles for effective tasks:](#key-principles-for-effective-tasks)
+  - [Tips for writing steps](#tips-for-writing-steps)
+  - [Task section examples](#task-section-examples)
+  - [Tips for when you have too many steps {#tips-for-when-you-have-too-many-steps}](#tips-for-when-you-have-too-many-steps-tips-for-when-you-have-too-many-steps)
+  - [Resist the urge to explain everything](#resist-the-urge-to-explain-everything)
+- [About the Summary section](#about-the-summary-section)
+- [About the Next steps section](#about-the-next-steps-section)
+- [About the Resources section](#about-the-resources-section)
+
 
 ### Titles
 
@@ -14,7 +31,7 @@ Titles start with a verb and reflect the overall learning objective.
 * Set up HTTPS  
 * Create a password-protected members’ area
 
-### About the conceptual overview section
+### About the Conceptual Overview section
 
 This section has no heading \- it follows directly after the title.  
 Provide information about why this guide exists. Explain what the feature is, how the goal will help the user, or why the learning objective is useful. If part of a broader learning path, explain where this guide sits in the learning journey to orient the user.   
