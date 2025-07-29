@@ -2,7 +2,7 @@
 
 # TYPO3 Step-By-Step Guide Template
 
-*This template includes writing instructions {in curly brackets} and boilerplate text that you can customize with your own text. The [step-by-step contributor’s guide](../20ContributorGuide/Index.md) explains each section in detail, and includes example text for each section. Search through the existing guides before you start - your guide might already exist!*
+*This template includes writing instructions {in curly brackets} and boilerplate text that you can customize with your own text. The [step-by-step contributor’s guide](../20ContributorGuide/Index.md) explains each section in detail, and includes example text for each section. Search the [Guide Registry](../../80GuidesRegistry/Index.md) before you start - your guide might already exist!*
 
 ## Title
 
@@ -33,14 +33,14 @@ In this step-by-step guide you will {describe what the learner will accomplish}.
    
 Watch this video to follow along with the steps below.
 
+## {Task name}
+
 >  **Scope check time**
 >
 > Don't start writing until you have a clear scope.
 > 
-> If you're unsure about the goal, the audience, or the prerequisites — go back and fix it now. Writing the task section without a solid scope will lead to frustration when you’re deep in > the details.
->
-
-## {Task name}
+> If you're unsure about the goal, the audience, or the prerequisites — go back and fix it now. Writing the task section without a solid scope will lead to frustration when you’re deep 
+> in the details.
 
 {Optional explanatory text}
 

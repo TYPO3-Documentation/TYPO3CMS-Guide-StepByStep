@@ -30,5 +30,5 @@ Step-by-step guides are modular. Each guide is an atomic unit of action — smal
 | TYPO3 documentation | Step-by-step guide |
 | :---- | :---- |
 | **Information oriented** Supports exploration and problem-solving for people seeking answers or understanding.. | **Learning oriented** Helps people learn through hands-on experience. |
-| **Comprehensive** Presents various approaches, configurations, and possibilities. Also covers edge cases. | **Single clear path** Follows a carefully managed path from start to finish with guaranteed success. |
+| **Comprehensive** Presents various approaches, configurations, and possibilities. Also covers edge cases. | **Single clear path** Follows a carefully managed path from start to finish with guaranteed success. |
 | **Blends doing and explaining** Combines how-to instructions, explanations, and reference information. | **Focused on doing** Prioritizes action with minimal explanation; links out to deeper material in the docs. |

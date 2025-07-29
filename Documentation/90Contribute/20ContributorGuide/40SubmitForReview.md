@@ -56,16 +56,14 @@ That’s okay! Missing guides are part of a growing system, and it’s important
 
 We plan to add an automated script that periodically scans for links to step-by-step guides that don’t yet exist—essentially, broken internal links within the repository. These will be flagged for review so they can be confirmed and added to the structure.
 
-We may also collect unplaced guides in a “pending” section at the bottom of the structure document to be filed manually. This will help us maintain a living, evolving guide library where contributors can spot gaps, reserve titles, and grow the system collaboratively.
+We may also collect unplaced guides in a “pending” section at the bottom of the registry to be filed manually. This will help us maintain a living, evolving guide library where contributors can spot gaps, reserve titles, and grow the system collaboratively.
 
 # How to find a guide or documentation page to link to
 
-It’s not always obvious where something lives, so here’s how to approach it:
-
 #### Do a search 
 
-* Check the Step-by-Step Guide registry  
-* Use the TYPO3 Documentation search function \- it is powerful and comprehensive. Try a few different terms or phrasing variations.
+* Check the [Step-by-Step Guide registry](../../80GuidesRegistry/Index.md) 
+* Use the [TYPO3 Documentation search function](https://docs.typo3.org/search/) - it is powerful and comprehensive. Try a few different terms or phrasing variations.
 
 If your search turns up nothing useful, that may be a good sign that your guide really is needed.
 
