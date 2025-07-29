@@ -2,7 +2,7 @@
 
 # TYPO3 Step-By-Step Guide Template
 
-*This template includes writing instructions {in curly brackets} and boilerplate text that you can customize with your own text. The [step-by-step contributor’s guide](../20ContributorGuide/Index.md) explains each section in detail, and includes example text for each section. Search the [Guide Registry](../../80GuidesRegistry/Index.md) before you start - your guide might already exist!*
+*This template includes writing instructions {in curly brackets} and boilerplate text that you can customize with your own text. The [step-by-step Contributor Guide](../20ContributorGuide/Index.md) explains each section in detail, and includes example text for each section. Search the [Guide Registry](../../80GuidesRegistry/Index.md) before you start - your guide might already exist!*
 
 ## Title
 

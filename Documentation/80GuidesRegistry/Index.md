@@ -2,6 +2,8 @@
 
 The full list of step-by-step guides.
 
+💡 Written a new guide and not sure where to add it? See [How to Place Guides in the Registry Structure](../90Contribute/20ContributorGuide/50PlaceGuidesInTheStructure/Index.md)
+
 #### Getting Started
 
 **Installation**
