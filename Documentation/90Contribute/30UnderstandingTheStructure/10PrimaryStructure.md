@@ -32,120 +32,120 @@ Beginners often look for a guided way of solving a particular task, such as gett
 #### Quick site setup
 
 <pre>
-`TYPO3 Step-by-Step Guides/`  
-`├── Getting Started/`  
-`│   ├── Installation/`  
-`│   │   ├── Install TYPO3 with Composer`  
-`│   ├── Basic Configuration/`  
-`│   │   ├── First-time Backend Setup`  
-`│   │   ├── Set Up a Site Configuration`  
-`│   └── Site Packages/`  
-`│       ├── Use the Bootstrap Package`  
-`├── Building Websites/`  
-`│   ├── Content Management/`  
-`│   │   ├── Set Up Page Types`  
-`│   ├── Extensions/`  
-`│   │   ├── Find and Install Extensions`
+TYPO3 Step-by-Step Guides/  
+├── Getting Started/  
+│   ├── Installation/  
+│   │   ├── Install TYPO3 with Composer  
+│   ├── Basic Configuration/  
+│   │   ├── First-time Backend Setup  
+│   │   ├── Set Up a Site Configuration  
+│   └── Site Packages/  
+│       ├── Use the Bootstrap Package  
+├── Building Websites/  
+│   ├── Content Management/  
+│   │   ├── Set Up Page Types  
+│   ├── Extensions/  
+│   │   ├── Find and Install Extensions
 </pre>
 
 #### Building a corporate website
 
 <pre>
-`TYPO3 Step-by-Step Guides/`  
-`├── Getting Started/`  
-`│   ├── Installation/`  
-`│   │   ├── Install TYPO3 with Composer`  
-`│   │   ├── Install TYPO3 without Composer`  
-`│   │   ├── Set up TYPO3 with DDEV`  
-`│   ├── Basic Configuration/`  
-`│   │   ├── First-time Backend Setup`  
-`│   └── Site Packages/`  
-`│       ├── Create a Basic Site Package`  
-`│       └── Implement Your Design`  
-`├── Building Websites/`  
-`│   ├── Content Management/`  
-`│   │   ├── Set Up Page Types`  
-`│   │   ├── Create Custom Content Elements`  
-`│   │   ├── Configure the Backend Layout`  
-`│   │   └── Manage Backend User Permissions`  
-`│   ├── Multilingual Websites/`  
-`│   │   ├── Set Up Multiple Languages`  
-`│   │   ├── Translate Content`  
-`│   │   ├── Manage Language Fallbacks`  
-`│   │   └── Work with Translation Services`  
-`├── Advanced Implementation/`  
-`│   ├── Performance Optimization/`  
-`│   │   ├── Configure Caching`  
-`│   │   ├── Set Up a CDN`  
-`│   │   ├── Optimize Database`  
-`│   │   └── Implement Static Site Generation`  
-`└── Maintenance and Security/`  
-    `├── Regular Maintenance/`  
-    `│   ├── Backup and Restore Procedures`  
-    `│   ├── Update TYPO3 Core`  
-    `│   ├── Update Extensions`  
-    `│   └── Database Maintenance Tasks`  
-    `├── Security/`  
-    `│   ├── Implement Security Best Practices`  
-    `│   ├── Set Up HTTPS`  
-    `│   ├── Manage User Authentication`  
-    `│   └── Security Incident Response`
+TYPO3 Step-by-Step Guides/  
+├── Getting Started/  
+│   ├── Installation/  
+│   │   ├── Install TYPO3 with Composer  
+│   │   ├── Install TYPO3 without Composer  
+│   │   ├── Set up TYPO3 with DDEV  
+│   ├── Basic Configuration/  
+│   │   ├── First-time Backend Setup  
+│   └── Site Packages/  
+│       ├── Create a Basic Site Package  
+│       └── Implement Your Design  
+├── Building Websites/  
+│   ├── Content Management/  
+│   │   ├── Set Up Page Types  
+│   │   ├── Create Custom Content Elements  
+│   │   ├── Configure the Backend Layout  
+│   │   └── Manage Backend User Permissions  
+│   ├── Multilingual Websites/  
+│   │   ├── Set Up Multiple Languages  
+│   │   ├── Translate Content  
+│   │   ├── Manage Language Fallbacks  
+│   │   └── Work with Translation Services  
+├── Advanced Implementation/  
+│   ├── Performance Optimization/  
+│   │   ├── Configure Caching  
+│   │   ├── Set Up a CDN  
+│   │   ├── Optimize Database  
+│   │   └── Implement Static Site Generation  
+└── Maintenance and Security/  
+    ├── Regular Maintenance/  
+    │   ├── Backup and Restore Procedures  
+    │   ├── Update TYPO3 Core  
+    │   ├── Update Extensions  
+    │   └── Database Maintenance Tasks  
+    ├── Security/  
+    │   ├── Implement Security Best Practices  
+    │   ├── Set Up HTTPS  
+    │   ├── Manage User Authentication  
+    │   └── Security Incident Response
 </pre>
 
 #### Building a web application
 
 <pre>
-`TYPO3 Step-by-Step Guides/`  
-`├── Getting Started/`  
-`│   ├── Installation/`  
-`│   │   ├── Install TYPO3 with Composer`  
-`│   │   ├── Install TYPO3 without Composer`  
-`│   │   ├── Set up TYPO3 with DDEV`  
-`│   ├── Basic Configuration/`  
-`│   │   ├── First-time Backend Setup`  
-`├── Building Websites/`  
-`│   ├── Extensions/`  
-`│   │   ├── Find and Install Extensions`  
-`│   │   ├── Configure Common Extensions`  
-`│   │   ├── Customize Extension Templates`  
-`│   │   └── Troubleshoot Extension Issues`  
-`├── Advanced Implementation/`  
-`│   ├── Extension Development/`  
-`│   │   ├── Create a Basic Extension`  
-`│   │   ├── Develop with Extbase and Fluid`  
-`│   │   ├── Build Non-Extbase Extensions`  
-`│   │   └── Create Extension APIs`  
-`│   ├── System Integration/`  
-`│   │   ├── Connect to External Services`  
-`│   │   ├── Implement Single Sign-On`  
-`│   │   ├── Set Up REST APIs`  
-`│   │   └── Integrate with Third-party Systems`  
-`│   └── Deployment and DevOps/`  
-`│       ├── Set Up CI/CD Pipelines`  
-`│       ├── Implement Git Workflows`  
-`│       ├── Containerize with Docker`  
-`│       └── Kubernetes Deployment`  
-`└── Maintenance and Security/`  
-    `├── Regular Maintenance/`  
-    `│   ├── Backup and Restore Procedures`  
-    `│   ├── Update TYPO3 Core`  
-    `│   ├── Update Extensions`  
-    `│   └── Database Maintenance Tasks`  
-    `├── Security/`  
-    `│   ├── Implement Security Best Practices`  
-    `│   ├── Set Up HTTPS`  
-    `│   ├── Manage User Authentication`  
-    `│   └── Security Incident Response`  
-    `├── Monitoring/`  
-    `│   ├── Set Up Application Monitoring`  
-    `│   ├── Configure Log Management`  
-    `│   ├── Implement Alerts`  
-    `│   └── Performance Monitoring`  
-    `└── Troubleshooting/`  
-        `├── Debug Common Issues`  
-        `├── Use the Admin Panel`  
-        `├── Work with Exception Logs`  
-        `└── Get Community Support`
+TYPO3 Step-by-Step Guides/  
+├── Getting Started/  
+│   ├── Installation/  
+│   │   ├── Install TYPO3 with Composer  
+│   │   ├── Install TYPO3 without Composer  
+│   │   ├── Set up TYPO3 with DDEV  
+│   ├── Basic Configuration/  
+│   │   ├── First-time Backend Setup  
+├── Building Websites/  
+│   ├── Extensions/  
+│   │   ├── Find and Install Extensions  
+│   │   ├── Configure Common Extensions  
+│   │   ├── Customize Extension Templates  
+│   │   └── Troubleshoot Extension Issues  
+├── Advanced Implementation/  
+│   ├── Extension Development/  
+│   │   ├── Create a Basic Extension  
+│   │   ├── Develop with Extbase and Fluid  
+│   │   ├── Build Non-Extbase Extensions  
+│   │   └── Create Extension APIs  
+│   ├── System Integration/  
+│   │   ├── Connect to External Services  
+│   │   ├── Implement Single Sign-On  
+│   │   ├── Set Up REST APIs  
+│   │   └── Integrate with Third-party Systems  
+│   └── Deployment and DevOps/  
+│       ├── Set Up CI/CD Pipelines  
+│       ├── Implement Git Workflows  
+│       ├── Containerize with Docker  
+│       └── Kubernetes Deployment  
+└── Maintenance and Security/  
+    ├── Regular Maintenance/  
+    │   ├── Backup and Restore Procedures  
+    │   ├── Update TYPO3 Core  
+    │   ├── Update Extensions  
+    │   └── Database Maintenance Tasks  
+    ├── Security/  
+    │   ├── Implement Security Best Practices  
+    │   ├── Set Up HTTPS  
+    │   ├── Manage User Authentication  
+    │   └── Security Incident Response  
+    ├── Monitoring/  
+    │   ├── Set Up Application Monitoring  
+    │   ├── Configure Log Management  
+    │   ├── Implement Alerts  
+    │   └── Performance Monitoring  
+    └── Troubleshooting/  
+        ├── Debug Common Issues  
+        ├── Use the Admin Panel  
+        ├── Work with Exception Logs  
+        └── Get Community Support
 </pre>
 
 ### Role-based learning paths
@@ -155,163 +155,163 @@ Users who want to take on a particular role in their TYPO3 team can take a role-
 #### Editor path
 
 <pre>
-`TYPO3 Step-by-Step Guides/`  
-`├── Getting Started/`  
-`│   ├── Basic Configuration/`  
-`│   │   ├── First-time Backend Setup`  
-`│   │   ├── Create Your First Pages`  
-`│   ├── Content Creation/`  
-`│   │   ├── Create and Organize Pages`  
-`│   │   ├── Add Various Content Elements`  
-`│   │   ├── Work with the Rich Text Editor`  
-`│   │   └── Manage Media Assets`  
-`├── Building Websites/`  
-`│   ├── Content Management/`  
-`│   │   └── Manage Backend User Permissions`  
-`│   ├── Multilingual Websites/`  
-`│   │   ├── Translate Content`  
-`│   │   ├── Manage Language Fallbacks`  
-`│   │   └── Work with Translation Services`
+TYPO3 Step-by-Step Guides/  
+├── Getting Started/  
+│   ├── Basic Configuration/  
+│   │   ├── First-time Backend Setup  
+│   │   ├── Create Your First Pages  
+│   ├── Content Creation/  
+│   │   ├── Create and Organize Pages  
+│   │   ├── Add Various Content Elements  
+│   │   ├── Work with the Rich Text Editor  
+│   │   └── Manage Media Assets  
+├── Building Websites/  
+│   ├── Content Management/  
+│   │   └── Manage Backend User Permissions  
+│   ├── Multilingual Websites/  
+│   │   ├── Translate Content  
+│   │   ├── Manage Language Fallbacks  
+│   │   └── Work with Translation Services
 </pre>
 
 #### Integrator path
 
 <pre>
-`TYPO3 Step-by-Step Guides/`  
-`├── Getting Started/`  
-`│   ├── Installation/`  
-`│   │   ├── Install TYPO3 with Composer`  
-`│   │   ├── Install TYPO3 without Composer`  
-`│   │   ├── Set up TYPO3 with DDEV`  
-`│   │   └── Upgrade an Existing TYPO3 Installation`  
-`│   ├── Basic Configuration/`  
-`│   │   ├── First-time Backend Setup`  
-`│   │   ├── Create Your First Pages`  
-`│   │   ├── Set Up a Site Configuration`  
-`│   │   └── Implement Site Sets (v13+)`  
-`│   ├── Content Creation/`  
-`│   │   ├── Create and Organize Pages`  
-`│   │   ├── Add Various Content Elements`  
-`│   │   ├── Work with the Rich Text Editor`  
-`│   │   └── Manage Media Assets`  
-`│   └── Site Packages/`  
-`│       ├── Create a Basic Site Package`  
-`│       ├── Use the Bootstrap Package`  
-`│       ├── Customize Templates`  
-`│       └── Implement Your Design`  
-`├── Building Websites/`  
-`│   ├── Content Management/`  
-`│   │   ├── Set Up Page Types`  
-`│   │   ├── Create Custom Content Elements`  
-`│   │   ├── Configure the Backend Layout`  
-`│   │   └── Manage Backend User Permissions`  
-`│   ├── Multilingual Websites/`  
-`│   │   ├── Set Up Multiple Languages`  
-`│   │   ├── Translate Content`  
-`│   │   ├── Manage Language Fallbacks`  
-`│   │   └── Work with Translation Services`  
-`│   ├── Extensions/`  
-`│   │   ├── Find and Install Extensions`  
-`│   │   ├── Configure Common Extensions`  
-`│   └── Frontend Development/`  
-`│       ├── Understand Fluid Templates`  
-`│       ├── Create Responsive Layouts`  
-`│       ├── Implement Frontend User Registration`  
-`│       └── Add Custom JavaScript and CSS`  
-`└── Maintenance and Security/`  
-    `├── Regular Maintenance/`  
-    `│   ├── Backup and Restore Procedures`  
-    `│   ├── Update TYPO3 Core`  
-    `│   ├── Update Extensions`  
-    `│   └── Database Maintenance Tasks`  
-    `├── Security/`  
-    `│   ├── Implement Security Best Practices`
+TYPO3 Step-by-Step Guides/  
+├── Getting Started/  
+│   ├── Installation/  
+│   │   ├── Install TYPO3 with Composer  
+│   │   ├── Install TYPO3 without Composer  
+│   │   ├── Set up TYPO3 with DDEV  
+│   │   └── Upgrade an Existing TYPO3 Installation  
+│   ├── Basic Configuration/  
+│   │   ├── First-time Backend Setup  
+│   │   ├── Create Your First Pages  
+│   │   ├── Set Up a Site Configuration  
+│   │   └── Implement Site Sets (v13+)  
+│   ├── Content Creation/  
+│   │   ├── Create and Organize Pages  
+│   │   ├── Add Various Content Elements  
+│   │   ├── Work with the Rich Text Editor  
+│   │   └── Manage Media Assets  
+│   └── Site Packages/  
+│       ├── Create a Basic Site Package  
+│       ├── Use the Bootstrap Package  
+│       ├── Customize Templates  
+│       └── Implement Your Design  
+├── Building Websites/  
+│   ├── Content Management/  
+│   │   ├── Set Up Page Types  
+│   │   ├── Create Custom Content Elements  
+│   │   ├── Configure the Backend Layout  
+│   │   └── Manage Backend User Permissions  
+│   ├── Multilingual Websites/  
+│   │   ├── Set Up Multiple Languages  
+│   │   ├── Translate Content  
+│   │   ├── Manage Language Fallbacks  
+│   │   └── Work with Translation Services  
+│   ├── Extensions/  
+│   │   ├── Find and Install Extensions  
+│   │   ├── Configure Common Extensions  
+│   └── Frontend Development/  
+│       ├── Understand Fluid Templates  
+│       ├── Create Responsive Layouts  
+│       ├── Implement Frontend User Registration  
+│       └── Add Custom JavaScript and CSS  
+└── Maintenance and Security/  
+    ├── Regular Maintenance/  
+    │   ├── Backup and Restore Procedures  
+    │   ├── Update TYPO3 Core  
+    │   ├── Update Extensions  
+    │   └── Database Maintenance Tasks  
+    ├── Security/  
+    │   ├── Implement Security Best Practices
 </pre>
 
 #### Developer path
 
 <pre>
-`TYPO3 Step-by-Step Guides/`  
-`├── Advanced Implementation/`  
-`│   ├── Extension Development/`  
-`│   │   ├── Create a Basic Extension`  
-`│   │   ├── Develop with Extbase and Fluid`  
-`│   │   ├── Build Non-Extbase Extensions`  
-`│   │   └── Create Extension APIs`  
-`│   ├── System Integration/`  
-`│   │   ├── Connect to External Services`  
-`│   │   ├── Implement Single Sign-On`  
-`│   │   ├── Set Up REST APIs`  
-`│   │   └── Integrate with Third-party Systems`  
-`│   ├── Performance Optimization/`  
-`│   │   ├── Configure Caching`  
-`│   │   ├── Optimize Database`  
-`│   │   └── Implement Static Site Generation`  
-`└── Maintenance and Security/`  
-    `└── Troubleshooting/`  
-        `├── Debug Common Issues`  
-        `├── Use the Admin Panel`  
-        `├── Work with Exception Logs`  
-        `└── Get Community Support`
+TYPO3 Step-by-Step Guides/  
+├── Advanced Implementation/  
+│   ├── Extension Development/  
+│   │   ├── Create a Basic Extension  
+│   │   ├── Develop with Extbase and Fluid  
+│   │   ├── Build Non-Extbase Extensions  
+│   │   └── Create Extension APIs  
+│   ├── System Integration/  
+│   │   ├── Connect to External Services  
+│   │   ├── Implement Single Sign-On  
+│   │   ├── Set Up REST APIs  
+│   │   └── Integrate with Third-party Systems  
+│   ├── Performance Optimization/  
+│   │   ├── Configure Caching  
+│   │   ├── Optimize Database  
+│   │   └── Implement Static Site Generation  
+└── Maintenance and Security/  
+    └── Troubleshooting/  
+        ├── Debug Common Issues  
+        ├── Use the Admin Panel  
+        ├── Work with Exception Logs  
+        └── Get Community Support
 </pre>
 
 #### Admin path 
 
 <pre>
-`TYPO3 Step-by-Step Guides/`  
-`├── Getting Started/`  
-`│   ├── Installation/`  
-`│   │   ├── Install TYPO3 with Composer`  
-`│   │   ├── Install TYPO3 without Composer`  
-`│   │   ├── Set up TYPO3 with DDEV`  
-`│   │   └── Upgrade an Existing TYPO3 Installation`  
-`│   ├── Basic Configuration/`  
-`│   │   ├── First-time Backend Setup`  
-`│   │   ├── Set Up a Site Configuration`  
-`│   │   └── Implement Site Sets (v13+)`  
-`├── Building Websites/`  
-`│   ├── Content Management/`  
-`│   │   ├── Set Up Page Types`  
-`│   │   ├── Create Custom Content Elements`  
-`│   │   ├── Configure the Backend Layout`  
-`│   │   └── Manage Backend User Permissions`  
-`│   ├── Multilingual Websites/`  
-`│   │   ├── Set Up Multiple Languages`  
-`│   ├── Extensions/`  
-`│   │   ├── Find and Install Extensions`  
-`│   │   ├── Configure Common Extensions`  
-`│   │   ├── Customize Extension Templates`  
-`│   │   └── Troubleshoot Extension Issues`  
-`├── Advanced Implementation/`  
-`│   ├── Performance Optimization/`  
-`│   │   ├── Configure Caching`  
-`│   │   ├── Set Up a CDN`  
-`│   └── Deployment and DevOps/`  
-`│       ├── Set Up CI/CD Pipelines`  
-`│       ├── Implement Git Workflows`  
-`│       ├── Containerize with Docker`  
-`│       └── Kubernetes Deployment`  
-`└── Maintenance and Security/`  
-    `├── Regular Maintenance/`  
-    `│   ├── Backup and Restore Procedures`  
-    `│   ├── Update TYPO3 Core`  
-    `│   ├── Update Extensions`  
-    `│   └── Database Maintenance Tasks`  
-    `├── Security/`  
-    `│   ├── Implement Security Best Practices`  
-    `│   ├── Set Up HTTPS`  
-    `│   ├── Manage User Authentication`  
-    `│   └── Security Incident Response`  
-    `├── Monitoring/`  
-    `│   ├── Set Up Application Monitoring`  
-    `│   ├── Configure Log Management`  
-    `│   ├── Implement Alerts`  
-    `│   └── Performance Monitoring`  
-    `└── Troubleshooting/`  
-        `├── Debug Common Issues`  
-        `├── Use the Admin Panel`  
-        `├── Work with Exception Logs`  
-        `└── Get Community Support`
+TYPO3 Step-by-Step Guides/  
+├── Getting Started/  
+│   ├── Installation/  
+│   │   ├── Install TYPO3 with Composer  
+│   │   ├── Install TYPO3 without Composer  
+│   │   ├── Set up TYPO3 with DDEV  
+│   │   └── Upgrade an Existing TYPO3 Installation  
+│   ├── Basic Configuration/  
+│   │   ├── First-time Backend Setup  
+│   │   ├── Set Up a Site Configuration  
+│   │   └── Implement Site Sets (v13+)  
+├── Building Websites/  
+│   ├── Content Management/  
+│   │   ├── Set Up Page Types  
+│   │   ├── Create Custom Content Elements  
+│   │   ├── Configure the Backend Layout  
+│   │   └── Manage Backend User Permissions  
+│   ├── Multilingual Websites/  
+│   │   ├── Set Up Multiple Languages  
+│   ├── Extensions/  
+│   │   ├── Find and Install Extensions  
+│   │   ├── Configure Common Extensions  
+│   │   ├── Customize Extension Templates  
+│   │   └── Troubleshoot Extension Issues  
+├── Advanced Implementation/  
+│   ├── Performance Optimization/  
+│   │   ├── Configure Caching  
+│   │   ├── Set Up a CDN  
+│   └── Deployment and DevOps/  
+│       ├── Set Up CI/CD Pipelines  
+│       ├── Implement Git Workflows  
+│       ├── Containerize with Docker  
+│       └── Kubernetes Deployment  
+└── Maintenance and Security/  
+    ├── Regular Maintenance/  
+    │   ├── Backup and Restore Procedures  
+    │   ├── Update TYPO3 Core  
+    │   ├── Update Extensions  
+    │   └── Database Maintenance Tasks  
+    ├── Security/  
+    │   ├── Implement Security Best Practices  
+    │   ├── Set Up HTTPS  
+    │   ├── Manage User Authentication  
+    │   └── Security Incident Response  
+    ├── Monitoring/  
+    │   ├── Set Up Application Monitoring  
+    │   ├── Configure Log Management  
+    │   ├── Implement Alerts  
+    │   └── Performance Monitoring  
+    └── Troubleshooting/  
+        ├── Debug Common Issues  
+        ├── Use the Admin Panel  
+        ├── Work with Exception Logs  
+        └── Get Community Support
 </pre>
 
 ## How to relate secondary structures to the primary structure
