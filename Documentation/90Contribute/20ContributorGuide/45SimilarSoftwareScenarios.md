@@ -22,12 +22,18 @@ Example hierarchy:
 
 Or:
 
+<pre> ``` Getting Started/ └── Installation/ └── Local Development Environments/ ├── Install TYPO3 on macOS with DDEV ├── Install TYPO3 on Windows 11 with DDEV └── Install TYPO3 on Ubuntu 22.04 with DDEV ``` </pre>
+
+
+
+<pre>
 └── Advanced Implementation  
     └── Deployment and DevOps  
         └── Server Stack Scenarios  
             ├── Install TYPO3 with Apache and MySQL  
             ├── Install TYPO3 with Nginx and MariaDB  
             └── Install TYPO3 with Caddy and PostgreSQL
+</pre>
 
 To boost SEO further, use **long-tail keywords** in the title and conceptual overview. For example: “This guide walks you through how to install TYPO3 CMS on Ubuntu 22.04 using Composer and DDEV — ideal for developers working in a Linux environment.”
 
