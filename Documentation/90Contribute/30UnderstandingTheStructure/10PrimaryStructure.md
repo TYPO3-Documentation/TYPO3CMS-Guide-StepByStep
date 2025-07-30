@@ -306,8 +306,8 @@ Readers can access any guide without choosing a learning path first. To give the
 
 For example:
 
-`This guide is part of the following learning paths:`
+This guide is part of the following learning paths:
 
-- `Editor path`  
-- `Integrator path`  
-- `Quick site setup`
+- Editor path
+- Integrator path
+- Quick site setup
