@@ -31,6 +31,7 @@ Beginners often look for a guided way of solving a particular task, such as gett
 
 #### Quick site setup
 
+<pre>
 `TYPO3 Step-by-Step Guides/`  
 `├── Getting Started/`  
 `│   ├── Installation/`  
@@ -45,9 +46,11 @@ Beginners often look for a guided way of solving a particular task, such as gett
 `│   │   ├── Set Up Page Types`  
 `│   ├── Extensions/`  
 `│   │   ├── Find and Install Extensions`
+</pre>
 
 #### Building a corporate website
 
+<pre>
 `TYPO3 Step-by-Step Guides/`  
 `├── Getting Started/`  
 `│   ├── Installation/`  
@@ -87,9 +90,11 @@ Beginners often look for a guided way of solving a particular task, such as gett
     `│   ├── Set Up HTTPS`  
     `│   ├── Manage User Authentication`  
     `│   └── Security Incident Response`
+</pre>
 
 #### Building a web application
 
+<pre>
 `TYPO3 Step-by-Step Guides/`  
 `├── Getting Started/`  
 `│   ├── Installation/`  
@@ -141,6 +146,7 @@ Beginners often look for a guided way of solving a particular task, such as gett
         `├── Use the Admin Panel`  
         `├── Work with Exception Logs`  
         `└── Get Community Support`
+</pre>
 
 ### Role-based learning paths
 
@@ -148,6 +154,7 @@ Users who want to take on a particular role in their TYPO3 team can take a role-
 
 #### Editor path
 
+<pre>
 `TYPO3 Step-by-Step Guides/`  
 `├── Getting Started/`  
 `│   ├── Basic Configuration/`  
@@ -165,9 +172,11 @@ Users who want to take on a particular role in their TYPO3 team can take a role-
 `│   │   ├── Translate Content`  
 `│   │   ├── Manage Language Fallbacks`  
 `│   │   └── Work with Translation Services`
+</pre>
 
 #### Integrator path
 
+<pre>
 `TYPO3 Step-by-Step Guides/`  
 `├── Getting Started/`  
 `│   ├── Installation/`  
@@ -217,9 +226,11 @@ Users who want to take on a particular role in their TYPO3 team can take a role-
     `│   └── Database Maintenance Tasks`  
     `├── Security/`  
     `│   ├── Implement Security Best Practices`
+</pre>
 
 #### Developer path
 
+<pre>
 `TYPO3 Step-by-Step Guides/`  
 `├── Advanced Implementation/`  
 `│   ├── Extension Development/`  
@@ -242,9 +253,11 @@ Users who want to take on a particular role in their TYPO3 team can take a role-
         `├── Use the Admin Panel`  
         `├── Work with Exception Logs`  
         `└── Get Community Support`
+</pre>
 
 #### Admin path 
 
+<pre>
 `TYPO3 Step-by-Step Guides/`  
 `├── Getting Started/`  
 `│   ├── Installation/`  
@@ -299,6 +312,7 @@ Users who want to take on a particular role in their TYPO3 team can take a role-
         `├── Use the Admin Panel`  
         `├── Work with Exception Logs`  
         `└── Get Community Support`
+</pre>
 
 ## How to relate secondary structures to the primary structure
 

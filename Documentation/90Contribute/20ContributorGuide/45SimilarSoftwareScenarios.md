@@ -13,18 +13,16 @@ TYPO3 step-by-step guides follow a **single-path principle**, so we create one g
 
 Example hierarchy:
 
+<pre>
 └── Getting Started  
     └── Installation  
         └── Local Development Environments  
             ├── Install TYPO3 on macOS with DDEV  
             ├── Install TYPO3 on Windows 11 with DDEV  
             └── Install TYPO3 on Ubuntu 22.04 with DDEV
+</pre>
 
 Or:
-
-<pre> ``` Getting Started/ └── Installation/ └── Local Development Environments/ ├── Install TYPO3 on macOS with DDEV ├── Install TYPO3 on Windows 11 with DDEV └── Install TYPO3 on Ubuntu 22.04 with DDEV ``` </pre>
-
-
 
 <pre>
 └── Advanced Implementation  
