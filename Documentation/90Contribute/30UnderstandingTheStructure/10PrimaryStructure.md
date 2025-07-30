@@ -1,6 +1,6 @@
 ## Primary Structure of the Step-by-Step Guides
 
-The primary structure of the step-by-step guides is a hierarchical, progression-based approach, with the most beginner-friendly content at the beginning and advancing towards advanced topics. It serves as a superset of all specialized learning paths. It facilitates maintenance of guides and learning paths. As such, it is not directly intended to be the preferred entry point for readers looking for particular learning paths. 
+The [primary structure](../../80GuidesRegistry/Index.md) of the step-by-step guides is a hierarchical, progression-based approach, with the most beginner-friendly content at the beginning and advancing towards advanced topics. It serves as a superset of all specialized learning paths. It facilitates maintenance of guides and learning paths. As such, it is not directly intended to be the preferred entry point for readers looking for particular learning paths. 
 
 **Contents**
 - [Secondary structures: learning paths](#secondary-structures-earning-paths)
