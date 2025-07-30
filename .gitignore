@@ -27,6 +27,7 @@
 .webprj
 /_make
 /Documentation-GENERATED-temp/
+/Documentation-BACKUP-temp/
 ehthumbs.db
 composer.lock
 nbproject

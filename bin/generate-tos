@@ -1,0 +1,68 @@
+#!/usr/bin/env php
+<?php
+const SEARCH_PATH = __DIR__ . '/../Documentation/';
+
+$files = json_decode(file_get_contents(SEARCH_PATH . 'files.json'), true);
+
+foreach ($files as $file) {
+    if (
+        $file['path'] === 'Index.md' // Ignore the project root index file
+        || basename($file['path']) !== 'Index.md'
+        || !$file['exists']
+    ) {
+        continue;
+    }
+
+    $topics = [];
+    $guides = [];
+
+    $dirname = dirname($file['path']);
+
+    foreach ($files as $fileToCompare) {
+        if ($fileToCompare['path'] === $file['path']) {
+            continue;
+        }
+
+        $compareDirname = dirname($fileToCompare['path']);
+
+        if ($compareDirname === $dirname) {
+            $guides[] = $fileToCompare;
+        } elseif (
+            str_starts_with($compareDirname, $dirname)
+            && !str_contains(trim(str_replace($dirname, '', $compareDirname), '/'), '/')
+            && basename($fileToCompare['path']) === 'Index.md'
+        ) {
+            $topics[] = $fileToCompare;
+        }
+    }
+
+    $content = '# ' . $file['title'] . "\n\n";
+
+    foreach ($topics as $topic) {
+        $content .= '* [' . $topic['title'] . '](/' . $topic['path'] . ')' . "\n";
+    }
+
+    if ($guides !== []) {
+        $content .= "\n\n" . '## Guides' . "\n\n";
+    }
+
+    foreach ($guides as $guide) {
+        if ($guide['exists']) {
+            $content .= '* [' . $guide['title'] . '](/' . $guide['path'] . ')' . "\n";
+        } else {
+            $url = 'https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/main/Documentation/'
+                . dirname($guide['path']) . '?'
+                . 'filename=' . urlencode(basename($guide['path']))
+                . '&value=' . urlencode('Copy content the template from: https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/refs/heads/main/Documentation/90Contribute/10Template/Index.md');
+
+            $content .= '* ' . $guide['title'] . ' [CREATE](' . $url . ')' . "\n";
+        }
+    }
+
+    if ($topics === [] && $guides === []) {
+        $content .= '> [!NOTE]' . "\n";
+        $content .= '> There are no guides here yet.' . "\n";
+    }
+
+    file_put_contents(SEARCH_PATH . $file['path'], $content);
+}

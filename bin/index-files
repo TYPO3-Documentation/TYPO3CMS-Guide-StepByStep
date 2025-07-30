@@ -1,0 +1,88 @@
+#!/usr/bin/env php
+<?php
+const SEARCH_PATH = __DIR__ . '/../Documentation/';
+
+const MARKDOWN_LINK_PATTERN = '/(?:(?!\!).)\[([^\]]+)\]\(([^ ]+)( "([^"]+)")?\)/';
+
+$files = array_keys(iterator_to_array(new RegexIterator(
+	new RecursiveIteratorIterator(
+		new RecursiveDirectoryIterator(SEARCH_PATH)
+	),
+    '/^.+\.md$/',
+    RecursiveRegexIterator::GET_MATCH
+)));
+
+$allFiles = [];
+
+foreach ($files as $fullFilePath) {
+    $file = str_replace(SEARCH_PATH, '', $fullFilePath);
+
+    $allFiles[$file] = [
+        'title' => null,
+        'path' => $file,
+        'exists' => true,
+        'incomingLinks' => [],
+        'outgoingLinks' => [],
+    ];
+}
+
+foreach (array_values($allFiles) as $file) {
+    $content = file_get_contents(SEARCH_PATH . $file['path']);
+
+    preg_match('/^#\s+(.+)$/m', $content, $titleMatches);
+
+    $allFiles[$file['path']]['title'] = $titleMatches[1] ?? basename($file['path']);
+
+    preg_match_all(MARKDOWN_LINK_PATTERN, $content, $linkMatches, PREG_SET_ORDER | PREG_UNMATCHED_AS_NULL);
+
+    foreach ($linkMatches as $linkMatch) {
+        if ($linkMatch === []) {
+            continue;
+        }
+
+        [$fullMatch, $linkText, $linkUrl, $linkTitle] = $linkMatch;
+
+        $linkEntry = [
+            'match' => trim($fullMatch),
+            'text' => $linkText,
+            'url' => $linkUrl,
+            'title' => $linkTitle,
+        ];
+
+        // Is not an external URL.
+        if (!preg_match('/^[a-zA-Z]+:/', $linkUrl)) {
+            $linkEntry['url'] = expandPath($linkUrl);
+
+            if (!key_exists($linkEntry['url'], $allFiles)) {
+                $allFiles[$linkEntry['url']] = [
+                    'title' => $linkText ?: basename($file['path']),
+                    'path' => $linkEntry['url'],
+                    'exists' => false,
+                    'incomingLinks' => [],
+                    'outgoingLinks' => [],
+                ];
+            }
+
+            $allFiles[$linkEntry['url']]['outgoingLinks'][$linkEntry['url']] = $linkEntry;
+        }
+
+        $allFiles[$file['path']]['outgoingLinks'][$linkEntry['url']] = $linkEntry;
+    }
+}
+
+file_put_contents(SEARCH_PATH . 'files.json', json_encode($allFiles));
+
+function expandPath(string $path): string {
+    $newLinkUrlParts = [];
+
+    foreach (array_filter(explode('/', $path)) as $linkUrlPart) {
+        if ($linkUrlPart === '..') {
+            array_pop($newLinkUrlParts);
+            continue;
+        }
+
+        $newLinkUrlParts[] = $linkUrlPart;
+    }
+
+    return implode('/', $newLinkUrlParts);
+}

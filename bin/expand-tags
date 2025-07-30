@@ -1,0 +1,84 @@
+#!/usr/bin/env php
+<?php
+const SEARCH_PATH = __DIR__ . '/../Documentation/';
+
+$tagsToFiles = [];
+
+foreach (json_decode(file_get_contents(SEARCH_PATH . 'files.json'), true) as $file) {
+    if (basename($file['path']) === 'Index.md' || !$file['exists']) {
+        continue;
+    }
+
+    $content = file_get_contents(SEARCH_PATH . $file['path']);
+
+    if (preg_match('/<!--(.*)-->/', $content, $matches)) {
+        $comment = $matches[0];
+
+        $expandedTagLine = '';
+
+        $typo3Versions = [];
+        $tags = [];
+        $authors = [];
+
+        foreach (preg_split('/\s+/', $matches[1], -1, PREG_SPLIT_NO_EMPTY) as $tag) {
+            $tagValue = substr($tag, 1);
+
+            // Skip if the value contains non-alphanumerical characters
+            if (preg_match('/[^A-Za-z0-9]/', $tagValue)) {
+                continue;
+            }
+
+            if (preg_match('/#TYPO3v\d\d/', $tag)) {
+                $typo3Versions[] = $tagValue;
+            } elseif ($tag[0] === '#') {
+                $tags[] = $tagValue;
+            } elseif ($tag[0] === '@') {
+                $authors[] = $tagValue;
+            }
+        }
+
+        if ($typo3Versions !== []) {
+            $expandedTagLine .= ' **Tested in:**';
+
+            foreach ($typo3Versions as $typo3Version) {
+                $tagsToFiles[$typo3Version][] = [$file['path'], $file['title']];
+
+                $expandedTagLine .= ' [' . $typo3Version . '](/Tags/' . $typo3Version . '.md)';
+            }
+        }
+
+        if ($tags !== []) {
+            $expandedTagLine .= ' **Categories:**';
+
+            foreach ($tags as $tag) {
+                $tagsToFiles[$tag][] = [$file['path'], $file['title']];
+
+                $expandedTagLine .= ' [' . $tag . '](/Tags/' . $tag . '.md)';
+            }
+        }
+
+        if ($authors !== []) {
+            $expandedTagLine .= ' **Author:**';
+
+            foreach ($authors as $author) {
+                $expandedTagLine .= ' [@' . $author . '](https://my.typo3.org/u/' . $author . ')';
+            }
+        }
+
+        file_put_contents(SEARCH_PATH . $file['path'], str_replace($comment, $expandedTagLine, $content));
+    }
+}
+
+if (!file_exists(SEARCH_PATH . '/Tags')) {
+    mkdir(SEARCH_PATH . '/Tags');
+}
+
+foreach ($tagsToFiles as $tag => $files) {
+    $content = '# ' . $tag . PHP_EOL . PHP_EOL;
+
+    foreach ($files as [$filePath, $fileTitle]) {
+        $content .= '* [' . $fileTitle . '](/' . $filePath . ')' . PHP_EOL;
+    }
+
+    file_put_contents(SEARCH_PATH . '/Tags/' . $tag . '.md', $content);
+}
