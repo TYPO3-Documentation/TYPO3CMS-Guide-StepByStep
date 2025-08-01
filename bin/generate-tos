@@ -50,10 +50,10 @@ foreach ($files as $file) {
         if ($guide['exists']) {
             $content .= '* [' . $guide['title'] . '](/' . $guide['path'] . ')' . "\n";
         } else {
-            $url = 'https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/main/Documentation/'
+            $url = 'https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/'
                 . dirname($guide['path']) . '?'
                 . 'filename=' . urlencode(basename($guide['path']))
-                . '&value=' . urlencode('Copy content the template from: https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/refs/heads/main/Documentation/90Contribute/10Template/Index.md');
+                . '&value=' . urlencode('Copy content the template from: https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/refs/heads/contrib/Documentation/90Contribute/10Template/Index.md');
 
             $content .= '* ' . $guide['title'] . ' [CREATE](' . $url . ')' . "\n";
         }
