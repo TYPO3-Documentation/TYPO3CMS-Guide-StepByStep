@@ -26,6 +26,10 @@ stage-docs: ## Make a backup of the Documentation directory in Documentation-BAC
 index-files: ## Indexes all files and links in files.json
 	docker run --rm -v "$(shell pwd)":/app php:8.3-cli php app/bin/index-files
 
+.PHONY: expand-links
+expand-links: ## Expands shorthand links
+	docker run --rm -v "$(shell pwd)":/app php:8.3-cli php app/bin/expand-links
+
 .PHONY: generate-tos
 generate-tos: ## Generates table of contents in all Index.md files
 	docker run --rm -v "$(shell pwd)":/app php:8.3-cli php app/bin/generate-tos
@@ -35,7 +39,7 @@ expand-tags: ## Expands tags into Markdown
 	docker run --rm -v "$(shell pwd)":/app php:8.3-cli php app/bin/expand-tags
 
 .PHONY: prepare-docs ## Prepares files for rendering: Backing up, generating TOS, expanding tags, etc.
-prepare-docs: stage-docs index-files generate-tos expand-tags
+prepare-docs: stage-docs index-files expand-links generate-tos expand-tags
 
 .PHONY: restore-docs
 restore-docs: ## Restores the Documentation folder from Documentation-BACKUP-temp
