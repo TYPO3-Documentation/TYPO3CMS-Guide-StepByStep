@@ -7,6 +7,8 @@ $files = json_decode(file_get_contents(SEARCH_PATH . 'files.json'), true);
 foreach ($files as $file) {
     if (
         $file['path'] === 'Index.md' // Ignore the project root index file
+        || str_contains($file['path'], '/80GuidesRegistry/')
+        || str_contains($file['path'], '/90Contribute/')
         || basename($file['path']) !== 'Index.md'
         || !$file['exists']
     ) {
