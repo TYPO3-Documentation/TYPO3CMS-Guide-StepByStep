@@ -1,3 +1,4 @@
 # Connect to External Services
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.

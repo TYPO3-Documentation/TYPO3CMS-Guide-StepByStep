@@ -1,3 +1,4 @@
 # Database Maintenance Tasks
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.

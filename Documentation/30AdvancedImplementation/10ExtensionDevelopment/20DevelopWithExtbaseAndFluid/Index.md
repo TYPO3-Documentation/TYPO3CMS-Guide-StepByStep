@@ -1,3 +1,4 @@
 # Develop with Extbase and Fluid
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.

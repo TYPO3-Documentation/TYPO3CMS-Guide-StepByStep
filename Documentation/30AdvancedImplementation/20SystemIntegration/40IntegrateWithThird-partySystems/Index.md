@@ -1,3 +1,4 @@
 # Integrate with Third-party Systems
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.

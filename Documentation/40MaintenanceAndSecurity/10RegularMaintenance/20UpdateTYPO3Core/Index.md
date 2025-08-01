@@ -1,3 +1,4 @@
 # Update TYPO3 Core
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.

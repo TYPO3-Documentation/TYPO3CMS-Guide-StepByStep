@@ -1,3 +1,4 @@
 # Create a Basic Extension
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.

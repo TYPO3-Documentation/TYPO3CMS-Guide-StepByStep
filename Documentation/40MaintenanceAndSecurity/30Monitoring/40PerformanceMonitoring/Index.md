@@ -1,3 +1,4 @@
 # Performance Monitoring
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.

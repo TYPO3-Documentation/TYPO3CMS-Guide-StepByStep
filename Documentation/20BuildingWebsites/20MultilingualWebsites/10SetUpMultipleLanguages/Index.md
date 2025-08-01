@@ -1,3 +1,4 @@
 # Set Up Multiple Languages
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.
