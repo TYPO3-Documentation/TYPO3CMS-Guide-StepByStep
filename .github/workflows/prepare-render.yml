@@ -1,0 +1,48 @@
+name: Prepare for rendering and push to main
+
+on:
+  push:
+    branches:
+      - contrib
+
+jobs:
+  prepare-and-push:
+    if: github.repository_owner == 'TYPO3-documentation'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+
+      - name: Index files
+        run: php bin/index-files
+
+      - name: Expand shorthand links
+        run: php bin/expand-tags
+
+      - name: Generate table of contents
+        run: php bin/generate-tos
+
+      - name: Expand tags
+        run: php bin/expand-tags
+
+      - name: Configure Git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Commit and push changes
+        run: |
+          git fetch origin main
+          git checkout main
+          git add .
+          git commit -m "Pre-render: $(git show -s --format='%s')"
+          git push origin main --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
