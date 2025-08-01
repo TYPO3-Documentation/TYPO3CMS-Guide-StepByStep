@@ -17,7 +17,7 @@
 			project-home="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep"
 			project-repository="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep"
 			project-issues="https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/issues"
-			edit-on-github-branch="main"
+			edit-on-github-branch="contrib"
 			edit-on-github="TYPO3-Documentation/TYPO3CMS-Guide-StepByStep"
 			interlink-shortcode="typo3/guide-step-by-step"
 			typo3-core-preferred="stable"
