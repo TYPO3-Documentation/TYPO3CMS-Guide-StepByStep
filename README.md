@@ -30,7 +30,7 @@ We welcome contributions from TYPO3 users of all backgrounds — editors, integr
 To write or test a guide, you’ll need:
 - A working TYPO3 installation (local or playground)
 - Basic familiarity with Markdown
-- Optional: DDEV, Composer, or other tools depending on the guide
+- Optional: DDEV/Docker, Composer, or other tools depending on the guide
 
 ## 💬 Feedback and Discussions
 
