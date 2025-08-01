@@ -45,6 +45,7 @@ foreach (array_values($allFiles) as $file) {
         $linkEntry = [
             'match' => trim($fullMatch),
             'text' => $linkText,
+            'unexpandedUrl' => $linkUrl,
             'url' => $linkUrl,
             'title' => $linkTitle,
         ];
@@ -63,7 +64,7 @@ foreach (array_values($allFiles) as $file) {
                 ];
             }
 
-            $allFiles[$linkEntry['url']]['outgoingLinks'][$linkEntry['url']] = $linkEntry;
+            $allFiles[$linkEntry['url']]['incomingLinks'][$file['path']] = $linkEntry;
         }
 
         $allFiles[$file['path']]['outgoingLinks'][$linkEntry['url']] = $linkEntry;
