@@ -20,6 +20,8 @@ When you create a step-by-step guide or a project guide for TYPO3, you must use 
 - [About the Next steps section](#about-the-next-steps-section)
 - [About the Resources section](#about-the-resources-section)
 
+> [!NOTE]
+> **Image and screenshot files** should be placed within `Images/MyGuidesFileName/` where `MyGuidesFileName` is your guide's filename without the final `.md`.
 
 ### Titles
 
@@ -30,6 +32,11 @@ Titles start with a verb and reflect the overall learning objective.
 * Translate your site to a second language
 * Set up HTTPS
 * Create a password-protected members’ area
+
+> [!IMPORTANT]
+> The title is reflected in the guide's file name. The file name should always be an UpperCamelCase version of the title.
+>
+> **Example**: Given the title "Translate your site to a second language" the file name will be `TranslateYourSiteToASecondLanguage.md`.
 
 ### About the Conceptual Overview section
 

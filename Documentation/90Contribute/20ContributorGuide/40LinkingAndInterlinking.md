@@ -1,13 +1,29 @@
-# Interlinking
+# Linking and Interlinking
 
+- [Links between step-by-step guides](#links-between-step-by-step-guides)
 - [Links between step-by-step guides and the TYPO3 documentation](#links-between-step-by-step-guides-and-the-typo3-documentation)
   - [From step-by-step guides to the TYPO3 documentation](#from-step-by-step-guides-to-the-typo3-documentation)
   - [From the TYPO3 documentation to step-by-step guides](#from-the-typo3-documentation-to-step-by-step-guides)
 - [How to find a guide or documentation page to link to](#how-to-find-a-guide-or-documentation-page-to-link-to)
 - [How to link to missing guides](#how-to-link-to-missing-guides)
 
+Step-by-step guides don’t exist in a vacuum, and linking to and from other content multiplies their usefulness. In addition to linking between step-by-step guides, there are two main document types to interlink with: the encyclopedic TYPO3 documentation, and [SkillDisplay](https://www.skilldisplay.eu/) skills.
 
-Step-by-step guides don’t exist in a vacuum, and linking to and from other content multiplies their usefulness. For step-by-step guides, there are two main document types to interlink with: the encyclopedic TYPO3 documentation, and [SkillDisplay](https://www.skilldisplay.eu/) skills.
+## Links between step-by-step guides
+
+Inside a step-by-step guide you will normally link to other step-by-step guides in these three places:
+
+* In the *Prerequisites* section, if the guide you link to must be completed before starting the current guide.
+* In the *Next steps* section, so the reader can continue to other guides after finishing the current guide.
+* Within the steps, if the step requires existing knowledge, for example: `Create a new page as described in [Create a new page](CreateANewPage.md).`
+
+> [!TIP]
+> **Just use the step-by-step guide's file name when linking.** Since all step-by-step guides have unique titles (and thus unique file names) the path will automatically be inserted when before the page is rendered. This also makes it easy to move files within the structure.
+>
+> **Example**: Use `[Change TYPO3's Default Language](ChangeTypo3sDefaultLanguage.md)` instead of `[Change TYPO3's Default Language](../../20Multilingual/ChangeTypo3sDefaultLanguage.md)`.
+
+> [!TIP]
+> **Link to non-existent step-by-step guides.**  If a step-by-step guide doesn't exist yet, linking to it will automatically add it to the list of missing guides. Please use the guide's title as the link text. The file name is always an `UpperCamelCase.md` version of the title.
 
 ## Links between step-by-step guides and the TYPO3 documentation
 
@@ -70,8 +86,4 @@ That’s okay! Missing guides are part of a growing system, and it’s important
 2. **Add the missing guide to the structure.**
    Don’t worry about writing the guide yourself — just give it a logical placeholder. See [How to Place Guides in the Structure](../30UnderstandingTheStructure/20PlaceGuidesInTheStructure.md) for more information.
 
-**Missing guides will be tracked automatically in the future.** In the future, an automated script will help us keep track of missing guides.
-
-We plan to add an automated script that periodically scans for links to step-by-step guides that don’t yet exist—essentially, broken internal links within the repository. These will be flagged for review so they can be confirmed and added to the structure.
-
-We may also collect unplaced guides in a “pending” section at the bottom of the [Step-by-Step Guide registry](../../80GuidesRegistry/Index.md) to be filed manually. This will help us maintain a living, evolving guide library where contributors can spot gaps, reserve titles, and grow the system collaboratively.
+**Missing guides will be tracked automatically.** An automated script keeps track of missing guides by tracking links to step-by-step guides that don’t yet exist (essentially, broken internal links within the repository). These will be listed as not-yet-created, with the option to click a link to create them.

@@ -2,6 +2,9 @@
 
 The [primary structure](../../80GuidesRegistry/Index.md) of the step-by-step guides is a hierarchical, progression-based approach, with the most beginner-friendly content at the beginning and advancing towards advanced topics. It serves as a superset of all specialized learning paths. It facilitates maintenance of guides and learning paths. As such, it is not directly intended to be the preferred entry point for readers looking for particular learning paths.
 
+> [!TIP]
+> If you don't yet know where to place your step-by-step guide in the structure, feel free to put the file here, within the `00Incoming` folder. Reviewers will look at your guide and find a place for it before it is merged.
+
 **Contents**
 
 - [Secondary structures: learning paths](#secondary-structures-earning-paths)

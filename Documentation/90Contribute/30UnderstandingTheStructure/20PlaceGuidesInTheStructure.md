@@ -4,6 +4,9 @@ This guide is for writers who create step-by-step guides and discover new step-b
 
 Finding the right place for a new guide is not always easy. You might find that no place in the structure seems to fit well, or you might find multiple places to place the new guide. The guide you’re reading was created for these corner cases to help you make an informed decision.
 
+> [!TIP]
+> If you don't yet know where to place your step-by-step guide in the structure, feel free to put the file here, within the `00Incoming` folder. Reviewers will look at your guide and find a place for it before it is merged.
+
 ## The guide structure philosophy
 
 The TYPO3 Step-by-Step Guides are structured to benefit beginners while being useful for advanced users as well.

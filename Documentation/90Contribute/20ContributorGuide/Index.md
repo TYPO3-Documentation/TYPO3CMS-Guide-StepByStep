@@ -14,6 +14,6 @@ You don’t need to be an expert writer to contribute — just a TYPO3 user with
 * [What are step-by-step guides?](10WhatAreStepByStepGuides.md)
 * [What are project guides?](20WhatAreProjectGuides.md)
 * [Using the template](30UsingTheTemplate.md)
-* [Interlinking](40Interlinking.md)
+* [Interlinking](40LinkingAndInterlinking)
 * [Similar software scenarios](45SimilarSoftwareScenarios.md)
 * [Submit for review](50SubmitForReview.md)
