@@ -1,29 +1,29 @@
 # What are project guides?
 
-A project guide is made up of multiple step-by-step guides. 
+A project guide is made up of multiple step-by-step guides.
 
 Project guides help learners complete multi-part processes by combining individual tasks into a coherent whole. They provide a clear learning sequence and maintain a narrative that shows how the parts fit together.
 
 ## How project guides extend step-by-step guides
 
-Project guides compose several atomic step-by-step guides into a larger or more advanced outcome. 
+Project guides compose several atomic step-by-step guides into a larger or more advanced outcome.
 
-Use a project guide when: 
+Use a project guide when:
 
-* Multiple distinct tasks are required  
-* Some tasks are already covered in other guides  
+* Multiple distinct tasks are required
+* Some tasks are already covered in other guides
 * It would take more than 30 minutes or feel overwhelming as one block
 
 **Examples**
 
-* Build a multilingual site  
+* Build a multilingual site
 * Develop a custom frontend plugin with user authentication
 
 ## Project guides are modular
 
 Project guides follow the same template as regular step-by-step guides, the only difference is that the Task section looks a bit different.
 
-Project guides are **fully modular**. They are made entirely by linking out to existing step-by-step guides, like ingredients in a recipe.
+Project guides are *fully modular*. They are made entirely by linking out to existing step-by-step guides, like ingredients in a recipe.
 
 You should only create a project guide once all the step-by-step guides it depends on have been created. This helps avoid incomplete or blocked project guides.
 
