@@ -2,7 +2,7 @@
 
 <!-- #TYPO3v13 #Beginner #Backend #Editing #PageProperties @mabolek -->
 
-TYPO3 enables you to disable pages. Disabled pages are inaccessible to frontend website visitors, but you can still edit the pages in the backend. Depending on your TYPO3 configuration all pages that you create may be disabled by default. They will need to be enabled in order to be published on your website.
+TYPO3 allows you to disable pages. Disabled pages are inaccessible to frontend website visitors, but you can still edit the pages in the backend. Depending on your TYPO3 configuration all pages that you create may be disabled by default. They will need to be enabled in order to be published on your website.
 
 ![Screenshot of the TYPO3 page tree with two pages named "Features" and "Customize". The first page's icon has a red circle with a white dash icon, while "Customize" has a plain document icon.](Images/EnablingAndDisablingAPageInThePageTree/EnabledAndDisabledPages.png)
 
