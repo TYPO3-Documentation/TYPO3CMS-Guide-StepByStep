@@ -1,3 +1,4 @@
 # Work with Exception Logs
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.

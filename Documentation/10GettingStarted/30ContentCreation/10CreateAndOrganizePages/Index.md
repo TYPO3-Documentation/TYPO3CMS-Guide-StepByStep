@@ -1,3 +1,4 @@
 # Create and Organize Pages
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.
