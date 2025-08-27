@@ -1,6 +1,6 @@
 # Enabling and disabling a page in the page tree
 
-<!-- #TYPO3v13 #Beginner #Backend #Editing #PageTree @mabolek -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [Backend](/Tags/Backend.md) [Editing](/Tags/Editing.md) [PageTree](/Tags/PageTree.md) **Author:** [@mabolek](https://my.typo3.org/u/mabolek)
 
 TYPO3 allows you to disable pages. Disabled pages are inaccessible to frontend website visitors, but you can still edit the pages in the backend. Depending on your TYPO3 configuration all pages that you create may be disabled by default. They will need to be enabled in order to be published on your website.
 

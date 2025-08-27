@@ -1,3 +1,4 @@
 # Set up TYPO3 with DDEV
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.

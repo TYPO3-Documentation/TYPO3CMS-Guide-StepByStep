@@ -1,3 +1,4 @@
 # Implement Frontend User Registration
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.

@@ -1,3 +1,4 @@
 # Set Up a Site Configuration
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.

@@ -1,6 +1,6 @@
 # Customize a content element template
 
-<!-- #TYPO3v13 #Beginner #ContentElements #Frontend #Templating @mabolek -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [ContentElements](/Tags/ContentElements.md) [Frontend](/Tags/Frontend.md) [Templating](/Tags/Templating.md) **Author:** [@mabolek](https://my.typo3.org/u/mabolek)
 
 TYPO3 is modular by design and organizes content on a page as blocks, called content elements. You can customize how content elements are displayed on your website by overriding the default template.
 

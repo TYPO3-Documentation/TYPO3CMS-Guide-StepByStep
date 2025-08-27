@@ -1,3 +1,4 @@
 # Implement Your Design
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.
