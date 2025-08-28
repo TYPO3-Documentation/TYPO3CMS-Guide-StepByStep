@@ -1,3 +1,4 @@
 # Install TYPO3 with Composer
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.

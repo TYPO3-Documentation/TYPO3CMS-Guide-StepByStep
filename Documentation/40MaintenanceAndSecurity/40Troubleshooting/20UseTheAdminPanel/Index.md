@@ -1,3 +1,4 @@
 # Use the Admin Panel
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.

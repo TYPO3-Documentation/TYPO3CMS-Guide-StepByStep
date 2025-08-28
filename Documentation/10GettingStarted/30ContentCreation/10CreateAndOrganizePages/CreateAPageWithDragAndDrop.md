@@ -1,6 +1,6 @@
 # Create a Page with Drag and Drop
 
-<!--#TYPO3v13 #Beginner #Backend @ninaaline -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [Backend](/Tags/Backend.md) **Author:** [@ninaaline](https://my.typo3.org/u/ninaaline)
 
 TYPO3 lets you quickly create new pages directly in the page tree. The drag & drop method is a fast way to add a page exactly where you want it — either as a child of an existing page or as a sibling between two pages.
 

@@ -1,3 +1,4 @@
 # Get Community Support
 
-*No content yet.*
+> [!NOTE]
+> There are no guides here yet.
