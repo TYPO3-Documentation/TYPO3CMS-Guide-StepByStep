@@ -30,18 +30,17 @@ In this step-by-step guide you will create a new page in the TYPO3 backend using
 
 1. In the backend, open the **Page** module from the left-hand menu.
 
-   ![Bildschirmfoto20250821um152942.png](assets/PageModule.png)
+   ![TYPO3 sidebar menu displays four options: Page (highlighted), View, List, and Forms, each with corresponding icons.](Images/CreateAPageWithDragAndDrop/PageModule.png)
 2. Expand the page tree so you see the place where you want to add your new page.
 3. At the top of the page tree, locate the **new page icons** (representing different page types).
-
-   ![Bildschirmfoto20250821um153601.png](assets/PagetreeIcons.png)
-4. Drag the **Standard page**icon
+   ![YPO3 pagetree toolbar icons showing options to create a standard page, link to a page, create a shortcut, or hide a page.](Images/CreateAPageWithDragAndDrop/PagetreeIcons.png)
+4. Drag the **Standard page** icon ![A blank document icon with a folded corner.](Images/CreateAPageWithDragAndDrop/NewPageIcon.png)
    and drop it:
 
    1. **Between two existing pages** → creates a sibling page at the same level
    2. **On top of an existing page** → creates a child page under that parent
 5. When prompted, enter a title for your new page and press **Enter**
-   ![Bildschirmfoto20250821um154322.png](assets/Pagetitle.png)
+   ![TYPO3 Pagetree with a main and a nested page showing how to edit a page title directly in the page tree](Images/CreateAPageWithDragAndDrop/Pagetitle.png)
 6. Confirm the new page appears in the page tree at the position you selected.
 
 ## Summary
@@ -52,10 +51,10 @@ You created a new TYPO3 page by dragging a page icon from the top of the page tr
 
 Now that you’ve added a page, you might like to:
 
-* [Enable a page]() so it becomes visible in the frontend
-* [Create a page with the context menu]() for more precise placement
-* [Add content to your page]()
+* [Enable a page](EnablingAndDisablingAPageInThePagetree.md) so it becomes visible in the frontend
+* [Create a page with the context menu](CreateAPageWithTheContextMenu) for more precise placement
+* [Add content to your page](https://docs.typo3.org/permalink/t3editors:content-creating)
 
 ## Resources
 
-* [Creating pages in the TYPO3 Editors Tutorial](https://docs.typo3.org/m/typo3/tutorial-editors/main/en-us/Pages/CreatingPages/Index.html#pages-creating)
+* [Creating pages in the TYPO3 Editors Tutorial](https://docs.typo3.org/permalink/t3editors:pages-creating)
