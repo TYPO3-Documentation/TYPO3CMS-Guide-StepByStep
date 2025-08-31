@@ -10,13 +10,13 @@ docs: prepare-docs render-docs restore-docs ## Prepare, generate, and clean up d
 render-docs: ## Render docs base on Documentation directory
 	mkdir -p Documentation-GENERATED-temp
 
-	docker run --rm --pull always -v "$(shell pwd)":/project -t ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
+	docker run --user $(shell id -u):$(shell id -g) --rm --pull always -v "$(shell pwd)":/project -t ghcr.io/typo3-documentation/render-guides:latest --config=Documentation
 
 .PHONY: test-docs
 test-docs: ## Test the documentation rendering
 	mkdir -p Documentation-GENERATED-temp
 
-	docker run --rm --pull always -v "$(shell pwd)":/project -t ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --fail-on-log
+	docker run --user $(shell id -u):$(shell id -g) --rm --pull always -v "$(shell pwd)":/project -t ghcr.io/typo3-documentation/render-guides:latest --config=Documentation --no-progress --fail-on-log
 
 .PHONY: stage-docs
 stage-docs: ## Make a backup of the Documentation directory in Documentation-BACKUP-temp
@@ -24,15 +24,15 @@ stage-docs: ## Make a backup of the Documentation directory in Documentation-BAC
 
 .PHONY: index-files
 index-files: ## Indexes all files and links in files.json
-	docker run --rm -v "$(shell pwd)":/app php:8.3-cli php app/bin/index-files
+	docker run --user $(shell id -u):$(shell id -g) --rm -v "$(shell pwd)":/app php:8.3-cli php app/bin/index-files
 
 .PHONY: expand-links
 expand-links: ## Expands shorthand links
-	docker run --rm -v "$(shell pwd)":/app php:8.3-cli php app/bin/expand-links
+	docker run --user $(shell id -u):$(shell id -g) --rm -v "$(shell pwd)":/app php:8.3-cli php app/bin/expand-links
 
 .PHONY: generate-tos
 generate-tos: ## Generates table of contents in all Index.md files
-	docker run --rm -v "$(shell pwd)":/app php:8.3-cli php app/bin/generate-tos
+	docker run --user $(shell id -u):$(shell id -g) --rm -v "$(shell pwd)":/app php:8.3-cli php app/bin/generate-tos
 
 .PHONY: expand-tags
 expand-tags: ## Expands tags into Markdown
