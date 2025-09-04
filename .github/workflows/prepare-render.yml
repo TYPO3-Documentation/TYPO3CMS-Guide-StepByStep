@@ -22,6 +22,9 @@ jobs:
         with:
           php-version: '8.3'
 
+      - name: Remove 00Incoming folder
+        run: rm -rf Documentation/00Incoming
+
       - name: Index files
         run: php bin/index-files
 

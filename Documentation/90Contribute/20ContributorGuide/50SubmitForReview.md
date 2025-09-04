@@ -29,11 +29,11 @@ Every guide will have room for improvement — that’s expected. That’s why a
 
 A step-by-step guide is ready for submission when:
 
-[ ] All required sections are complete — no placeholders.
-[ ] Numbered steps are logical, testable, and lead to the expected outcome
-[ ] Screenshots or code examples are included where appropriate and follow TYPO3 guidelines.
-[ ] Relevant concepts or references are linked where needed
-[ ] Language is clear, concise, and action-oriented
-[ ] The guide has been tested by the author
-[ ] The guide follows [TYPO3 writing conventions and formatting rules](https://docs.typo3.org/permalink/h2document:spelling)
-[ ] The guide fits its intended scope. (One learning objective per guide, or a project guide for more complex, multi-step processes.)
+[ ] All required sections are complete — no placeholders<br>
+[ ] Numbered steps are logical, testable, and lead to the expected outcome<br>
+[ ] Screenshots or code examples are included where appropriate and follow TYPO3 guidelines<br>
+[ ] Relevant concepts or references are linked where needed<br>
+[ ] Language is clear, concise, and action-oriented<br>
+[ ] The guide has been tested by the author<br>
+[ ] The guide follows [TYPO3 writing conventions and formatting rules](https://docs.typo3.org/permalink/h2document:spelling)<br>
+[ ] The guide fits its intended scope. (One learning objective per guide, or a project guide for more complex, multi-step processes.)<br>
