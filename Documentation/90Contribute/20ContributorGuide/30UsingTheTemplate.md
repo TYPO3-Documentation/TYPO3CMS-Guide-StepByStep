@@ -2,7 +2,10 @@
 
 When you create a step-by-step guide or a project guide for TYPO3, you must use the [step-by-step guide template](../10Template/Index.md). Here we explain each section in detail and provide example text to help you.
 
-**📝 [Create a new step-by-step guide using the template](../10Template/Index.md)**
+**[Go to the Step-by-Step Guide template](../10Template/Index.md)**
+
+> [!TIP]
+> **If you're a beginner**, read through this page, then check out the guide to [Contributing a Step-by-Step Guide Using Your Browser and GitHub](35ContributingAStepByStepGuideUsingYourBrowserAndGitHub.md).
 
 ## Contents
 - [Titles](#titles)

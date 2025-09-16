@@ -1,6 +1,7 @@
 # Submit for Review
 
 ## Minimum requirements
+
 All TYPO3 Step-by-Step Guides must include the following required sections:
 
 * **Title** — Starts with a verb and reflects the overall learning objective
