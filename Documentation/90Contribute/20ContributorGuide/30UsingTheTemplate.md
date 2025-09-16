@@ -17,7 +17,7 @@ When you create a step-by-step guide or a project guide for TYPO3, you must use 
   - [Key principles for effective tasks:](#key-principles-for-effective-tasks)
   - [Tips for writing steps](#tips-for-writing-steps)
   - [Task section examples](#task-section-examples)
-  - [Tips for when you have too many steps {#tips-for-when-you-have-too-many-steps}](#tips-for-when-you-have-too-many-steps-tips-for-when-you-have-too-many-steps)
+  - [Tips for when you have too many steps {#tips-for-when-you-have-too-many-steps}](#tips-for-when-you-have-too-many-steps)
   - [Resist the urge to explain everything](#resist-the-urge-to-explain-everything)
 - [About the Summary section](#about-the-summary-section)
 - [About the Next steps section](#about-the-next-steps-section)
@@ -165,9 +165,9 @@ In this example, each of the numbered steps link to pre-existing step-by-step gu
 
 *H2* Create a multilingual website
 
-1. [Set up multiple languages](../../20BuildingWebsites/20MultilingualWebsites/10SetUpMultipleLanguages/Index.md)
-2. [Translate content into other languages](../../20BuildingWebsites/20MultilingualWebsites/20TranslateContent/Index.md)
-3. [Manage language fallbacks](../../20BuildingWebsites/20MultilingualWebsites/30ManageLanguageFallbacks/Index.md)
+1. [Set up multiple languages](.)
+2. [Translate content into other languages](.)
+3. [Manage language fallbacks](.)
 
 #### Tips for when you have too many steps
 
