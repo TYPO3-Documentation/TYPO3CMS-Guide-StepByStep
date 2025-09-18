@@ -49,11 +49,11 @@ You have now disabled and re-enabled a page using the context menu of TYPO3's pa
 
 A page tree can also be enabled and disabled in other ways than this:
 
-* [Enabling and disabling a page in the page properties](EnablingAndDisablingAPageInThePageProperties)
+* [Enabling and disabling a page in the page properties](EnablingAndDisablingAPageInThePageProperties.md)
 * [Enabling and disabling a page in the List module](EnablingAndDisablingAPageInTheListModule.md)
 
 ## Resources
 
-* [Enabling and disabling a page in the page properties](EnablingAndDisablingAPageInThePageProperties)
+* [Enabling and disabling a page in the page properties](EnablingAndDisablingAPageInThePageProperties.md)
 * [Enabling and disabling a page in the List module](EnablingAndDisablingAPageInTheListModule.md)
 * [Introduction to the TYPO3 Backend](https://docs.typo3.org/permalink/t3start:backend)
