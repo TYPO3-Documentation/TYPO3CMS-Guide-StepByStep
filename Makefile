@@ -34,12 +34,16 @@ expand-links: ## Expands shorthand links
 generate-tos: ## Generates table of contents in all Index.md files
 	docker run --user $(shell id -u):$(shell id -g) --rm -v "$(shell pwd)":/app php:8.3-cli php app/bin/generate-tos
 
+.PHONY: generate-registry
+generate-tos: ## Generates the guides registry at 80GuidesRegistry/Index.md
+	docker run --user $(shell id -u):$(shell id -g) --rm -v "$(shell pwd)":/app php:8.3-cli php app/bin/generate-registry
+
 .PHONY: expand-tags
 expand-tags: ## Expands tags into Markdown
 	docker run --rm -v "$(shell pwd)":/app php:8.3-cli php app/bin/expand-tags
 
 .PHONY: prepare-docs ## Prepares files for rendering: Backing up, generating TOS, expanding tags, etc.
-prepare-docs: stage-docs index-files expand-links generate-tos expand-tags
+prepare-docs: stage-docs index-files expand-links generate-tos generate-registry expand-tags
 
 .PHONY: restore-docs
 restore-docs: ## Restores the Documentation folder from Documentation-BACKUP-temp
