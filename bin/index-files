@@ -55,6 +55,10 @@ foreach (array_values($allFiles) as $file) {
 
         // Is not an external URL.
         if (!$isExternalUrl) {
+            if ($linkUrl[0] !== '/' && $linkUrl[0] !== '#') {
+                $linkUrl = dirname($file['path']) . '/' . $linkUrl;
+            }
+
             $linkEntry['url'] = expandPath($linkUrl);
 
             if (!key_exists($linkEntry['url'], $allFiles)) {

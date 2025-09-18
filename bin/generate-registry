@@ -102,8 +102,8 @@ if ($missingGuidesCount === 0) {
 
 echo $output;
 
-function newGuideUrl(string $title) {
+function newGuideUrl(string $fileName) {
     return 'https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?'
-        . 'filename=' . rawurlencode($title)
+        . 'filename=' . rawurlencode(basename($fileName))
         . '&value=' . rawurlencode('Copy content the template from: https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/refs/heads/contrib/Documentation/90Contribute/10Template/Index.md');
 }

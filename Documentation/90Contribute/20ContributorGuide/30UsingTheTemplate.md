@@ -162,9 +162,9 @@ In this example, each of the numbered steps link to pre-existing step-by-step gu
 
 *H2* Create a multilingual website
 
-1. [Set up multiple languages](../../20BuildingWebsites/20MultilingualWebsites/10SetUpMultipleLanguages/Index.md)
-2. [Translate content into other languages](../../20BuildingWebsites/20MultilingualWebsites/20TranslateContent/Index.md)
-3. [Manage language fallbacks](../../20BuildingWebsites/20MultilingualWebsites/30ManageLanguageFallbacks/Index.md)
+1. [Set up multiple languages](30UsingTheTemplate.md)
+2. [Translate content into other languages](30UsingTheTemplate.md)
+3. [Manage language fallbacks](30UsingTheTemplate.md)
 
 #### Tips for when you have too many steps
 

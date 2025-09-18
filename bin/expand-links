@@ -21,7 +21,6 @@ foreach (array_values($files) as $file) {
         }
 
         if ($matchedFile === null) {
-
             $matchingFiles = array_values(array_filter(
                 array_keys($files),
                 function ($entry) use ($outgoingLink) {
@@ -36,10 +35,14 @@ foreach (array_values($files) as $file) {
             $matchedFile = $matchingFiles[0];
         }
 
-        $replaceLinkString = '[' . $outgoingLink['text'] . ']'
-            . '(/' . $matchedFile
-            . ($outgoingLink['title'] ? ' "' . $outgoingLink['title'] . '"' : '')
-            . ')';
+        $replaceLinkString = $outgoingLink['text'];
+
+        if ($outgoingLink['exists']) {
+            $replaceLinkString = '[' . $outgoingLink['text'] . ']'
+                . '(/' . $matchedFile
+                . ($outgoingLink['title'] ? ' "' . $outgoingLink['title'] . '"' : '')
+                . ')';
+        }
 
         file_put_contents(
             SEARCH_PATH . $file['path'],
