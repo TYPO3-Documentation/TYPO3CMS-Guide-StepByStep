@@ -1,0 +1,83 @@
+#!/usr/bin/env php
+<?php
+const SEARCH_PATH = __DIR__ . '/../Documentation/';
+
+$files = json_decode(file_get_contents(SEARCH_PATH . 'files.json'), true);
+
+$sections = [];
+
+foreach ($files as $file) {
+    if (
+        $file['path'] === 'Index.md' // Ignore the project root index file
+        || str_starts_with($file['path'], '00Incoming/')
+        || str_starts_with($file['path'], '80GuidesRegistry/')
+        || str_starts_with($file['path'], '90Contribute/')
+        || basename($file['path']) !== 'Index.md'
+        || !$file['exists']
+    ) {
+        continue;
+    }
+
+    $dirname = dirname($file['path']);
+
+    $subsectionPath = array_reverse(explode('/', $dirname));
+    $currentSection = [];
+    foreach ($subsectionPath as $part) {
+        $currentSection = [$part => $currentSection];
+    }
+
+    $sections = array_merge_recursive($sections, $currentSection);
+}
+
+$output = '# Step-by-Step Guides Registry' . PHP_EOL . PHP_EOL;
+
+$output .= 'This is a list of all the published and unpublished Step-by-Step guides. It\'s also an easy starting point if you would like to contribute a missing guide.' . PHP_EOL . PHP_EOL;
+
+$output .= '* [Published Guides](#published-guides)' . PHP_EOL;
+$output .= '* [Missing Guides](#missing-guides)' . PHP_EOL;
+
+$output .= PHP_EOL;
+
+$output .= '## Published Guides' . PHP_EOL . PHP_EOL;
+
+renderSection('', $sections, 2);
+
+function renderSection(string $parentPath, array $sections, int $level) {
+    global $output, $files;
+
+    if ($parentPath !== '') {
+        $relevantFiles = array_filter(
+            $files,
+            function ($key) use ($parentPath) {
+                return str_starts_with($key, $parentPath . '/')
+                    && !str_ends_with($key, '/Index.md')
+                    && !str_contains(str_replace($parentPath . '/', '', $key), '/');
+            },
+            ARRAY_FILTER_USE_KEY
+        );
+
+        $file = $files[$parentPath . '/Index.md'];
+
+        $output .= str_repeat('#', $level) . ' ' . $file['title'] . PHP_EOL . PHP_EOL;
+
+        foreach ($relevantFiles as $file) {
+            $output .= '* [' . $file['title'] . '](../' . $file['path'] . ')' . PHP_EOL;
+        }
+
+        if (count($relevantFiles) === 0 && count($sections) === 0) {
+            $output .= 'No guides in this section yet. Create one?' . PHP_EOL;
+        }
+
+        $output .= PHP_EOL;
+    }
+
+    foreach ($sections as $sectionPath => $subSections) {
+        var_dump($sectionPath);
+        $subSectionPath = $parentPath . ($parentPath === '' ? '' : '/') . $sectionPath;
+
+        renderSection($subSectionPath, $subSections, $level + 1);
+    }
+}
+
+echo $output;
+
