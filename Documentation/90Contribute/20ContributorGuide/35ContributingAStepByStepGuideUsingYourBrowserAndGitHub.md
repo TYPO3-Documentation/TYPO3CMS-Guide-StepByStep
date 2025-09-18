@@ -8,6 +8,15 @@ It's easy to add a new guide to the TYPO3 Step-by-Step Guides. All of the guides
 
 In this step-by-step guide you will create a new Step-by-Step guide and create a *pull request*, asking for your guide to be included in the TYPO3 Step-by-Step guides.
 
+Here is the approach we'll take:
+
+- Create a GitHub account
+- Copy content from the template
+- Create a new file
+- Create a fork
+- Commit your changes
+- Open a pull request
+
 ## Prerequisites
 
 ### Tools and technology
