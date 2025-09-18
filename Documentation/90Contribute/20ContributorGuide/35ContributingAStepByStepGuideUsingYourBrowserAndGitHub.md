@@ -115,6 +115,8 @@ Committing your changes means the same as saving them, but you also add a messag
 
 ## Open a pull request
 
+When you're finished writing your guide, you're ready to ask for it to be copied from your fork into the official step-by-step guide repository. 
+
 To tell the Step-by-Step Guide maintainers that you have new things to contribute, you must open a *pull request*. Basically a request to "please, pull in my changes."
 
 You're still on the "Comparing changes" page shown in the screenshot above.
