@@ -65,19 +65,45 @@ function renderSection(string $parentPath, array $sections, int $level) {
         }
 
         if (count($relevantFiles) === 0 && count($sections) === 0) {
-            $output .= 'No guides in this section yet. Create one?' . PHP_EOL;
+            $output .= 'No guides in this section yet.';
+            $output .= ' [Create a new guide](' . newGuideUrl('GiveYourGuideAName.md') . ')' . PHP_EOL;
+            $output .= PHP_EOL;
         }
 
         $output .= PHP_EOL;
     }
 
     foreach ($sections as $sectionPath => $subSections) {
-        var_dump($sectionPath);
         $subSectionPath = $parentPath . ($parentPath === '' ? '' : '/') . $sectionPath;
 
         renderSection($subSectionPath, $subSections, $level + 1);
     }
 }
 
+$output .= '# Missing guides' . PHP_EOL . PHP_EOL;
+
+$missingGuidesCount = 0;
+
+foreach ($files as $file) {
+    if ($file['exists'] || $file['external'] || $file['path'][0] === '#' || !str_ends_with($file['path'], '.md')) {
+        continue;
+    }
+
+    $missingGuidesCount++;
+
+    $output .= '* ' . $file['title'] . ' [CREATE](' . newGuideUrl($file['path']) . ')' . PHP_EOL;
+}
+
+if ($missingGuidesCount === 0) {
+    $output .= 'No missing guides.';
+    $output .= ' You can still [create a new guide](' . newGuideUrl('GiveYourGuideAName.md') . ')' . PHP_EOL;
+    $output .= PHP_EOL;
+}
+
 echo $output;
 
+function newGuideUrl(string $title) {
+    return 'https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?'
+        . 'filename=' . rawurlencode($title)
+        . '&value=' . rawurlencode('Copy content the template from: https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/refs/heads/contrib/Documentation/90Contribute/10Template/Index.md');
+}

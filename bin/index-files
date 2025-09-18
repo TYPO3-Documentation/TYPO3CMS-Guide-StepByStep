@@ -42,16 +42,19 @@ foreach (array_values($allFiles) as $file) {
 
         [$fullMatch, $linkText, $linkUrl, $linkTitle] = $linkMatch;
 
+        $isExternalUrl = (bool)preg_match('/^[a-zA-Z]+:/', $linkUrl);
+
         $linkEntry = [
             'match' => trim($fullMatch),
             'text' => $linkText,
             'unexpandedUrl' => $linkUrl,
             'url' => $linkUrl,
             'title' => $linkTitle,
+            'external' => $isExternalUrl,
         ];
 
         // Is not an external URL.
-        if (!preg_match('/^[a-zA-Z]+:/', $linkUrl)) {
+        if (!$isExternalUrl) {
             $linkEntry['url'] = expandPath($linkUrl);
 
             if (!key_exists($linkEntry['url'], $allFiles)) {
