@@ -90,6 +90,9 @@ Each collection of files and folders is called a *repository*. In order to edit 
 When you are finished, it should look something like in this screenshot:
 
 ![Screenshot of a GitHub interface showing a Markdown file titled "CreatingAGuide.md" being edited. The file contains a template for a TYPO3 step-by-step guide, with instructional text and placeholders.](Images/45ContributingAStepByStepGuideUsingYourBrowserAndGitHub/GitHubNewGuideFileWithContent.png)
+## Write the guide
+
+Here is the point in the process when you write the step-by-step guide. See [Using the Template] 30UsingTheTemplate.md) for help to write each section of the guide. 
 
 ## Commit your changes
 
