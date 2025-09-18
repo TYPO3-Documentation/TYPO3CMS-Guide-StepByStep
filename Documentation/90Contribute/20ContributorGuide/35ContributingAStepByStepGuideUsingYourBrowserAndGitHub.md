@@ -21,7 +21,7 @@ In this step-by-step guide you will create a new Step-by-Step guide and create a
 * Basic understanding of Markdown, as explained in the [Markdown Cheat Sheet](https://docs.typo3.org/permalink/h2document:md-cheat-sheet)
 * How to use the step-by-step guide template, as explained in [Using the Template](30UsingTheTemplate.md).
 
-## Create a GitHub user
+## Create a GitHub user account
 
 > [!NOTE]
 > You can skip this section if you already have a user account on GitHub.
