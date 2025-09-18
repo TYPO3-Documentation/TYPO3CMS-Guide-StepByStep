@@ -1,9 +1,10 @@
 #!/usr/bin/env php
 <?php
-const SEARCH_PATH = __DIR__ . '/../Documentation/';
+const SEARCH_PATH = __DIR__ . '/../Documentation';
 
 const MARKDOWN_LINK_PATTERN = '/(?:(?!\!).)\[([^\]]+)\]\(([^ ]+)( "([^"]+)")?\)/';
 
+// Find all Markdown files
 $files = array_keys(iterator_to_array(new RegexIterator(
 	new RecursiveIteratorIterator(
 		new RecursiveDirectoryIterator(SEARCH_PATH)
@@ -13,6 +14,7 @@ $files = array_keys(iterator_to_array(new RegexIterator(
 )));
 
 $allFiles = [];
+$allLinks = [];
 
 foreach ($files as $fullFilePath) {
     $file = str_replace(SEARCH_PATH, '', $fullFilePath);
@@ -20,7 +22,6 @@ foreach ($files as $fullFilePath) {
     $allFiles[$file] = [
         'title' => null,
         'path' => $file,
-        'exists' => true,
         'incomingLinks' => [],
         'outgoingLinks' => [],
     ];
@@ -40,45 +41,62 @@ foreach (array_values($allFiles) as $file) {
             continue;
         }
 
-        [$fullMatch, $linkText, $linkUrl, $linkTitle] = $linkMatch;
+        [$fullMatch, $linkText, $linkUri, $linkTitle] = $linkMatch;
 
-        $isExternalUrl = (bool)preg_match('/^[a-zA-Z]+:/', $linkUrl);
+        // If the URI is an anchor, we don't want it
+        if ($linkUri[0] === '#') {
+            continue;
+        }
+
+        $isExternalUrl = (bool)preg_match('/^[a-zA-Z]+:/', $linkUri);
 
         $linkEntry = [
+            'inFile' => $file['path'],
+            'toFile' => null,
             'match' => trim($fullMatch),
-            'text' => $linkText,
-            'unexpandedUrl' => $linkUrl,
-            'url' => $linkUrl,
-            'title' => $linkTitle,
+            'linkText' => $linkText,
+            'unexpandedUri' => $linkUri,
+            'uri' => $linkUri,
+            'titleAttribute' => $linkTitle,
             'external' => $isExternalUrl,
         ];
 
-        // Is not an external URL.
         if (!$isExternalUrl) {
-            if ($linkUrl[0] !== '/' && $linkUrl[0] !== '#') {
-                $linkUrl = dirname($file['path']) . '/' . $linkUrl;
+            // If this is not an absolute link, we add the path to the file containing the link and expand it.
+            if ($linkUri[0] !== '/') {
+                $linkEntry['uri'] = expandPath(dirname($file['path']) . '/' . $linkUri);
+            // If it is an absolute link, we s
             }
 
-            $linkEntry['url'] = expandPath($linkUrl);
+            // If this is a straight-forward link to a file
+            if (key_exists($linkEntry['uri'], $allFiles)) {
+                $linkEntry['toFile'] = $linkEntry['uri'];
+            // If it's a shortlink (just file name) we try to find the file it's linking to.
+            } elseif(!str_contains($linkUri, '/')) {
+                $matchingFiles = array_filter(
+                    array_keys($allFiles),
+                    function ($entry) use ($linkUri) {
+                        return str_ends_with($entry, '/' . $linkUri);
+                    }
+                );
 
-            if (!key_exists($linkEntry['url'], $allFiles)) {
-                $allFiles[$linkEntry['url']] = [
-                    'title' => $linkText ?: basename($file['path']),
-                    'path' => $linkEntry['url'],
-                    'exists' => false,
-                    'incomingLinks' => [],
-                    'outgoingLinks' => [],
-                ];
+                if (count($matchingFiles) === 1) {
+                    $linkEntry['toFile'] = $matchingFiles[0];
+                }
             }
-
-            $allFiles[$linkEntry['url']]['incomingLinks'][$file['path']] = $linkEntry;
         }
 
-        $allFiles[$file['path']]['outgoingLinks'][$linkEntry['url']] = $linkEntry;
+        $allLinks[] = $linkEntry;
     }
 }
 
-file_put_contents(SEARCH_PATH . 'files.json', json_encode($allFiles));
+file_put_contents(
+    SEARCH_PATH . '/files.json',
+    json_encode([
+        'files' => $allFiles,
+        'links' => $allLinks,
+    ])
+);
 
 function expandPath(string $path): string {
     $newLinkUrlParts = [];
@@ -92,5 +110,5 @@ function expandPath(string $path): string {
         $newLinkUrlParts[] = $linkUrlPart;
     }
 
-    return implode('/', $newLinkUrlParts);
+    return '/' . implode('/', $newLinkUrlParts);
 }

@@ -68,11 +68,11 @@ You have now disabled and re-enabled a page using TYPO3's page properties interf
 
 A page tree can also be enabled and disabled in other ways than this:
 
-* [Enabling and disabling a page in the page tree](EnablingAndDisablingAPageInThePageTree)
+* [Enabling and disabling a page in the page tree](EnablingAndDisablingAPageInThePageTree.md)
 * [Enabling and disabling a page in the List module](EnablingAndDisablingAPageInTheListModule.md)
 
 ## Resources
 
-* [Enabling and disabling a page in the page tree](EnablingAndDisablingAPageInThePageTree)
+* [Enabling and disabling a page in the page tree](EnablingAndDisablingAPageInThePageTree.md)
 * [Enabling and disabling a page in the List module](EnablingAndDisablingAPageInTheListModule.md)
 * [Introduction to the TYPO3 Backend](https://docs.typo3.org/permalink/t3start:backend)
