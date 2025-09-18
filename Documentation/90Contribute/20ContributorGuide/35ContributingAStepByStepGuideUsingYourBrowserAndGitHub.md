@@ -39,7 +39,7 @@ You now have a user account on GitHub. At the end of the sign-up process, you sh
 
 ## Copy content from the template
 
-All step-by-step guides should be based on the template file. It includes important instructions and makes the job of writing the guide easier. You need to copy it so it can be the strating point for your new guide.
+All step-by-step guides should be based on the template file. It includes important instructions and makes the job of writing the guide easier. You need to copy it so it can be the starting point for your new guide.
 
 1. Visit the step-by-step guide template in your web browser by clicking this link: [github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/blob/contrib/Documentation/90Contribute/10Template/Index.md](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/blob/contrib/Documentation/90Contribute/10Template/Index.md)
 2. Whent he page has loaded, click the "Copy raw file" button. The button has no text, but an icon with two partially overlapping squares. In the screenshot below, it is highlighted with an orange frame and there is an orange arrow pointing to it.
