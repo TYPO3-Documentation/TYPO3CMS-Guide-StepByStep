@@ -98,6 +98,9 @@ Here is the point in the process when you write the step-by-step guide. See [Usi
 
 Committing your changes means the same as saving them, but you also add a message saying what changes your save action includes.
 
+> [!TIP]
+> You don't have to wait until you've finished writing the guide to do one big commit. You can do lots of small commits to save as you go. You are working in your fork of the repository, so nobody knows about your work yet but you. 
+
 1. Click the green "Commit changes…" button. A dialog titled "Propose Changes" will appear.
 
 ![A dialog box titled Propose changes shows fields for a commit message, extended description, and commit email, with Cancel and green Propose changes buttons at the bottom.](Images/45ContributingAStepByStepGuideUsingYourBrowserAndGitHub/GitHubCommitMessageDialog.png)
