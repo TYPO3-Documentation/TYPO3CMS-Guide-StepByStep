@@ -1,60 +1,47 @@
 #!/usr/bin/env php
 <?php
-const SEARCH_PATH = __DIR__ . '/../Documentation/';
+define('SEARCH_PATH', realpath(__DIR__ . '/../Documentation'));
 
-$files = json_decode(file_get_contents(SEARCH_PATH . 'files.json'), true);
+$filesAndLinks = json_decode(file_get_contents(SEARCH_PATH . '/files.json'), true);
 
-foreach (array_values($files) as $file) {
-    if (
-        $file['path'] === 'Index.md' // Ignore the project root index file
-        || basename($file['path']) === 'Index.md'
-        || !$file['exists']
-    ) {
+foreach ($filesAndLinks['files'] as $file) {
+    // Ignore index files
+    if (basename($file['path']) === 'Index.md') {
         continue;
     }
 
     $matchedFile = null;
 
-    foreach ($file['outgoingLinks'] as $outgoingLink) {
-        if (str_contains($outgoingLink['unexpandedUrl'], '/')) {
+    $fileContents = file_get_contents(SEARCH_PATH . $file['path']);
+
+    $changedLinks = 0;
+
+    foreach ($filesAndLinks['links'] as $link) {
+        // Only care about internal links within this file
+        if ($link['inFile'] !== $file['path'] || $link['external']) {
             continue;
         }
 
-        if ($matchedFile === null) {
-            $matchingFiles = array_values(array_filter(
-                array_keys($files),
-                function ($entry) use ($outgoingLink) {
-                    return str_ends_with($entry, '/' . $outgoingLink['unexpandedUrl']);
-                }
-            ));
+        $changedLinks++;
 
-            if ($matchingFiles === [] || count($matchingFiles) > 1) {
-                continue;
-            }
+        $replaceLinkString = $link['linkText'];
 
-            $matchedFile = $matchingFiles[0];
-        }
-
-        $replaceLinkString = $outgoingLink['text'];
-
-        if ($outgoingLink['exists']) {
-            $replaceLinkString = '[' . $outgoingLink['text'] . ']'
-                . '(/' . $matchedFile
-                . ($outgoingLink['title'] ? ' "' . $outgoingLink['title'] . '"' : '')
+        // If the file exists, ensure we make a proper link to it
+        if ($link['toFile'] !== null) {
+            $replaceLinkString = '[' . $link['linkText'] . ']'
+                . '(' . $link['toFile'] . ')'
+                . ($link['titleAttribute'] ? ' "' . $link['titleAttribute'] . '"' : '')
                 . ')';
         }
 
-        file_put_contents(
-            SEARCH_PATH . $file['path'],
-            str_replace(
-                $outgoingLink['match'],
-                $replaceLinkString,
-                file_get_contents(SEARCH_PATH . $file['path'])
-            )
+        $fileContents = str_replace(
+            $link['match'],
+            $replaceLinkString,
+            $fileContents
         );
+    }
 
-        unset($files[$outgoingLink['url']]);
+    if ($changedLinks > 0) {
+        file_put_contents(SEARCH_PATH . $file['path'], $fileContents);
     }
 }
-
-file_put_contents(SEARCH_PATH . 'files.json', json_encode($files));

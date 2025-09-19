@@ -1,6 +1,6 @@
 #!/usr/bin/env php
 <?php
-const SEARCH_PATH = __DIR__ . '/../Documentation';
+define('SEARCH_PATH', realpath(__DIR__ . '/../Documentation'));
 
 const MARKDOWN_LINK_PATTERN = '/(?:(?!\!).)\[([^\]]+)\]\(([^ ]+)( "([^"]+)")?\)/';
 
@@ -63,25 +63,22 @@ foreach (array_values($allFiles) as $file) {
 
         if (!$isExternalUrl) {
             // If this is not an absolute link, we add the path to the file containing the link and expand it.
-            if ($linkUri[0] !== '/') {
-                $linkEntry['uri'] = expandPath(dirname($file['path']) . '/' . $linkUri);
-            // If it is an absolute link, we s
+            if (!str_starts_with($linkEntry['uri'], '/')) {
+                $linkEntry['uri'] = expandPath(dirname($file['path']) . '/' . $linkEntry['uri']);
             }
 
-            // If this is a straight-forward link to a file
-            if (key_exists($linkEntry['uri'], $allFiles)) {
-                $linkEntry['toFile'] = $linkEntry['uri'];
-            // If it's a shortlink (just file name) we try to find the file it's linking to.
-            } elseif(!str_contains($linkUri, '/')) {
-                $matchingFiles = array_filter(
+            if (!str_contains($linkUri, '/')) {
+                // If it's a shortlink (just file name) we try to find the file it's linking to.
+                $matchingFiles = array_values(array_filter(
                     array_keys($allFiles),
                     function ($entry) use ($linkUri) {
-                        return str_ends_with($entry, '/' . $linkUri);
+                        return str_ends_with(strtolower($entry), '/' . strtolower($linkUri));
                     }
-                );
+                ));
 
                 if (count($matchingFiles) === 1) {
                     $linkEntry['toFile'] = $matchingFiles[0];
+                    $linkEntry['uri'] = $matchingFiles[0];
                 }
             }
         }

@@ -1,70 +1,173 @@
 #!/usr/bin/env php
 <?php
-const SEARCH_PATH = __DIR__ . '/../Documentation/';
+define('SEARCH_PATH', realpath(__DIR__ . '/../Documentation'));
 
-$files = json_decode(file_get_contents(SEARCH_PATH . 'files.json'), true);
+$filesAndLinks = json_decode(file_get_contents(SEARCH_PATH . '/files.json'), true);
 
-foreach ($files as $file) {
+$guidesByParentFolder = [];
+
+// Organize all files by parent parentFolderPath.
+foreach ($filesAndLinks['files'] as $key => $file) {
     if (
-        $file['path'] === 'Index.md' // Ignore the project root index file
-        || str_contains($file['path'], '00Incoming/')
-        || str_contains($file['path'], '80GuidesRegistry/')
-        || str_contains($file['path'], '90Contribute/')
-        || basename($file['path']) !== 'Index.md'
-        || !$file['exists']
+        str_starts_with($file['path'], '/00Incoming/')
+        || str_starts_with($file['path'], '/80GuidesRegistry/')
+        || str_starts_with($file['path'], '/90Contribute/')
     ) {
         continue;
     }
 
-    $topics = [];
-    $guides = [];
+    $guidesByParentFolder[dirname($file['path'])][] = $file;
+}
 
-    $dirname = dirname($file['path']);
+foreach ($guidesByParentFolder as $parentFolder => $guides) {
+    [$output, $numberOfRenderedGuides] = renderSection($parentFolder, $guides);
 
-    foreach ($files as $fileToCompare) {
-        if ($fileToCompare['path'] === $file['path']) {
-            continue;
+    if ($output === null) {
+        continue;
+    }
+
+    file_put_contents(SEARCH_PATH . $parentFolder . '/Index.md', $output);
+}
+
+$renderedSections = '';
+
+$output = '# Guides Registry' . PHP_EOL . PHP_EOL;
+
+$output .= 'This is a list of all the published and unpublished Step-by-Step guides. It\'s also an easy starting point if you would like to [contribute a missing guide](' . newGuideUrl() . ').' . PHP_EOL . PHP_EOL;
+
+$output .= '* [Published Guides](#published-guides)' . PHP_EOL;
+$output .= '* [Missing Guides](#missing-guides)' . PHP_EOL;
+
+$output .= '## Published Guides' . PHP_EOL . PHP_EOL;
+
+foreach ($guidesByParentFolder as $parentFolder => $guides) {
+    if (str_contains(trim($parentFolder, '/'), '/') || $parentFolder === '/') {
+        continue;
+    }
+
+    [$renderedSections, $numberOfRenderedGuides] = renderSection($parentFolder, $guides, 3, true);
+
+    if ($renderedSections === null) {
+        continue;
+    }
+
+    $output .= $renderedSections;
+}
+
+$output .= '## Missing Guides' . PHP_EOL . PHP_EOL;
+
+$mentionedUris = [];
+
+foreach ($filesAndLinks['links'] as $link) {
+    if (
+        $link['external']
+        || $link['toFile'] !== null
+        || str_starts_with($link['uri'], '/00Incoming/')
+        || str_starts_with($link['uri'], '/80GuidesRegistry/')
+        || str_starts_with($link['uri'], '/90Contribute/')
+        || in_array($link['uri'], $mentionedUris, true)
+    ) {
+        continue;
+    }
+
+    $mentionedUris[] = $link['uri'];
+
+    $output .= '* ' . ($link['linkText'] ?? basename($link['uri'])) . ' [CREATE](' . newGuideUrl(basename($link['uri'])) . ')' . PHP_EOL;
+}
+
+file_put_contents(SEARCH_PATH . '/80GuidesRegistry/Index.md', $output);
+
+/**
+ * Renders a section ToC, recursively with subsections.
+ *
+ * @param string $parentFolderPath
+ * @param array $guides
+ * @param int $level
+ * @param bool $isFullRegistry
+ * @return array
+ */
+function renderSection(string $parentFolderPath, array $guides, int $level = 1, bool $isFullRegistry = false): array
+{
+    global $guidesByParentFolder, $filesAndLinks;
+
+    $indexFile = $filesAndLinks['files'][$parentFolderPath . '/Index.md'] ?? null;
+
+    if ($indexFile === null) {
+        return [null, 0];
+    }
+
+    $childFolders = array_filter(
+        $guidesByParentFolder,
+        function ($folderPathToTest) use ($parentFolderPath) {
+            return str_starts_with($folderPathToTest, $parentFolderPath . '/')
+                && !str_contains(str_replace($parentFolderPath . '/', '', $folderPathToTest), '/');
+        },
+        ARRAY_FILTER_USE_KEY
+    );
+
+    $output = '';
+
+    $hasGuides = count($guides) > 1;
+    $hasChildFolders = count($childFolders) > 0;
+    $isFirstLevelSection = $level === 1;
+    $isLeafLevelSection = $isFirstLevelSection && !$hasChildFolders;
+    $renderedSubSections = '';
+    $numberOfRenderedGuides = 0;
+
+    foreach ($childFolders as $childFolder => $childGuides) {
+        [$renderedSubSection, $numberRendered] = renderSection($childFolder, $childGuides, $level + 1, $isFullRegistry);
+
+        $numberOfRenderedGuides += $numberRendered;
+        $renderedSubSections .= $renderedSubSection;
+    }
+
+    if ($isFirstLevelSection || $numberOfRenderedGuides > 0 || ($isFullRegistry && $hasGuides)) {
+        $output .= str_repeat('#', $level) . ' ' . $indexFile['title'] . PHP_EOL . PHP_EOL;
+    }
+
+    if ($hasGuides && $isLeafLevelSection) {
+        $output .= str_repeat('#', $level + 1) . ' Guides' . PHP_EOL . PHP_EOL;
+    }
+
+    if (($hasGuides && $isLeafLevelSection) || $isFullRegistry) {
+        foreach ($guides as $guide) {
+            if (basename($guide['path']) === 'Index.md') {
+                continue;
+            }
+
+            $numberOfRenderedGuides++;
+
+            $output .= '* [' . $guide['title'] . '](' . $guide['path'] . ')' . PHP_EOL;
         }
 
-        $compareDirname = dirname($fileToCompare['path']);
+        $output .= PHP_EOL;
+    }
 
-        if ($compareDirname === $dirname) {
-            $guides[] = $fileToCompare;
-        } elseif (
-            str_starts_with($compareDirname, $dirname)
-            && !str_contains(trim(str_replace($dirname, '', $compareDirname), '/'), '/')
-            && basename($fileToCompare['path']) === 'Index.md'
-        ) {
-            $topics[] = $fileToCompare;
+    $output .= $renderedSubSections;
+
+    if (!$hasGuides && $isFirstLevelSection && $hasChildFolders && !$isFullRegistry) {
+        $output .= str_repeat('#', $level + 1) . ' Topics' . PHP_EOL . PHP_EOL;
+
+        $orderedChildFolders = array_keys($childFolders);
+        sort($orderedChildFolders, SORT_STRING);
+
+        foreach ($orderedChildFolders as $childFolder) {
+            $indexFile = $filesAndLinks['files'][$childFolder . '/Index.md'] ?? null;
+
+            $output .= '* [' . $indexFile['title'] . '](' . $indexFile['path'] . ')' . PHP_EOL;
         }
     }
 
-    $content = '# ' . $file['title'] . "\n\n";
-
-    foreach ($topics as $topic) {
-        $content .= '* [' . $topic['title'] . '](/' . $topic['path'] . ')' . "\n";
+    if ($isLeafLevelSection && !$hasGuides) {
+        $output .= '> [!NOTE]' . PHP_EOL;
+        $output .= '> There are no guides here yet. [Create a new guide](' . newGuideUrl() . ')';
     }
 
-    if ($guides !== []) {
-        $content .= "\n\n" . '## Guides' . "\n\n";
-    }
+    return [$output, $numberOfRenderedGuides];
+}
 
-    foreach ($guides as $guide) {
-        if ($guide['exists']) {
-            $content .= '* [' . $guide['title'] . '](/' . $guide['path'] . ')' . "\n";
-        } else {
-            $url = 'https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?'
-                . 'filename=' . urlencode(basename($guide['path']))
-                . '&value=' . urlencode('Copy content the template from: https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/refs/heads/contrib/Documentation/90Contribute/10Template/Index.md');
-
-            $content .= '* ' . $guide['title'] . ' [CREATE](' . $url . ')' . "\n";
-        }
-    }
-
-    if ($topics === [] && $guides === []) {
-        $content .= '> [!NOTE]' . "\n";
-        $content .= '> There are no guides here yet.' . "\n";
-    }
-
-    file_put_contents(SEARCH_PATH . $file['path'], $content);
+function newGuideUrl(string $fileName = 'GiveYourGuideAName.md') {
+    return 'https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?'
+        . 'filename=' . rawurlencode(basename($fileName))
+        . '&value=' . rawurlencode('Copy content the template from: https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/refs/heads/contrib/Documentation/90Contribute/10Template/Index.md');
 }
