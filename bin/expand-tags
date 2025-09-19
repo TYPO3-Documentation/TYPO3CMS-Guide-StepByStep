@@ -7,7 +7,10 @@ $filesAndLinks = json_decode(file_get_contents(SEARCH_PATH . '/files.json'), tru
 $tagsToFiles = [];
 
 foreach ($filesAndLinks['files'] as $file) {
-    if (basename($file['path']) === '/Index.md') {
+    if (
+        basename($file['path']) === '/Index.md'
+        || $file['path'] === '/90Contribute/10Template/Index.md'
+    ) {
         continue;
     }
 
