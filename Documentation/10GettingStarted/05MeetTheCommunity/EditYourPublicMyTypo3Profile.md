@@ -49,42 +49,64 @@ The edit profile page shows you information about your profile image (avatar), a
 
 1. Fill in the information you like in the appropriate fields.
 2. Towards the bottom of the page, click the black *Add* button to create links that can be listed on your profile. Each link has three elements:
-   * A drop-down menu for selecting the type of link. Example: *Facebook* or *Bluesky*.
+   * An orange drop-down menu for selecting the type of link. Example: *Facebook* or *Bluesky*.
    * A field for the URL or username you would like to link to, depending on your selection in the drop-down menu.
    * A checkbox to highlight the link. Checking it will display the link at the top of your profile.
-3. Click the orange *Save* button to save your changes.
+
+![Screenshot of a webpage showing links management with options to mark links as highlighted. The links displayed are for bsky.app, typo3.social, linkedin.com in an example format, and github.com/typo3. Each link has options to remove or highlight.](Images/EditYourPublicMyTypo3Profile/LinkExamples.png)
+![A dropdown menu displaying social media and website icons and names, including Website, X, Facebook, Instagram, Mastodon, Bluesky (highlighted), Threads, YouTube, XING, LinkedIn, GitHub, GitLab, Stack Overflow, and Other.](Images/EditYourPublicMyTypo3Profile/LinkTypeSelector.png)
+
+3. Click the orange *Save* button at the bottom of the page to save your changes.
 
 ## Configuring the visibility of your information
 
-Apart from your username (which is always visible) fields that do not have a visibility option next to them will always be hidden from everyone.
+Your profile information may still not be visible on your public profile page. This is because your profile information is hidden by default, so you must update its visibility settings.
 
-1. {Write the first step. Start with a verb.}
-   {Optional: Code sample or screenshot that helps the learner complete this step.}
-   {Optional: Expected outcome.}
-2. {Write the next step. Start with a verb.}
+To the right of almost every field is a drop-down menu where you can choose the visibility of that field's information. Here's an example of how it looks:
 
-{For Project guides, use this section to link to existing step-by-step guides}
+![A dropdown menu with three options: Public (selected), Logged-in users, and Private, each with an icon indicating the level of access or security.](Images/EditYourPublicMyTypo3Profile/PrivacySettingsMenu.png)
+
+1. For each field, use the drop-down menu to select the visibility setting you would like. The visibility setting is updated automatically, so there is no need to click the *Save* button.
+
+> [!NOTE]
+> Apart from your username (which is always visible) fields that do not have a visibility option next to them will always be hidden from everyone.
+
+## Access more privacy and visibility settings
+
+You can configure the visibility of even more information on the *Privacy settings* page.
+
+1. In the navigation menu to the left of the form, click on *Privacy settings*. You will be taken to a *Privacy settings* page looking something like this:
+
+![Privacy settings interface showing options for adjusting visibility of personal information like first name, title, email, and memberships. Privacy levels include Public and Logged-in Users. A View Public Profile button is on the right.](Images/EditYourPublicMyTypo3Profile/PrivacySettingsPage.png)
+
+2. For each entry, use the drop-down menu on the right to select the visibility setting you would like. The visibility setting is updated automatically, so there is no need to click the *Save* button.
+
+## Check your profile
+
+It is now time to check how your profile is looking. As the fields that are visible may change whether you are logged in or not, it is also good to look at the profile in your browser's *incognito mode* or *private browsing*.
+
+1. Click the black *View public profile* button to see your public profile as it looks now.
+2. Copy the URL of the page.
+3. Open a new *incognito mode* or *private browsing* window. In this window you are no longer logged in.
+4. Paste in the URL of your profile page in the address bar.
+5. Hit enter to visit the URL. You can now see your profile as others see it, if they are not logged in.
+
+If you are missing some information, you can go back to the *Privacy settings* page and set more fields to *Public*.
+
+> [!TIP]
+> The URL to a user profile is always `my.typo3.org/u/<username>`, where `<username>` is the user's username (e.g. `john.doe`).
 
 ## Summary
 
-{State the outcome of the step-by-step guide to recap what the learner has achieved.}
-
-Congratulations! You now have {outcome}.
+Congratulations! You have now edited your public My TYPO3 profile and changed the visibility settings for the fields.
 
 ## Next steps
 
-{List links to tasks that the learner could do next.}:
+Now that you have edited your public My TYPO3 profile, you might like to:
 
-Now that you have {achieved goal}, you might like to:
-
-* Task 1
-* Task 2
-* Task 3…
+* Ask a colleague for their My TYPO3 username and visit their profile at `my.typo3.org/u/<username>`.
 
 ## Resources
 
-{**Optional**. List links to related material.}
-
-* Resource 1
-* Resource 2
-* Resource 3…
+* [Set up a Gravatar account](https://gravatar.com/connect)
+* [Read more about Avatars on Gravatar's support page](https://support.gravatar.com/avatars/)
