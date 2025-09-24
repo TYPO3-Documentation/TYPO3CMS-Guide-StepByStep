@@ -43,18 +43,14 @@ During the registration process, you will need to confirm your email address.
 
 3. Click the orange *Confirm your account* button. You will be directed to the my.typo3.org website, where a message will tell you that your email has been confirmed.
 
-## {Task name}
+You should now be able to log in with your new account at [my.typo3.org/login](https://my.typo3.org/login).
 
-{Optional explanatory text}
-
-1. {Write the first step. Start with a verb.}
-   {Optional: Code sample or screenshot that helps the learner complete this step.}
-   {Optional: Expected outcome.}
-2. {Write the next step. Start with a verb.}
+> [!IMPORTANT]
+> **Extra steps may be necessary.** In some cases, an extra confirmation step may be necessary. If so, you will receive an email with further instructions.
 
 ## Summary
 
-Congratulations! You now have now registerd your My TYPO3 account.
+Congratulations! You have now registered your My TYPO3 account.
 
 ## Next steps
 
