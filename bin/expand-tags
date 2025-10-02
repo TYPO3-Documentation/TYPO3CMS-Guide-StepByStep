@@ -1,11 +1,16 @@
 #!/usr/bin/env php
 <?php
-const SEARCH_PATH = __DIR__ . '/../Documentation/';
+define('SEARCH_PATH', realpath(__DIR__ . '/../Documentation'));
+
+$filesAndLinks = json_decode(file_get_contents(SEARCH_PATH . '/files.json'), true);
 
 $tagsToFiles = [];
 
-foreach (json_decode(file_get_contents(SEARCH_PATH . 'files.json'), true) as $file) {
-    if (basename($file['path']) === 'Index.md' || !$file['exists']) {
+foreach ($filesAndLinks['files'] as $file) {
+    if (
+        basename($file['path']) === '/Index.md'
+        || $file['path'] === '/90Contribute/10Template/Index.md'
+    ) {
         continue;
     }
 
@@ -61,7 +66,7 @@ foreach (json_decode(file_get_contents(SEARCH_PATH . 'files.json'), true) as $fi
             $expandedTagLine .= ' **Author:**';
 
             foreach ($authors as $author) {
-                $expandedTagLine .= ' [@' . $author . '](https://my.typo3.org/u/' . $author . ')';
+                $expandedTagLine .= ' [@' . $author . '](https://my.typo3.org/u/' . rawurlencode($author) . ')';
             }
         }
 
@@ -82,3 +87,15 @@ foreach ($tagsToFiles as $tag => $files) {
 
     file_put_contents(SEARCH_PATH . '/Tags/' . $tag . '.md', $content);
 }
+
+// Generate index file
+
+$content = '# Category Index' . PHP_EOL . PHP_EOL;
+
+$sortedTags = array_keys($tagsToFiles);
+sort($sortedTags, SORT_STRING);
+foreach ($sortedTags as $tag) {
+    $content .= '* [' . $tag . '](' . $tag . '.md)' . PHP_EOL;
+}
+
+file_put_contents(SEARCH_PATH . '/Tags/Index.md', $content);

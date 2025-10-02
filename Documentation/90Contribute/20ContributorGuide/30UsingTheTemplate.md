@@ -2,7 +2,10 @@
 
 When you create a step-by-step guide or a project guide for TYPO3, you must use the [step-by-step guide template](../10Template/Index.md). Here we explain each section in detail and provide example text to help you.
 
-**📝 [Create a new step-by-step guide using the template](../10Template/Index.md)**
+**[Go to the Step-by-Step Guide template](../10Template/Index.md)**
+
+> [!TIP]
+> **If you're a beginner**, read through this page, then check out the guide to [Contributing a Step-by-Step Guide Using Your Browser and GitHub](35ContributingAStepByStepGuideUsingYourBrowserAndGitHub.md).
 
 ## Contents
 - [Titles](#titles)
@@ -14,7 +17,7 @@ When you create a step-by-step guide or a project guide for TYPO3, you must use 
   - [Key principles for effective tasks:](#key-principles-for-effective-tasks)
   - [Tips for writing steps](#tips-for-writing-steps)
   - [Task section examples](#task-section-examples)
-  - [Tips for when you have too many steps {#tips-for-when-you-have-too-many-steps}](#tips-for-when-you-have-too-many-steps-tips-for-when-you-have-too-many-steps)
+  - [Tips for when you have too many steps {#tips-for-when-you-have-too-many-steps}](#tips-for-when-you-have-too-many-steps)
   - [Resist the urge to explain everything](#resist-the-urge-to-explain-everything)
 - [About the Summary section](#about-the-summary-section)
 - [About the Next steps section](#about-the-next-steps-section)
@@ -162,9 +165,9 @@ In this example, each of the numbered steps link to pre-existing step-by-step gu
 
 *H2* Create a multilingual website
 
-1. [Set up multiple languages](../../20BuildingWebsites/20MultilingualWebsites/10SetUpMultipleLanguages/Index.md)
-2. [Translate content into other languages](../../20BuildingWebsites/20MultilingualWebsites/20TranslateContent/Index.md)
-3. [Manage language fallbacks](../../20BuildingWebsites/20MultilingualWebsites/30ManageLanguageFallbacks/Index.md)
+1. [Set up multiple languages](30UsingTheTemplate.md)
+2. [Translate content into other languages](30UsingTheTemplate.md)
+3. [Manage language fallbacks](30UsingTheTemplate.md)
 
 #### Tips for when you have too many steps
 

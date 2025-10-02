@@ -1,11 +1,15 @@
 # TYPO3 Step-By-Step Guide Template
 
+**[Open this template file in GitHub](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/blob/contrib/Documentation/90Contribute/10Template/Index.md)**
+
 *This template includes writing instructions {in curly brackets} and boilerplate text that you can customize with your own text. The [step-by-step Contributor Guide](../20ContributorGuide/Index.md) explains each section in detail, and includes example text for each section. Search the [Guide Registry](../../80GuidesRegistry/Index.md) before you start - your guide might already exist!*
+
+——— *Remove contents above and including this line when writing* ———
+
+# Title
 
 {The template includes an HTML comment with different tags for categorization (look in the source code). Include the ones you think fits and feel free to add new ones. A tag like #TYPO3v13 indicates that the step-by-step guide has been tested in TYPO3 v13. To credit yourself as author, use "@" followed by your my.typo3.org username (e.g. "@username").}
 <!-- #TYPO3v00 #Beginner #Intermediary #Advanced #ContentElements #Frontend #Backend #Templating #Server #Editing #Configuration @username -->
-
-## Title
 
 {Provide a conceptual overview.}
 

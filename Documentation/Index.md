@@ -12,7 +12,7 @@ These guides are short, focused, and easy to follow. Each one walks you through 
 - Guaranteed outcome at the end of each guide
 - Less than 30 minutes per guide
 
-👉 Start exploring the guides now — or check out the [Guides Registry](80GuidesRegistry/Index.md) to see the full list.
+👉 Start exploring the guides now — or check out the [Guides Registry](/80GuidesRegistry/Index.md) to see the full list.
 
 ---
 
@@ -20,4 +20,4 @@ These guides are short, focused, and easy to follow. Each one walks you through 
 
 We’d love your help — whether you want to fix a typo or write your own guide. You don’t need to be a professional writer, just someone who knows how to do something in TYPO3 and wants to help others succeed.
 
-The [Contributor Guide](90Contribute/20ContributorGuide/Index.md) shows you how to get started. 
+The [Contributor Guide](/90Contribute/20ContributorGuide/Index.md) shows you how to get started.
