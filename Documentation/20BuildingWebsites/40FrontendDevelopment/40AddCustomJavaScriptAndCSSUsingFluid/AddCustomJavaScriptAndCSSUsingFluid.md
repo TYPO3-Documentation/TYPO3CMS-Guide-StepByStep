@@ -1,16 +1,13 @@
-# Add Custom CSS and JavaScript to Your TYPO3 Site
+# Add CSS and JavaScript to a Fluid Template
 <!-- #TYPO3v13 #Beginner #Templating #Frontend -->
 
-Customizing your website's appearance and behavior is a fundamental part of web development. TYPO3 offers several powerful and flexible methods for adding CSS and JavaScript assets to your frontend. You can include them directly in your Fluid templates for simplicity or manage them globally using TypoScript for more control.
+Adding assets like CSS and JavaScript directly into your Fluid templates is a straightforward way to style and add interactivity to specific parts of your website. This method is ideal when your styles or scripts are tightly coupled with a particular page layout or template.
 
-This guide will teach you how to link custom CSS and JavaScript files to your site package using both Fluid templates and TypoScript, giving you the foundation to style and add interactivity to your pages.
+This guide will teach you how to link custom CSS and JavaScript files to your site package using Fluid's built-in Asset ViewHelpers.
 
 ## Learning objective
 
-In this step-by-step guide, you will learn how to:
-*   Create custom CSS and JavaScript files within your site package.
-*   Include these assets using Fluid ViewHelpers in your templates.
-*   Include these assets globally using TypoScript.
+In this step-by-step guide, you will learn how to create custom CSS and JavaScript files and include them in your site's Fluid templates using the `f:asset.css` and `f:asset.js` ViewHelpers.
 
 ## Prerequisites
 
@@ -26,11 +23,10 @@ In this step-by-step guide, you will learn how to:
 *   Basic understanding of the TYPO3 backend.
 *   Familiarity with the structure of a site package.
 *   Basic knowledge of CSS, JavaScript, and HTML.
-*   Awareness of what TypoScript is and its role in TYPO3.
 
-## Task 1: Create Your CSS and JavaScript Files
+## Create Your Asset Files
 
-First, you need to create the asset files within your site package's directory structure.
+First, you need to create the CSS and JavaScript files within your site package's directory structure.
 
 1.  Navigate to your site package's `Resources/Public/` directory.
 2.  Create two new sub-directories: `Css` and `JavaScript`.
@@ -60,9 +56,9 @@ First, you need to create the asset files within your site package's directory s
                 └── ...
     ```
 
-## Task 2: Include Assets Using Fluid Templates
+## Include Assets in Your Fluid Template
 
-This method is ideal for assets that are specific to a particular layout or template.
+Now, you will link these new files in the main Fluid layout file of your site package.
 
 1.  Open the main HTML template file for your site's layout. This is commonly located at `your_sitepackage/Resources/Private/Layouts/Page/Default.html`.
 2.  Add the `<f:asset.css>` and `<f:asset.js>` ViewHelpers inside the `<head>` section of the file. These ViewHelpers tell TYPO3 to add the respective files to the page.
@@ -79,32 +75,7 @@ This method is ideal for assets that are specific to a particular layout or temp
     ```
     Make sure to replace `your_sitepackage` with the actual key of your site package extension.
 
-## Task 3: Include Assets Using TypoScript
-
-This method is best for assets that should be loaded on every page of your site, as it is managed globally.
-
-1.  Open your site package's main TypoScript setup file. This is typically located at `your_sitepackage/Configuration/TypoScript/setup.typoscript`.
-2.  Add the `page.includeCSS` and `page.includeJS` properties to your page object configuration. You can assign a key and set the value to the path of your asset file.
-
-    ```typoscript
-    page {
-        # ... other page configuration
-
-        includeCSS {
-            style = EXT:your_sitepackage/Resources/Public/Css/custom-styles.css
-        }
-
-        includeJS {
-            js = EXT:your_sitepackage/Resources/Public/JavaScript/custom-scripts.js
-        }
-    }
-    ```
-
-    > **Scope check time**
-    >
-    > For this guide, choose **either** the Fluid method (Task 2) **or** the TypoScript method (Task 3). Using both will include the files twice. If you tested the Fluid method, remove the `<f:asset...>` tags before proceeding with the TypoScript method.
-
-## Task 4: Clear the Cache and Verify
+## Clear the Cache and Verify
 
 Finally, clear the TYPO3 caches to ensure your changes are loaded, and then check the frontend of your website.
 
@@ -116,18 +87,16 @@ Finally, clear the TYPO3 caches to ensure your changes are loaded, and then chec
 
 ## Summary
 
-Congratulations! You have successfully added custom CSS and JavaScript files to your TYPO3 site using both Fluid templates and TypoScript. You now have the flexibility to manage your frontend assets in a way that best suits your project's needs.
+Congratulations! You have successfully added custom CSS and JavaScript files to your TYPO3 site using Fluid Asset ViewHelpers. You can now easily manage assets that are specific to your templates.
 
 ## Next steps
 
-Now that you have experience including assets, you can continue to add more advanced functionality to your site:
+Now that you know how to include assets in Fluid, you might like to:
 
-*   Learn how to conditionally load assets on specific pages.
-*   Explore using CSS pre-processors like SASS/SCSS with TYPO3.
+*   [Add Global CSS and JavaScript with TypoScript](AddGlobalCssAndJavaScriptWithTypoScript.md)
+*   Explore using other ViewHelpers in your templates.
 
 ## Resources
 
 *   [f:asset.css ViewHelper Reference](https://docs.typo3.org/permalink/t3viewhelper:typo3-fluid-asset-css)
 *   [f:asset.js ViewHelper Reference](https://docs.typo3.org/permalink/t3viewhelper:typo3-fluid-asset-script)
-*   [TypoScript Reference: includeCSS](https://docs.typo3.org/permalink/t3tsref:confval-page-includecss)
-*   [TypoScript Reference: includeJS](https://docs.typo3.org/permalink/t3tsref:confval-page-includejs)
