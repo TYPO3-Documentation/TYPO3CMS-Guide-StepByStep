@@ -37,50 +37,44 @@ You should be familiar with:
 * YAML configuration format
 * Extension or site package conventions (``EXT:site_package``)
 
-## Watch the video
-
-{**Optional**. If available, embed the YouTube video version of this tutorial from the TYPO3 official channel.}
-
-Watch this video to follow along with the steps below.
-
 ## Step-by-step instructions
 
 ### Step 1: Create a folder for your Site Set
-Inside your site package or custom extension, you should create Configuration/Sets/BaseSite folder.
+Inside your site package or custom extension, you should create Configuration/Sets/SetName folder.
 
 ### Step 2: Add a config.yaml file
 Every Site Set must include a ``config.yaml`` that defines metadata and dependencies. It can have the following fields:
 * ``name`` – unique name (recommended format: ``vendor/set-name``)  
-* ``label`` – displayed in backend Site Set lists  
-* ``dependencies`` – required sets (must exist)  
-* ``optionalDependencies`` – loaded if available  
-* ``hidden`` – hides the set from backend UI (optional)
+* ``label`` – displayed in backend, in the site module. Should be as unique as possible  
+* ``dependencies`` – required sets (must exist). Loads ``setup.typoscript``, ``constants.typoscript``, ``page.tsconfig`` and ``config.yaml`` from the site set definitions of this or other extensions. 
+* ``optionalDependencies`` – loaded if available (if extension is not installed, no errors are reported, in contrast to ``dependencies``)
+* ``hidden`` – hides the set from backend backend set selection and the console command `bin/typo3 site:sets:list` (optional)
 
- ### Step 3: Add TypoScript configuration
- Create ``setup.typoscript`` to define frontend behavior. Optionally , constants can be defined in ``constants.typoscript``
+### Step 3: Add TypoScript configuration
+Create ``setup.typoscript`` to define frontend behavior. Optionally, constants can be defined in ``constants.typoscript``
 
- ### Step 4: Add TSconfig and site settings
- Add a ``page.tsconfig`` file for backend settings.
- Define global settings in ``settings.yaml``.
- Optionally, you can provide definitions for the TYPO3 backend Settings Editor in ``settings.definitions.yaml``
+### Step 4: Add TSconfig and site settings
+Add a ``page.tsconfig`` file for backend settings.
+Define global settings in ``settings.yaml``.
+Optionally, you can provide definitions for the TYPO3 backend Settings Editor in ``settings.definitions.yaml``
 
- ### Step 5: Register the Site Set in your site configuration
+### Step 5: Register the Site Set in your site configuration
 Open your site configuration in ``config/sites/<identifier>/config.yaml`` and register your Site Set:
-dependencies:
-     - my-vendor/base-site
+`dependencies:
+     - my-vendor/base-site`
 TYPO3 automatically merges TypoScript, TSconfig, and settings from all sets in ``dependencies``.
 
 
- ### Step 6: Test and verify
- 1. Clear all TYPO3 caches.  
- 2. List available Site Sets using the CLI: `vendor/bin/typo3 site:sets:list`
- 3. Confirm that your Site Set appears in the list and reports no missing dependencies.  
- 4. Visit the frontend to verify that TypoScript and settings were applied correctly.
- 5. Default settings appear in the backend module **Site Configuration → Settings**.
+### Step 6: Test and verify
+1. Clear all TYPO3 caches.  
+2. List available Site Sets using the CLI: `vendor/bin/typo3 site:sets:list`
+3. Confirm that your Site Set appears in the list (if hidden: false) and reports no missing dependencies.  
+4. Visit the frontend to verify that TypoScript and settings were applied correctly.
+5. Default settings appear in the backend module **Site Configuration → Settings** (if hidden: false).
 
- If not:
+If not:
 * Check YAML indentation.  
-* Ensure filenames match exactly (case-sensitive).  
+* Ensure filenames match exactly.  
 * Confirm the Site Set is listed in ``dependencies``.  
 
 ## Summary
