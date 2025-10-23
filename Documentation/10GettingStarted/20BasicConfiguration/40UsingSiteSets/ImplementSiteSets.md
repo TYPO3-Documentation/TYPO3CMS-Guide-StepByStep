@@ -8,6 +8,12 @@ and site settings into reusable packages.
 They replace many older static TypoScript includes and simplify configuration management
 for multi-site TYPO3 installations.
 
+## Real World Scenario
+You’re building multiple websites for the same company. Each site should share a default page setup, meta tags, 
+and some backend configuration (for example some RTE settings). 
+Instead of copying code manually, you’ll create a Site Set called `my-vendor/base` that can be reused anywhere.
+
+
 ## Learning objective
 
 After completing this tutorial, you will be able to:
@@ -40,12 +46,12 @@ You should be familiar with:
 ## Step-by-step instructions
 
 ### Step 1: Create a folder for your Site Set
-Inside your site package or custom extension, you should create Configuration/Sets/SetName folder.
+Inside your site package or custom extension, you should create `Configuration/Sets/base` folder.
 
 ### Step 2: Add a config.yaml file
 Every Site Set must include a ``config.yaml`` that defines metadata and dependencies. It can have the following fields:
-* ``name`` – unique name (recommended format: ``vendor/set-name``)  
-* ``label`` – displayed in backend, in the site module. Should be as unique as possible  
+* ``name`` – unique name: `my-vendor/base` (recommended format: ``vendor/set-name``)  
+* ``label`` – displayed in backend, in the site module. Should be as unique as possible - `Base Site Set`
 * ``dependencies`` – required sets (must exist). Loads ``setup.typoscript``, ``constants.typoscript``, ``page.tsconfig`` and ``config.yaml`` from the site set definitions of this or other extensions. 
 * ``optionalDependencies`` – loaded if available (if extension is not installed, no errors are reported, in contrast to ``dependencies``)
 * ``hidden`` – hides the set from backend set selection and the console command `bin/typo3 site:sets:list` (optional)
@@ -62,7 +68,7 @@ Optionally, you can provide definitions for the TYPO3 backend Settings Editor in
 Open your site configuration in ``config/sites/<identifier>/config.yaml`` and register your Site Set:
 ```
 dependencies:
-     - my-vendor/base-site
+     - my-vendor/base
 ```
 TYPO3 automatically merges TypoScript, TSconfig, and settings from all sets in ``dependencies``.
 
@@ -87,9 +93,21 @@ You have successfully created a **Site Set** and linked it to your TYPO3 site.
 
 * Define a Site Set’s metadata and dependencies  
 * Add TypoScript, TSconfig, and YAML settings  
-* Register and verify the Site Set in the site configuration  
+* Register and verify the Site Set in the site configuration
+* Create a reusable **Site Set** in an extension
+* Quickly replicate configurations across all the websites
 
-This modular approach allows cleaner configuration management and improved reuse across projects.
+## Conclusion - Why Site Sets Matter in Real Projects
+In the context of the real-world scenario — managing multiple websites for the same company — Site Sets save you from copying TypoScript, TSconfig 
+and settings across projects. Instead of manually configuring every new site, you define everything once in EXT:site_package/Configuration/Sets/base/ 
+and simply activate it in each new site configuration. This way, you will obtain:
+* **Consistency accross projects** - all websites start with the same trusted configuration defined in your Site Set
+* **Time savings** - by not creating additional configuration files
+* **Easy Maintenance** - if changes needs to be done, you have to modify the Site Set once and all connected sites will inherit the updates
+* **Scalability** - as the project grows, you can split features into multiple Site Sets and add only what each site needs.
+
+In short: **Site Sets turn your TYPO3 instance
+into a modular, maintainable, future-proof system — ideal for building multiple websites.**
 
 ## Resources
 - [Site Sets Reference](https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SiteHandling/SiteSets.html)  
