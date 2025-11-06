@@ -1,4 +1,5 @@
 # Implementing a Site Set with Editable Settings and Custom CSS
+<!-- #TYPO3v13 #Beginner #Backend #Configuration @csabareanu -->
 
 This guide shows how to build a **practical, working Site Set** for TYPO3 v13.  
 You’ll create a Site Set named `my-vendor/base` inside your site package (`EXT:sitepackage`) that:
