@@ -129,5 +129,7 @@ You now have a **complete Site Set** that provides:
 * A working Fluid template with `{site.settings}`  
 * Automatically included CSS styling
 
-This Site Set can now be reused across any project —  
-just add `- my-vendor/base` to another site’s `config.yaml`.
+This Site Set can now be reused across any project —  just add `- my-vendor/base` to another site’s `config.yaml`.
+
+## Resources
+- [Site Sets Reference](https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SiteHandling/SiteSets.html)  
