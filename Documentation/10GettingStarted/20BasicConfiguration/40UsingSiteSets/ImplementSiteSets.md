@@ -1,116 +1,133 @@
-# Implementing Site Sets
-<!-- #TYPO3v13 #Intermediary #Backend #Configuration @csabareanu -->
+# Implementing a Site Set with Editable Settings and Custom CSS
 
-This guide explains how to define, configure and use **Site Sets** in TYPO3 v13+.
-Site Sets are modular building blocks for site configuration that combine TypoScript, TSconfig,
-and site settings into reusable packages.
+This guide shows how to build a **practical, working Site Set** for TYPO3 v13.  
+You’ll create a Site Set named `my-vendor/base` inside your site package (`EXT:sitepackage`) that:
 
-They replace many older static TypoScript includes and simplify configuration management
-for multi-site TYPO3 installations.
+* Adds a default meta description and site contact info (editable in backend)  
+* Renders them in a simple Fluid template  
+* Loads a custom CSS file to style the title
 
-## Real World Scenario
-You’re building multiple websites for the same company. Each site should share a default page setup, meta tags, 
-and some backend configuration (for example some RTE settings). 
-Instead of copying code manually, you’ll create a Site Set called `my-vendor/base` that can be reused anywhere.
+## Step 1: Create the Site Set folder
+Inside your extension, create the folder:
+`EXT:sitepackage/Configuration/Sets/base/`
 
+## Step 2: Create `config.yaml`
+Every Site Set needs a manifest that defines its name and dependencies.
 
-## Learning objective
-
-After completing this tutorial, you will be able to:
-
-* Explain the purpose and benefits of Site Sets in TYPO3  
-* Create a Site Set inside an extension or site package  
-* Define dependencies and optional dependencies  
-* Add TypoScript, TSconfig, and default settings to a Site Set  
-* Register the Site Set in a site configuration  
-* Verify and troubleshoot Site Set loading via CLI  
-
-
-## Prerequisites
-
-### Tools and technology
-
-Before beginning this step by step guide, ensure that:
-
-* TYPO3 v13+ is installed (composer-based setup is recommended)  
-
-### Knowledge and skills
-
-You should be familiar with:
-
-* TYPO3 site configuration (``config/sites/``)
-* Basic TypoScript syntax and file structure
-* YAML configuration format
-* Extension or site package conventions (``EXT:site_package``)
-
-## Step-by-step instructions
-
-### Step 1: Create a folder for your Site Set
-Inside your site package or custom extension, you should create `Configuration/Sets/base` folder.
-
-### Step 2: Add a config.yaml file
-Every Site Set must include a ``config.yaml`` that defines metadata and dependencies. It can have the following fields:
-* ``name`` – unique name: `my-vendor/base` (recommended format: ``vendor/set-name``)  
-* ``label`` – displayed in backend, in the site module. Should be as unique as possible - `Base Site Set`
-* ``dependencies`` – required sets (must exist). Loads ``setup.typoscript``, ``constants.typoscript``, ``page.tsconfig`` and ``config.yaml`` from the site set definitions of this or other extensions. 
-* ``optionalDependencies`` – loaded if available (if extension is not installed, no errors are reported, in contrast to ``dependencies``)
-* ``hidden`` – hides the set from backend set selection and the console command `bin/typo3 site:sets:list` (optional)
-
-### Step 3: Add TypoScript configuration
-Create ``setup.typoscript`` to define frontend behavior. Optionally, constants can be defined in ``constants.typoscript``
-
-### Step 4: Add TSconfig and site settings
-Add a ``page.tsconfig`` file for backend settings.
-Define global settings in ``settings.yaml``.
-Optionally, you can provide definitions for the TYPO3 backend Settings Editor in ``settings.definitions.yaml``
-
-### Step 5: Register the Site Set in your site configuration
-Open your site configuration in ``config/sites/<identifier>/config.yaml`` and register your Site Set:
+**File:** `EXT:sitepackage/Configuration/Sets/base/config.yaml`
 ```
-dependencies:
-     - my-vendor/base
+name: 'my-vendor/base'
+label: 'Base Site Set'
+dependencies: []
+optionalDependencies: []
+hidden: false
 ```
-TYPO3 automatically merges TypoScript, TSconfig, and settings from all sets in ``dependencies``.
+## Step 3: Add editable site settings
+These files define the default settings and make them editable in the backend.
 
+**File:** `EXT:sitepackage/Configuration/Sets/base/settings.yaml`
+```
+settings:
+  site:
+    meta:
+      description: 'Default meta description from settings.yaml'
+    contact:
+      email: 'contact@example.com'
+```
+**File:** `EXT:sitepackage/Configuration/Sets/base/settings.definitions.yaml`
+```
+settings:
+  site.meta.description:
+    type: string
+    label: 'Base Settings: Meta Description'
+    default: 'Default meta description from definitions'
+  site.contact.email:
+    type: string
+    label: 'Base Settings: Contact Email'
+    default: 'contact@example.com'
+```
+## Step 4: Add TypoScript (setup.typoscript)
+This TypoScript defines your page rendering, meta description, CSS, and settings processor.
 
-### Step 6: Test and verify
-1. Clear all caches.  
-2. List available Site Sets using the CLI: `vendor/bin/typo3 site:sets:list`
-3. Confirm that your Site Set appears in the list (if ``hidden: false``) and reports no missing dependencies.  
-4. Visit the frontend to verify that TypoScript and settings were applied correctly.
-5. Default settings appear in the backend module **Site Configuration → Settings** (if ``hidden: false``).
+**File:** `EXT:sitepackage/Configuration/Sets/base/setup.typoscript`
+```
+page = PAGE
+page.10 = FLUIDTEMPLATE
+page.10 {
+  templateName = Default
+  templateRootPaths.10 = EXT:sitepackage/Resources/Private/Templates/
+  partialRootPaths.10 = EXT:sitepackage/Resources/Private/Partials/
+  layoutRootPaths.10 = EXT:sitepackage/Resources/Private/Layouts/
 
-If not:
-* Check YAML indentation
-* Ensure filenames match exactly
-* Confirm the Site Set is listed in ``dependencies``
+  dataProcessing {
+    10 = TYPO3\CMS\Frontend\DataProcessing\SiteProcessor
+  }
+}
+
+# Include custom CSS
+page.includeCSS.base = EXT:sitepackage/Resources/Public/Css/base.css
+```
+
+## Step 5: Backend configuration (page.tsconfig)
+Rename the Common section in the New Content Element Wizard
+
+**File:** `EXT:sitepackage/Configuration/Sets/base/page.tsconfig`
+```
+mod.wizards.newContentElement.wizardItems.common.header = Common Elements (Site Set active)
+```
+## Step 6: Add your CSS file
+**File:** `EXT:sitepackage/Resources/Public/Css/base.css`
+```
+/* Base Site Set Styles */
+h1 {
+  color: darkred;
+  font-weight: 700;
+}
+```
+
+## Step 7: Create a simple Fluid template
+**File:** `EXT:sitepackage/Resources/Private/Templates/Default/Default.html`
+```
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+<body>
+  <h1>Site Settings Test</h1>
+
+  <p><strong>Meta Description:</strong> {site.settings.site.meta.description}</p>
+  <p><strong>Contact Email:</strong> {site.settings.site.contact.email}</p>
+
+</body>
+</html>
+```
+Thanks to the `SiteProcessor` in TypoScript, you can access `{site.settings}` here.
+
+## Step 8: Register the Site Set in your site configuration
+**File:** `config/sites/your-site/config.yaml`
+```
+dependencies:  
+  - my-vendor/base
+```
+
+## Step 9: Clear caches and verify
+1. Clear caches
+2. Open **Backend → Site → Settings**  . You’ll see your **Base Settings: Meta Description** and **Contact Email** fields.
+3. Change them and save.   
+4. Visit your site’s frontend — you should see:
+```
+Site Settings Test
+Meta Description: (your value from backend)
+Contact Email: (your value)
+```
+5. The `<h1>` title appears **dark red** — proving the CSS loaded.
+6. Check the Common section in the New Content Element Wizard and see the title changed
+
 
 ## Summary
+You now have a **complete Site Set** that provides:
 
-You have successfully created a **Site Set** and linked it to your TYPO3 site.
+* Editable Site Settings (in **Backend → Sites → Settings**)  
+* Custom TypoScript  
+* A working Fluid template with `{site.settings}`  
+* Automatically included CSS styling
 
-**You learned how to:**
-
-* Define a Site Set’s metadata and dependencies  
-* Add TypoScript, TSconfig, and YAML settings  
-* Register and verify the Site Set in the site configuration
-* Create a reusable **Site Set** in an extension
-* Quickly replicate configurations across all the websites
-
-## Conclusion - Why Site Sets Matter in Real Projects
-In the context of the real-world scenario — managing multiple websites for the same company — Site Sets save you from copying TypoScript, TSconfig 
-and settings across projects. Instead of manually configuring every new site, you define everything once in EXT:site_package/Configuration/Sets/base/ 
-and simply activate it in each new site configuration. This way, you will obtain:
-* **Consistency accross projects** - all websites start with the same trusted configuration defined in your Site Set
-* **Time savings** - by not creating additional configuration files
-* **Easy Maintenance** - if changes needs to be done, you have to modify the Site Set once and all connected sites will inherit the updates
-* **Scalability** - as the project grows, you can split features into multiple Site Sets and add only what each site needs.
-
-In short: **Site Sets turn your TYPO3 instance
-into a modular, maintainable, future-proof system — ideal for building multiple websites.**
-
-## Resources
-- [Site Sets Reference](https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SiteHandling/SiteSets.html)  
-- [Site Settings Reference](https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SiteHandling/SiteSettings.html)  
-- [Step by step guide: Setup a Site Configuration](https://docs.typo3.org/m/typo3/guide-step-by-step/main/en-us/10GettingStarted/20BasicConfiguration/30SiteConfiguration/SetUpASiteConfiguration.html)
-- [Changelog: Feature 103437 – Introduce Site Sets](https://docs.typo3.org/c/typo3/cms-core/13.4/en-us/Changelog/13.1/Feature-103437-IntroduceSiteSets.html)  
+This Site Set can now be reused across any project —  
+just add `- my-vendor/base` to another site’s `config.yaml`.
