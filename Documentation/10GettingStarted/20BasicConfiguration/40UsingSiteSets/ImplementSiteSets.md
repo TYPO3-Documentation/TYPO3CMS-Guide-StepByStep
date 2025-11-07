@@ -4,7 +4,8 @@
 This guide shows how to build a **practical, working Site Set** for TYPO3 v13.  
 You’ll create a Site Set named `my-vendor/base` inside your site package (`EXT:sitepackage`) that:
 
-* Adds a default meta description and site contact info (editable in backend)  
+* Adds a default meta description and site contact info (editable in backend)
+* Adds a simple backend configuration
 * Renders them in a simple Fluid template  
 * Loads a custom CSS file to style the title
 
@@ -48,7 +49,7 @@ settings:
     default: 'contact@example.com'
 ```
 ## Step 4: Add TypoScript (setup.typoscript)
-This TypoScript defines your page rendering, meta description, CSS, and settings processor.
+This TypoScript defines your page rendering, CSS, and settings processor.
 
 **File:** `EXT:sitepackage/Configuration/Sets/base/setup.typoscript`
 ```
@@ -116,10 +117,22 @@ dependencies:
 ```
 Site Settings Test
 Meta Description: (your value from backend)
-Contact Email: (your value)
+Contact Email: (your value from backend)
 ```
 5. The `<h1>` title appears **dark red** — proving the CSS loaded.
 6. Check the Common section in the New Content Element Wizard and see the title changed
+<img width="992" height="269" alt="image" src="https://github.com/user-attachments/assets/04d237ba-a57b-45b6-b1be-16313952b925" />
+
+
+##  Troubleshooting
+
+|  Problem |  Cause |  Solution |
+|-------------|-----------|-------------|
+| **Site Set missing from CLI (`vendor/bin/typo3 site:sets:list`)** | Invalid YAML indentation | Verify correct indentation |
+| **Settings not visible in backend** | `settings.definitions.yaml` not indentet corectly | Verify correct indentation |
+| **CSS not applied** | Wrong path in `includeCSS` | Use full extension syntax: `EXT:sitepackage/Resources/Public/Css/base.css`. |
+| **Template error (Default.html not found)** | Missing Fluid template file | Create `Resources/Private/Templates/Default/Default.html` . |
+| **Backend changes not visible** | Cache not cleared or wrong TSconfig path | Clear cache and confirm your `page.tsconfig` is loaded under the active Site Set. |
 
 
 ## Summary
