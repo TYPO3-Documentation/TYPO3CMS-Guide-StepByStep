@@ -123,3 +123,139 @@ What does this code do?
   * `contentMain` : all content elements from colPos=0
   * `pageTitle` : current page title
 
+## Step 3: Create the Layout
+File: `EXT:sitepackage/Resources/Private/Layouts/Default.html`:
+```
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" lang="en">
+    <head>
+        <f:render partial="Meta/Head" />
+    </head>
+    <body>
+        <header class="site-header">
+            <nav>
+                <f:render partial="Nav/Main" arguments="{items: mainMenu}" />
+            </nav>
+        </header>
+        <main class="site-main">
+            <f:render section="Main" />
+        </main>
+        <footer class="site-footer">
+            <p>&copy; {f:format.date(date: 'now', format: 'Y')}</p>
+        </footer>
+    </body>
+</html>
+```
+Key points:
+* `<f:render partial="Meta/Head" />` includes the meta partial
+* `<f:render partial="Nav/Main" arguments="{items: mainMenu}" />` includes the nav partial with menu items
+* `<f:render section="Main" />` marks where the template’s page content will appear
+
+## Step 4: Create the Meta Partial
+File: `EXT:sitepackage/Resources/Private/Partials/Meta/Head.html`
+```
+<title>{pageTitle -> f:format.stripTags()}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Sample Fluid template" />
+```
+ViewHelpers explained:
+* f:format.stripTags : removes any HTML tags from pageTitle to keep <title> clean.
+
+## Step 5: Create the Navigation Partial
+File: `EXT:sitepackage/Resources/Private/Partials/Nav/Main.html`
+```
+<ul class="nav">
+    <f:for each="{items}" as="item">
+        <li class="{f:if(condition: item.active, then: 'active')}">
+            <a href="{item.link}" title="{item.title}">
+                {item.title}
+            </a>
+        </li>
+    </f:for>
+</ul>
+```
+ViewHelpers explained:
+* f:for each="{items}" as="item" : loops through all menu items
+* f:if(condition: item.active, then: 'active') : adds active class for the current page
+
+## Step 6: Create the Page Template
+File: `EXT:sitepackage/Resources/Private/Templates/Default/Default.html`
+```
+{namespace f=TYPO3\CMS\Fluid\ViewHelpers}
+<f:layout name="Default" />
+<f:section name="Main">
+    <h1>{pageTitle}</h1>
+    <!-- Render all content elements in colPos=0 -->
+    <f:format.raw>{contentMain}</f:format.raw>
+    <f:debug>{mainMenu}</f:debug>
+</f:section>
+```
+ViewHelpers explained:
+* <f:layout name="Default" /> : tells Fluid to use Layouts/Default.html
+* <f:section name="Main"> : defines the section that the layout will render
+* <f:format.raw> : outputs HTML directly (used here because contentMain already contains rendered HTML)
+* <f:debug> : dumps variables for debugging during development
+
+## Step 7: Create Child Pages for the Navigation
+
+Before testing the frontend, make sure your page tree contains at least one
+page **below** the site root. The MenuProcessor only renders visible,
+non-hidden child pages.
+### 1. Go to Web → Page
+Open the backend module **Web → Page**.
+
+### 2. Create a basic page structure
+Create the following minimal page tree: <br/>
+<img width="301" height="141" alt="image" src="https://github.com/user-attachments/assets/9f6474ae-a5d5-422b-b468-cb3b5ca64f48" />
+
+## Step 7: Connect the Site Set to Your Site
+If you are using Site Sets, make sure your site configuration depends on the set that contains this TypoScript.
+File: `config/sites/<identifier>/config.yaml`
+Add or update the `dependencies` section:
+```
+dependencies:
+  - my-vendor/base
+```
+(where `my-vendor/base` is the `name` defined in your Site Set’s `config.yaml`).
+
+## Step 8: Test and Verify
+### Flush caches:
+* `vendor/bin/typo3 cache:flush`
+### Add content:
+* Go to Web → Page in the backend
+* On your root or subpage, add some content elements in the normal column (colPos=0)
+### Check the frontend:
+* You should see:
+  * The HTML structure from `Layouts/Default.html`
+  * The navigation built from `Partials/Nav/Main.html`
+  * The `<title>` coming from `Partials/Meta/Head.html`
+  * All content elements rendered (thanks to contentMain TypoScript variable)
+### Use debug tools:
+* The `<f:debug>{mainMenu}</f:debug>` output will show the structure of the mainMenu array.
+* Remove debug outputs when done.
+
+## Troubleshooting
+
+| Problem                                         | Possible Cause                               | What to Check                                                                 |
+|-------------------------------------------------|----------------------------------------------|--------------------------------------------------------------------------------|
+| Content elements not visible                    | Wrong column                                 | Make sure elements are in **normal column** (`colPos = 0`).                    |
+| “Content Element … has no rendering definition” | Fluid Styled Content TypoScript not loaded   | Ensure fluid imports are present at the top of `setup.typoscript`.              |
+| Navigation empty                                | No site root or pages hidden                 | Mark the root page as **Site Root** and ensure pages are **visible** and `Access -> Page enabled in menus` is checked. |
+| Template not found                              | Wrong paths or filenames                     | Check `templateRootPaths`, folder names, and `templateName = Default`.         |
+| Nothing changes in frontend                     | Cache not cleared                            | Run: `vendor/bin/typo3 cache:flush`.                                           |
+
+## Conclusion
+In this tutorial, you learned how TYPO3 renders a page using **Layouts**, **Templates**, and **Partials**, and how these pieces work together through **FLUIDTEMPLATE**, **TypoScript**, and **Fluid Styled Content**.
+You built a working frontend structure that includes:
+* A clean HTML layout
+* A reusable navigation partial
+* Custom meta/head markup
+* A default page template
+* Automatic rendering of all content elements
+
+## Resources
+- **Fluid Templating Official Documentation**  
+  https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Fluid/Index.html  
+- **Fluid Styled Content Documentation**  
+  https://docs.typo3.org/c/typo3/cms-fluid-styled-content/main/en-us/  
+- **TypoScript Reference**  
+  https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/     
