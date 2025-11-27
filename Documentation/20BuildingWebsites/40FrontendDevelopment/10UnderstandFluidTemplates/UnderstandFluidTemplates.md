@@ -1,7 +1,7 @@
 # Understand Fluid Templates in TYPO3 v13 – A Practical, Step-by-Step Guide
 <!-- #TYPO3v13 #Intermediary #Frontend #Fluid @csabareanu -->
 
-This guide shows how TYPO3 renders pages using Fluid templates, and how to build a clean template structure in your sitepackage (EXT:sitepackage) using:
+This guide shows how TYPO3 renders pages using Fluid templates, and how to build a clean template structure in your sitepackage (`EXT:sitepackage`) using:
 * Layouts (global page shell)
 * Templates (page-specific content)
 * Partials (reusable snippets)
@@ -40,7 +40,7 @@ Before touching code, it’s important to understand the three Fluid building bl
 #### Layout
 A Layout defines the global HTML structure shared by multiple templates.
 * Contains `<html>`, `<head>`, `<body>`, `<header>`, `<footer>`
-* Provides a placeholder for template content via <f:render section="Main" />
+* Provides a placeholder for template content via `<f:render section="Main" />`
 ##### Example behavior:
 All pages have the same header/footer, but different main content.
 
@@ -61,10 +61,10 @@ A `Nav/Main.html` partial used both on the homepage and subpages.
 
 ## Step 1: Create the Folder Structure
 Inside your sitepackage (`EXT:sitepackage`), create the following files:
-* Resources/Private/Layouts/Default.html
-* Resources/Private/Partials/Meta/Head.html
-* Resources/Private/Partials/Nav/Main.html
-* Resources/Private/Templates/Default/Default.html
+* `Resources/Private/Layouts/Default.html`
+* `Resources/Private/Partials/Meta/Head.html`
+* `Resources/Private/Partials/Nav/Main.html`
+* `Resources/Private/Templates/Default/Default.html`
 
 ## Step 2: Configure FLUIDTEMPLATE and FSC in TypoScript
 Create or edit the TypoScript file for your Site Set:
@@ -158,7 +158,7 @@ File: `EXT:sitepackage/Resources/Private/Partials/Meta/Head.html`
 <meta name="description" content="Sample Fluid template" />
 ```
 ViewHelpers explained:
-* f:format.stripTags : removes any HTML tags from pageTitle to keep <title> clean.
+* `f:format.stripTags` : removes any HTML tags from pageTitle to keep `<title>` clean.
 
 ## Step 5: Create the Navigation Partial
 File: `EXT:sitepackage/Resources/Private/Partials/Nav/Main.html`
@@ -174,8 +174,8 @@ File: `EXT:sitepackage/Resources/Private/Partials/Nav/Main.html`
 </ul>
 ```
 ViewHelpers explained:
-* f:for each="{items}" as="item" : loops through all menu items
-* f:if(condition: item.active, then: 'active') : adds active class for the current page
+* `<f:for each="{items}" as="item">` : loops through all menu items
+* `f:if(condition: item.active, then: 'active')` : adds active class for the current page
 
 ## Step 6: Create the Page Template
 File: `EXT:sitepackage/Resources/Private/Templates/Default/Default.html`
@@ -190,10 +190,10 @@ File: `EXT:sitepackage/Resources/Private/Templates/Default/Default.html`
 </f:section>
 ```
 ViewHelpers explained:
-* <f:layout name="Default" /> : tells Fluid to use Layouts/Default.html
-* <f:section name="Main"> : defines the section that the layout will render
-* <f:format.raw> : outputs HTML directly (used here because contentMain already contains rendered HTML)
-* <f:debug> : dumps variables for debugging during development
+* `<f:layout name="Default" />` : tells Fluid to use Layouts/Default.html
+* `<f:section name="Main">` : defines the section that the layout will render
+* `<f:format.raw>` : outputs HTML directly (used here because contentMain already contains rendered HTML)
+* `<f:debug>` : dumps variables for debugging during development
 
 ## Step 7: Create Child Pages for the Navigation
 
@@ -222,7 +222,7 @@ dependencies:
 * `vendor/bin/typo3 cache:flush`
 ### Add content:
 * Go to Web → Page in the backend
-* On your root or subpage, add some content elements in the normal column (colPos=0)
+* Add some content elements in the normal column (colPos=0)
 ### Check the frontend:
 * You should see:
   * The HTML structure from `Layouts/Default.html`
