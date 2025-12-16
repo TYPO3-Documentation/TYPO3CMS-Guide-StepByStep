@@ -38,6 +38,7 @@ All of the editable page content for a basic team or committee page is stored in
    * **Group title:** The name of your team or committee.
    * **Path segment:** The URL path for your team or committee page. *(You should not change this unless your team or committee has been renamed.)*
    * **Group image:** The image that will be displayed on your team or committee page and on cards elsewhere on the TYPO3 websites.
+   * **Group short description:** A short description of your team or committee that will be displayed on your team or committee pageand on cards elsewhere on the TYPO3 websites.
    * **Group long description:** A long description of your team or committee. Include information on
      * The tasks of your team or committee.
      * Information about regular meetings.
