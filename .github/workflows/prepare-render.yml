@@ -29,7 +29,7 @@ jobs:
         run: php bin/index-files
 
       - name: Expand shorthand links
-        run: php bin/expand-tags
+        run: php bin/expand-links
 
       - name: Generate table of contents
         run: php bin/generate-tos
