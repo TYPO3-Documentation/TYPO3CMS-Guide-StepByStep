@@ -29,7 +29,7 @@ foreach ($filesAndLinks['files'] as $file) {
         // If the file exists, ensure we make a proper link to it
         if ($link['toFile'] !== null) {
             $replaceLinkString = '[' . $link['linkText'] . ']'
-                . '(' . $link['toFile'] . ')'
+                . '(' . $link['toFile']
                 . ($link['titleAttribute'] ? ' "' . $link['titleAttribute'] . '"' : '')
                 . ')';
         }
