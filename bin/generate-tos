@@ -74,7 +74,7 @@ foreach ($filesAndLinks['links'] as $link) {
 
     $mentionedUris[] = $link['uri'];
 
-    $output .= '* ' . ($link['linkText'] ?? basename($link['uri'])) . ' [CREATE](' . newGuideUrl(basename($link['uri'])) . ')' . PHP_EOL;
+    $output .= '* ' . ($link['linkText'] ?? basename($link['uri'])) . ' [CREATE](' . newGuideUrl(basename($link['uri'])) . ' "Create this missing step-by-step guide")' . PHP_EOL;
 }
 
 file_put_contents(SEARCH_PATH . '/80GuidesRegistry/Index.md', $output);

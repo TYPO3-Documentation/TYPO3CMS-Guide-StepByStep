@@ -18,7 +18,6 @@ $allLinks = [];
 
 foreach ($files as $fullFilePath) {
     $file = str_replace(SEARCH_PATH, '', $fullFilePath);
-
     $allFiles[$file] = [
         'title' => null,
         'path' => $file,
