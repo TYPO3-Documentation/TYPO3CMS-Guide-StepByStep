@@ -1,8 +1,8 @@
-# Change TYPO3's Default Language
+# Change A TYPO3 Site's Default Language
 
 <!--#TYPO3v13 #Beginner #Configuration @ninaaline -->
 
-TYPO3's default language configuration controls the primary language for your website content. Changing the default language ensures that your site displays content in the language that matches your target audience. This guide shows you how to modify the default site language in TYPO3 13.4.
+A TYPO3 site's language configuration controls the primary language for your website content. Changing the default language ensures that your site displays content in the language that matches your target audience. This guide shows you how to modify the default site language in TYPO3 13.4.
 
 ## Learning objective
 
