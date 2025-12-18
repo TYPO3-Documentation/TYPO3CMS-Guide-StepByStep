@@ -38,13 +38,13 @@ The default language is always represented by language ID "0" in TYPO3's system.
 
 1. In the backend, navigate to **Site Management** > **Sites** from the left-hand menu.
 
-   ![TYPO3 sidebar menu displays the Site Management Section with the site module underneath it.](Images/SiteModule.png)
-2. Click on your site configuration (typically named "main" or your domain name) and open on the **Languages** tab.![Site Configuration Menu displays four tabs: General, Languages (highlighted), Error Handling and Static Routes](Images/LanguageTab.png)
+   ![TYPO3 sidebar menu displays the Site Management Section with the site module underneath it.](Images/ChangeATypo3SitesDefaultLanguage/SiteModule.png)
+2. Click on your site configuration (typically named "main" or your domain name) and open on the **Languages** tab.![Site Configuration Menu displays four tabs: General, Languages (highlighted), Error Handling and Static Routes](Images/ChangeATypo3SitesDefaultLanguage/LanguageTab.png)
 3. Find the default language entry (listed first with language ID "0" and usually in English).
 4. Click the on the default language entry.
 5. The language configuration form is opening:
 
-   ![The Language Configurations Form displaying the Configuration for English with multiple options like Title, Locale, Entry Point and Navigation Title](Images/LanguageConfigurations.png)
+   ![The Language Configurations Form displaying the Configuration for English with multiple options like Title, Locale, Entry Point and Navigation Title](Images/ChangeATypo3SitesDefaultLanguage/LanguageConfigurations.png)
 
    **Update these fields:**
 
@@ -56,14 +56,14 @@ The default language is always represented by language ID "0" in TYPO3's system.
    * **Flag item:** Search for the right flag icon for your language
 6. For German your changes should look like this now:
 
-   ![The Language Configurations Form displaying the changed Configuration for German now with multiple options like Title, Locale, Entry Point and Navigation Title](Images/ChangedLanguageConfiguration.png)
+   ![The Language Configurations Form displaying the changed Configuration for German now with multiple options like Title, Locale, Entry Point and Navigation Title](Images/ChangeATypo3SitesDefaultLanguage/ChangedLanguageConfiguration.png)
 
    Click **Save** to apply your changes.
-7. Go to the **Page** Module and click on a page in the pagetree.![TYPO3 sidebar menu displays three options: Page (highlighted), View, List, and Forms, each with corresponding icons.](Images/Pagetree.png)
+7. Go to the **Page** Module and click on a page in the pagetree.![TYPO3 sidebar menu displays three options: Page (highlighted), View, List, and Forms, each with corresponding icons.](Images/ChangeATypo3SitesDefaultLanguage/Pagetree.png)
 
 
 8. You can see a little flag-icon on your content. Verify that the new flag is shown.
-   ![A Regular Text Element with a little flag icon next to it. ](Images/LanguageFlag.png)
+   ![A Regular Text Element with a little flag icon next to it. ](Images/ChangeATypo3SitesDefaultLanguage/LanguageFlag.png)
 9. Open your website's frontend in a new browser tab and verify that the language settings have been applied correctly.
 
 ## Summary
@@ -77,9 +77,9 @@ You successfully changed your TYPO3 site's default content language by editing t
 
 Now that you've changed the default language, you might like to:
 
-* [Configure additional content languages](../../20BuildingWebsites/20MultilingualWebsites/10ConfigureContentLanguages/Index.md) to create a multilingual website
-* [Translate existing content](../../20BuildingWebsites/20MultilingualWebsites/20TranslateContent/Index.md) into your new default language
-* [Manage language fallbacks](../../20BuildingWebsites/20MultilingualWebsites/30ManageLanguageFallbacks/Index.md) for handling missing translations
+* [Configure additional content languages](../../../20BuildingWebsites/20MultilingualWebsites/10ConfigureContentLanguages/Index.md) to create a multilingual website
+* [Translate existing content](../../../20BuildingWebsites/20MultilingualWebsites/20TranslateContent/Index.md) into your new default language
+* [Manage language fallbacks](../../../20BuildingWebsites/20MultilingualWebsites/30ManageLanguageFallbacks/Index.md) for handling missing translations
 
 ## Resources
 

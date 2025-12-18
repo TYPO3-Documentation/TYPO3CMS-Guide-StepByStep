@@ -28,11 +28,11 @@ In this step-by-step guide, you will learn how to clear the TYPO3 frontend cache
 1. Log in to your TYPO3 backend as explained in [Log in in to the TYPO3 backend](LogInToTheTypo3Backend.md).
 2. In the backend, locate the administrative toolbar at the top of the screen. This bar contains various administrative icons, including the cache icon.
 
-   ![TYPO3 administrative toolbar with five icons including the lightning for clearing caches](Images/Toolbar.png)
+   ![TYPO3 administrative toolbar with five icons including the lightning for clearing caches](Images/ClearingFrontendCacheInTypo3Backend/Toolbar.png)
 3. Click on the lightning icon (the clear cache icon) in the administrative toolbar. This action will open a dropdown menu with two cache-related options.
 4. From the dropdown menu, select the option labeled "Flush frontend caches"
 
-   ![Flush frontend cache Button with a green lightning icon](Images/FlushFrontendCache.png)
+   ![Flush frontend cache Button with a green lightning icon](Images/ClearingFrontendCacheInTypo3Backend/FlushFrontendCache.png)
 
 > [!NOTE]
 > You might also see "Flush All Caches". Only use this option if "Flush Frontend Caches" doesn't solve your issue, as clearing all caches can take longer and may temporarily slow down the backend.
