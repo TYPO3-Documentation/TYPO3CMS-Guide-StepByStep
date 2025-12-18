@@ -18,8 +18,8 @@ In this step-by-step guide you will learn how to change your TYPO3 site's defaul
 
 ### Knowledge and skills
 
-* You know how to log in into the TYPO3 backend
-* You have a basic understanding of language codes (e.g., "en" for English, "de" for German)
+* You know how to [Log in in to the TYPO3 backend](LogInToTheTypo3Backend.md)
+* You have a basic understanding of [ISO language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) (e.g., "en" for English, "de" for German)
 
 ## Understanding the default language
 
@@ -31,7 +31,8 @@ TYPO3's default language is the primary language configured for your website con
 
 The default language is always represented by language ID "0" in TYPO3's system.
 
-**Note**: This guide covers the *site content language* (what visitors see). The *backend interface language* (admin menu labels and buttons) is a separate setting that each backend user configures in their personal user settings.
+> [!NOTE]
+> This guide covers the *site content language* (what visitors see). The *backend interface language* (admin menu labels and buttons) is a separate setting that each backend user configures in their personal user settings.
 
 ## Change the default language
 
@@ -69,7 +70,8 @@ The default language is always represented by language ID "0" in TYPO3's system.
 
 You successfully changed your TYPO3 site's default content language by editing the language configuration in the Site Management module. Your website now uses the new language for all default content.
 
-**Important**: Changing the default language updates the language identifier and configuration, but does not automatically translate your existing content. You need to manually translate or update content to match the new default language.
+> [!IMPORTANT]
+> Changing the default language updates the language identifier and configuration, but does not automatically translate your existing content. You need to manually translate or update content to match the new default language.
 
 ## Next steps
 
@@ -81,5 +83,6 @@ Now that you've changed the default language, you might like to:
 
 ## Resources
 
-* [TYPO3 Site Handling Documentation](https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SiteHandling/Index.html)
-* [Language Configuration Reference](https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SiteHandling/AddLanguages.html)
+* [TYPO3 Site Handling Documentation](https://docs.typo3.org/permalink/t3coreapi:sitehandling)
+* [Language Configuration Reference](https://docs.typo3.org/permalink/t3coreapi:sitehandling-addinglanguages)
+* [List of ISO 639 language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes)
