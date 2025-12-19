@@ -1,4 +1,4 @@
-# Implementing a Site Set with Editable Settings and Custom CSS
+# Create a Site Set with Editable Settings and Custom CSS
 
 <!-- #TYPO3v13 #Beginner #Backend #Configuration @csabareanu -->
 
