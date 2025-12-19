@@ -1,5 +1,5 @@
 # Understand Fluid Templates in TYPO3 v13 – A Practical, Step-by-Step Guide
-<!-- #TYPO3v13 #Intermediary #Frontend #Fluid @csabareanu -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Intermediary](/Tags/Intermediary.md) [Frontend](/Tags/Frontend.md) [Fluid](/Tags/Fluid.md) **Author:** [@csabareanu](https://my.typo3.org/u/csabareanu)
 
 This guide shows how TYPO3 renders pages using Fluid templates, and how to build a clean template structure in your sitepackage (`EXT:sitepackage`) using:
 * Layouts (global page shell)

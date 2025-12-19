@@ -1,6 +1,6 @@
 # Create a Site Set with Editable Settings and Custom CSS
 
-<!-- #TYPO3v13 #Beginner #Backend #Configuration @csabareanu -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [Backend](/Tags/Backend.md) [Configuration](/Tags/Configuration.md) **Author:** [@csabareanu](https://my.typo3.org/u/csabareanu)
 
 TYPO3's Site Sets are reusable packages of site configuration that streamline multi-site management. It replaces older methods and allows you to bundle and apply settings across multiple sites or projects.
 
@@ -17,7 +17,7 @@ In this guide, you will build a practical, working site set named `my-vendor/bas
 
 ### Tools and technology
 
-* A computer with a local TYPO3 installation and a site package extension as described in [Create a Site Package](CreateASitePackage.md).
+* A computer with a local TYPO3 installation and a site package extension as described in *Create a Site Package* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=CreateASitePackage.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide").
 * An IDE or plain text editor.
 
 ### Knowledge and skills
@@ -186,7 +186,7 @@ Site sets can also include Fluid templates. In this case we will create a simple
 
 ## Clear caches and verify
 
-1. Clear caches as described in [Clearing the Frontend Cache in the TYPO3 Backend](ClearingFrontendCacheInTypo3Backend.md).
+1. Clear caches as described in [Clearing the Frontend Cache in the TYPO3 Backend](/10GettingStarted/20BasicConfiguration/10BackendBasics/ClearingFrontendCacheInTypo3Backend.md).
 2. Open **Backend → Site → Settings** module. You’ll see your *Base Settings: Meta Description* and *Contact Email* fields.
 3. Change the value of the fields.
 4. Save the settings.
@@ -220,7 +220,7 @@ Next steps
 Now that you have created your site set, you might like to:
 
 * Explore the [Site Set Reference](https://docs.typo3.org/permalink/t3coreapi:site-sets) to learn more about all the available options.
-* [Include CSS through the Fluid Template](AddCSSAndJavaScriptToAFluidTemplate.md) instead of through TypoScript.
+* [Include CSS through the Fluid Template](/20BuildingWebsites/40FrontendDevelopment/40JavaScriptAndCSS/AddCSSAndJavaScriptToAFluidTemplate.md) instead of through TypoScript.
 
 ## Resources
 

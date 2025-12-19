@@ -1,5 +1,5 @@
 # Add Global CSS and JavaScript with TypoScript
-<!-- #TYPO3v13 #Beginner #Templating #Configuration -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [Templating](/Tags/Templating.md) [Configuration](/Tags/Configuration.md)
 
 Managing your website's core CSS and JavaScript files globally is an efficient way to ensure a consistent look and feel across all pages. TYPO3's TypoScript provides a powerful, centralized method for including these assets sitewide.
 

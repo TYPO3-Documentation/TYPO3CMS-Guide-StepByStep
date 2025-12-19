@@ -15,12 +15,12 @@ Inside a step-by-step guide you will normally link to other step-by-step guides 
 
 * In the *Prerequisites* section, if the guide you link to must be completed before starting the current guide.
 * In the *Next steps* section, so the reader can continue to other guides after finishing the current guide.
-* Within the steps, if the step requires existing knowledge, for example: `Create a new page as described in [Create a new page](CreateANewPage.md).`
+* Within the steps, if the step requires existing knowledge, for example: `Create a new page as described in Create a new page.`
 
 > [!TIP]
 > **Just use the step-by-step guide's file name when linking.** Since all step-by-step guides have unique titles (and thus unique file names) the path will automatically be inserted when before the page is rendered. This also makes it easy to move files within the structure.
 >
-> **Example**: Use `[Change TYPO3's Default Language](ChangeTypo3sDefaultLanguage.md)` instead of `[Change TYPO3's Default Language](../../20Multilingual/ChangeTypo3sDefaultLanguage.md)`.
+> **Example**: Use Change TYPO3's Default Language` instead of Change TYPO3's Default Language`.
 
 > [!TIP]
 > **Link to non-existent step-by-step guides.**  If a step-by-step guide doesn't exist yet, linking to it will automatically add it to the list of missing guides. Please use the guide's title as the link text. The file name is always an `UpperCamelCase.md` version of the title.
@@ -60,7 +60,7 @@ If a step-by-step guide exists for a given page of the documentation, this page 
 
 **Do a search**
 
-* Check the [Step-by-Step Guide registry](../../80GuidesRegistry/Index.md)
+* Check the Step-by-Step Guide registry
 * Use the [TYPO3 Documentation search function](https://docs.typo3.org/search/) — it is powerful and comprehensive. Try a few different terms or phrasing variations.
 
 If your search turns up nothing useful, that may be a good sign that your guide really is needed.
@@ -81,9 +81,9 @@ Sometimes, while writing a step-by-step guide, you’ll need to reference a rela
 That’s okay! Missing guides are part of a growing system, and it’s important not to lose your flow or get side-tracked. Here’s how to handle them.
 
 1. **Link to the missing guide anyway.**
-   If the guide doesn’t exist, link to the title it should have as if it does. Use the normal way you'd insert a link using MarkDown syntax: `[Link text](relative/path-to-guide/)`
+   If the guide doesn’t exist, link to the title it should have as if it does. Use the normal way you'd insert a link using MarkDown syntax: Link text`
 
 2. **Add the missing guide to the structure.**
-   Don’t worry about writing the guide yourself — just give it a logical placeholder. See [How to Place Guides in the Structure](../30UnderstandingTheStructure/20PlaceGuidesInTheStructure.md) for more information.
+   Don’t worry about writing the guide yourself — just give it a logical placeholder. See How to Place Guides in the Structure for more information.
 
 **Missing guides will be tracked automatically.** An automated script keeps track of missing guides by tracking links to step-by-step guides that don’t yet exist (essentially, broken internal links within the repository). These will be listed as not-yet-created, with the option to click a link to create them.
