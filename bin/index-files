@@ -3,6 +3,8 @@
 define('SEARCH_PATH', realpath(__DIR__ . '/../Documentation'));
 
 const MARKDOWN_LINK_PATTERN = '/(?:(?!\!).)\[([^\]]+)\]\(([^ ]+)( "([^"]+)")?\)/';
+const MARKDOWN_INLINE_CODE_PATTERN = '/`([^`]+?)`/';
+const MARKDOWN_CODE_BLOCK_PATTERN = '/```\s*(\w+)?\n([\s\S]*?)\n```/';
 
 // Find all Markdown files
 $files = array_keys(iterator_to_array(new RegexIterator(
@@ -28,6 +30,10 @@ foreach ($files as $fullFilePath) {
 
 foreach (array_values($allFiles) as $file) {
     $content = file_get_contents(SEARCH_PATH . $file['path']);
+
+    // Remove inline and code blocks from the content so we don't parse links in them.
+    $content = preg_replace(MARKDOWN_INLINE_CODE_PATTERN, '', $content);
+    $content = preg_replace(MARKDOWN_CODE_BLOCK_PATTERN, '', $content);
 
     preg_match('/^#\s+(.+)$/m', $content, $titleMatches);
 
