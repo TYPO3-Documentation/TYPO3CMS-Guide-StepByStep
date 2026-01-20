@@ -1,6 +1,6 @@
 # Create the Site Package File Structure
 
-<!-- #TYPO3v13 #Beginner #Backend # SitePackage @ninaaline -->
+<!-- #TYPO3v13 #Beginner #Backend #SitePackage @ninaaline -->
 
 A Site Package is a custom TYPO3 extension that bundles all your project-specific configurations, templates, and assets. This guide focuses on the single task of creating the minimal file structure required for TYPO3 to recognize your Site Package.
 
@@ -104,7 +104,7 @@ You have successfully created the skeletal structure of a TYPO3 Site Package. TY
 
 Now that the basic structure is ready, you might like to:
 
-* [Register and Install the Site Package via Composer](InstallTheSitePackage.md)
+* [Register and Install the Site Package via Composer](RegisterAndInstallSitePackage.md)
 * [Activating the Site Set in the Site Configuration](ActivatingSiteSet.md)
 
 ## Resources
