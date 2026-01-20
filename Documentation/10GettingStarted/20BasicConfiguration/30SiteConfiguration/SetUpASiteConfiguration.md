@@ -1,6 +1,6 @@
 # Set Up a Site Configuration
 
-<!-- #TYPO3v13 #Beginner #Backend #Configuration @dragos_tuluc -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [Backend](/Tags/Backend.md) [Configuration](/Tags/Configuration.md)
 
 In TYPO3, a site configuration is essential for defining the domain, root page, and languages for a website.
 

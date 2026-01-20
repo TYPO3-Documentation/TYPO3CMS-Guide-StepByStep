@@ -1,6 +1,6 @@
 # Clearing the Frontend Cache in the TYPO3 Backend
 
-<!--#TYPO3v13 #Beginner #Backend #Cache #FrontendCache @ninaaline -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [Backend](/Tags/Backend.md) [Cache](/Tags/Cache.md) [FrontendCache](/Tags/FrontendCache.md) **Author:** [@ninaaline](https://my.typo3.org/u/ninaaline)
 
 After making changes to your TYPO3 website's content, templates, or configuration, the site's frontend may not immediately reflect these updates.
 This is typically due to the frontend cache, which stores a static version of your pages to ensure fast delivery to visitors.
@@ -20,12 +20,12 @@ In this step-by-step guide, you will learn how to clear the TYPO3 frontend cache
 
 ### Knowledge and skills
 
-* You know how to [Log in in to the TYPO3 backend](LogInToTheTypo3Backend.md)
-* You can [Locate and use the TYPO3 backend's administrative toolbar](LocateAndUseTheTypo3BackendsAdministrativeToolbar.md) in the TYPO3 backend.
+* You know how to *Log in in to the TYPO3 backend* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=LogInInToTheTYPO3Backend.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide")
+* You can *Locate and use the TYPO3 backend's administrative toolbar* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=LocateAndUseTheTYPO3BackendsAdministrativeToolbar.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide") in the TYPO3 backend.
 
 ## Clearing the Frontend Cache
 
-1. Log in to your TYPO3 backend as explained in [Log in in to the TYPO3 backend](LogInToTheTypo3Backend.md).
+1. Log in to your TYPO3 backend as explained in *Log in in to the TYPO3 backend* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=LogInInToTheTYPO3Backend.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide").
 2. In the backend, locate the administrative toolbar at the top of the screen. This bar contains various administrative icons, including the cache icon.
 
    ![TYPO3 administrative toolbar with five icons including the lightning for clearing caches](Images/ClearingFrontendCacheInTypo3Backend/Toolbar.png)

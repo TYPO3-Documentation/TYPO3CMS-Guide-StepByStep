@@ -1,8 +1,8 @@
 # Register and Install a Site Package
 
-<!-- #TYPO3v13 #Beginner #SitePackage #Backend @ninaaline -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [SitePackage](/Tags/SitePackage.md) [Backend](/Tags/Backend.md) **Author:** [@ninaaline](https://my.typo3.org/u/ninaaline)
 
-After [creating the file structure for the Site Package](CreateTheSitePackageFileStructure.md), the Site Package exists on your disk but is not yet known to the TYPO3 installation.
+After [creating the file structure for the Site Package](/10GettingStarted/40SitePackages/10CreateABasicSitePackage/CreateTheSitePackageFileStructure.md), the Site Package exists on your disk but is not yet known to the TYPO3 installation.
 
 This guide covers how to register the local directory as a Composer repository and install it into your project.
 
@@ -19,7 +19,7 @@ In this guide, you will learn the two essential Composer commands to link and ac
 
 ### Knowledge and skills
 
-* You have completed the [Create the Site Package File Structure](CreateTheSitePackageFileStructure.md) guide.
+* You have completed the [Create the Site Package File Structure](/10GettingStarted/40SitePackages/10CreateABasicSitePackage/CreateTheSitePackageFileStructure.md) guide.
 * Basic knowledge of how to use a Terminal
 
 ## Register the local package path
@@ -70,7 +70,7 @@ You have successfully registered and installed your Site Package. It is now reco
 
 Now that the package is installed, the final step to make it functional is:
 
-* [Activate the Site Package in the Site Configuration](ActivateSitePackage.md)
+* *Activate the Site Package in the Site Configuration* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=ActivateTheSitePackageInTheSiteConfiguration.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide")
 
 ## Resources
 

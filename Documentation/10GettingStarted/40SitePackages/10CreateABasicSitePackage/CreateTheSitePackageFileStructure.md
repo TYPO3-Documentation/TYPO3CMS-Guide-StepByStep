@@ -1,6 +1,6 @@
 # Create the Site Package File Structure
 
-<!-- #TYPO3v13 #Beginner #Backend #SitePackage @ninaaline -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [Backend](/Tags/Backend.md) [SitePackage](/Tags/SitePackage.md) **Author:** [@ninaaline](https://my.typo3.org/u/ninaaline)
 
 A Site Package is a custom TYPO3 extension that bundles all your project-specific configurations, templates, and assets. This guide focuses on the single task of creating the minimal file structure required for TYPO3 to recognize your Site Package.
 
@@ -104,8 +104,8 @@ You have successfully created the skeletal structure of a TYPO3 Site Package. TY
 
 Now that the basic structure is ready, you might like to:
 
-* [Register and Install the Site Package via Composer](RegisterAndInstallSitePackage.md)
-* [Activating the Site Set in the Site Configuration](ActivatingSiteSet.md)
+* [Register and Install the Site Package via Composer](/10GettingStarted/40SitePackages/10CreateABasicSitePackage/RegisterAndInstallSitePackage.md)
+* *Activating the Site Set in the Site Configuration* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=ActivatingTheSiteSetInTheSiteConfiguration.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide")
 
 ## Resources
 

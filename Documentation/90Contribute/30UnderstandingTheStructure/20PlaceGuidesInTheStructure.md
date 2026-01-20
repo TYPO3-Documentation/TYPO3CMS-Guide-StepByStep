@@ -1,6 +1,6 @@
 # How to Place Guides in the Registry Structure
 
-This guide is for writers who create step-by-step guides and discover new step-by-step content that does not yet exist in the [Guide Registry](../../80GuidesRegistry/Index.md).
+This guide is for writers who create step-by-step guides and discover new step-by-step content that does not yet exist in the Guide Registry.
 
 Finding the right place for a new guide is not always easy. You might find that no place in the structure seems to fit well, or you might find multiple places to place the new guide. The guide you’re reading was created for these corner cases to help you make an informed decision.
 

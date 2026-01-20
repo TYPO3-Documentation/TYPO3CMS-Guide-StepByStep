@@ -1,6 +1,6 @@
 # Enabling and disabling a page in the page tree
 
-<!-- #TYPO3v13 #Beginner #Backend #Editing #PageTree @mabolek -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [Backend](/Tags/Backend.md) [Editing](/Tags/Editing.md) [PageTree](/Tags/PageTree.md) **Author:** [@mabolek](https://my.typo3.org/u/mabolek)
 
 TYPO3 allows you to disable pages. Disabled pages are inaccessible to frontend website visitors, but you can still edit the pages in the backend. Depending on your TYPO3 configuration all pages that you create may be disabled by default. They will need to be enabled in order to be published on your website.
 
@@ -49,11 +49,11 @@ You have now disabled and re-enabled a page using the context menu of TYPO3's pa
 
 A page tree can also be enabled and disabled in other ways than this:
 
-* [Enabling and disabling a page in the page properties](EnablingAndDisablingAPageInThePageProperties.md)
-* [Enabling and disabling a page in the List module](EnablingAndDisablingAPageInTheListModule.md)
+* [Enabling and disabling a page in the page properties](/10GettingStarted/20BasicConfiguration/10BackendBasics/EnablingAndDisablingAPageInThePageProperties.md)
+* [Enabling and disabling a page in the List module](/10GettingStarted/20BasicConfiguration/10BackendBasics/EnablingAndDisablingAPageInTheListModule.md)
 
 ## Resources
 
-* [Enabling and disabling a page in the page properties](EnablingAndDisablingAPageInThePageProperties.md)
-* [Enabling and disabling a page in the List module](EnablingAndDisablingAPageInTheListModule.md)
+* [Enabling and disabling a page in the page properties](/10GettingStarted/20BasicConfiguration/10BackendBasics/EnablingAndDisablingAPageInThePageProperties.md)
+* [Enabling and disabling a page in the List module](/10GettingStarted/20BasicConfiguration/10BackendBasics/EnablingAndDisablingAPageInTheListModule.md)
 * [Introduction to the TYPO3 Backend](https://docs.typo3.org/permalink/t3start:backend)
