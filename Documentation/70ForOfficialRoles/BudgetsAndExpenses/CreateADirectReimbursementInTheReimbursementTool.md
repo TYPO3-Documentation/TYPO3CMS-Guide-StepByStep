@@ -18,7 +18,7 @@ In this step-by-step guide you will request that the TYPO3 Association pays an i
 ### Tools and technology
 
 * A web browser with internet access.
-* A PayPal account or bank account with [IBAN](https://en.wikipedia.org/wiki/International_Bank_Account_Number) or [BIC/SWIFT](https://en.wikipedia.org/wiki/ISO_9362) information.
+* A payment method registered in the TYPO3 Reimbursement Tool. See: [Add a Payment Method in the Reimbursement Tool](AddAPaymentMethodInTheReimbursementTool.md).
 * A My TYPO3 account ([Sign Up for a My TYPO3 Account](SignUpForAMyTypo3Account.md))
 
 ### Knowledge and skills
@@ -34,7 +34,7 @@ You will see the Reimbursement Tool dashboard. It is titled *My Reimbursements*.
 
 ## Create a reimbursement
 
-![Screenshot of the TYPO3 Reimbursement Tool dashboard. A black “Request Reimbursement” button is prominently circled in red in the upper right of a white section labeled “My Reimbursements.”.](Images/CreateARegularReimbursementInTheReimbursementTool/ReimbursementDashboard.png)
+![Screenshot of the TYPO3 Reimbursement Tool dashboard. A black “Request Reimbursement” button is prominently circled in red in the upper right of a white section labeled “My Reimbursements.”.](Images/CreateADirectReimbursementInTheReimbursementTool/ReimbursementDashboard.png)
 
 1. On the Reimbursement Tool dashboard, click the black *Request Reimbursement* button. You will be redirected to a page asking you to choose *Regular Reimbursement* or *Direct Expense*.
 
