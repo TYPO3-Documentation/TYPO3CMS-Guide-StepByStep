@@ -8,10 +8,7 @@ As a TYPO3 contributor, you can use it to request and track reimbursements for e
 
 ## Learning objective
 
-In this step-by-step guide you will request that the TYPO3 Association pays an invoice directly to the issuer using a *Direct Reimbursement*.
-
-> [!NOTE]
-> If you would instead like to reimburse expenses you have paid for, please follow the guide [Create a Regular Reimbursement in the Reimbursement Tool](CreateARegularReimbursementInTheReimbursementTool.md).
+In this step-by-step guide you will add bank or PayPal account information to the Reimbursement Tool.
 
 ## Prerequisites
 
