@@ -60,10 +60,10 @@ You have now created the reimbursement request itself, and you are ready to add 
 
 ![A web page shows a reimbursement request with status Draft, a description, budget number, and no expenses added yet. Buttons for Edit, Delete, and Add Receipt are visible.](Images/CreateADirectReimbursementInTheReimbursementTool/ReimbursementSummaryPage.png)
 
-> [!INFO]
+> [!NOTE]
 > The reimbursement request will be in draft status and only visible to you until you submit it for approval.
 
-> [!INFO]
+> [!NOTE]
 > You can normally add two types of expenses to a reimbursement (*receipts* and *driven kilometers*), but a direct reimbursement will usually only concern invoices (called *receipts* in the TYPO3 Reimbursement Tool).
 
 ## Add an invoice or receipt
@@ -85,7 +85,7 @@ We are now going to add an invoice or receipt and the necessary documentation. Y
     * **Date of expense:** Click on the field and select a date from the pop-up calendar. The date must be the same as the date on the invoice or receipt.
 3. Click the orange *Save* button. You will be redirected to the reimbursement summary page.
 
-> [!INFO]
+> [!NOTE]
 > The TYPO3 Association is domiciled in Switzerland. If the invoice issuer is a foreign company, sales tax should often not be included.
 
 ## Submit the reimbursement for approval
