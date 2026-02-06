@@ -60,10 +60,10 @@ You have now created the reimbursement request itself, and you are ready to docu
 
 ![A reimbursement request page showing status as draft, with details such as description, budget, purpose, payment via bank transfer, IBAN, BIC, and address. There are options to add receipt or driven kilometers.](Images/CreateARegularReimbursementInTheReimbursementTool/ReimbursementSummaryPage.png)
 
-> [!INFO]
+> [!NOTE]
 > The reimbursement request will be in draft status and only visible to you until you submit it for approval.
 
-> [!INFO]
+> [!NOTE]
 > You can add two types of expenses to your reimbursement:
 >
 > * **Receipt:** Any invoice or receipt that is applicable for reimbursement.
@@ -93,7 +93,7 @@ We are now going to add an invoice or receipt and the necessary documentation. Y
 
 You should repeat this step for every invoice or receipt you want to submit.
 
-> [!INFO]
+> [!NOTE]
 > The TYPO3 Association is domiciled in Switzerland. If you reimburse as a foreign company, sales tax should not be included.
 
 ## Add expense for driven kilometers
