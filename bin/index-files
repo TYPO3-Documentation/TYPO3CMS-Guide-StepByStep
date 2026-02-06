@@ -2,7 +2,7 @@
 <?php
 define('SEARCH_PATH', realpath(__DIR__ . '/../Documentation'));
 
-const MARKDOWN_LINK_PATTERN = '/(?:(?!\!).)\[([^\]]+)\]\(([^ ]+)( "([^"]+)")?\)/';
+const MARKDOWN_LINK_PATTERN = '/(?:(?!\!))\[([^\]]+)\]\(([^ )]+)( "([^"]+)")?\)/';
 const MARKDOWN_INLINE_CODE_PATTERN = '/`([^`]+?)`/';
 const MARKDOWN_CODE_BLOCK_PATTERN = '/```\s*(\w+)?\n([\s\S]*?)\n```/';
 

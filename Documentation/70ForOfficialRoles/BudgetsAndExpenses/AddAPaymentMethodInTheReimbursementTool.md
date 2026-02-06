@@ -1,4 +1,4 @@
-# Create a Direct Reimbursement in the Reimbursement Tool
+# Add a Payment Method in the Reimbursement Tool
 
 <!-- #Beginner @stefan.busemann @mabolek -->
 
