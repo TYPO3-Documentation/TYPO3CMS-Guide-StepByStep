@@ -29,9 +29,25 @@ foreach ($filesAndLinks['files'] as $file) {
         // If the file exists, ensure we make a proper link to it
         if ($link['toFile'] !== null) {
             $replaceLinkString = '[' . $link['linkText'] . ']'
-                . '(' . $link['toFile'] . ')'
+                . '(' . $link['toFile']
                 . ($link['titleAttribute'] ? ' "' . $link['titleAttribute'] . '"' : '')
                 . ')';
+        } elseif (
+            !str_starts_with($file['path'], '/00Incoming/')
+            && !str_starts_with($file['path'], '/80GuidesRegistry/')
+            && !str_starts_with($file['path'], '/90Contribute/')
+        ) {
+            $fileName = preg_replace(
+                '/[^A-Za-z0-9]/',
+                '',
+                iconv(
+                        'UTF-8',
+                        'ASCII//TRANSLIT',
+                        ucwords($link['linkText'])
+                )
+            ) . '.md';
+
+            $replaceLinkString = '*' . $link['linkText'] . '* [(CREATE)]' . '(' . newGuideUrl($fileName) . ' "Create this missing step-by-step guide")';
         }
 
         $fileContents = str_replace(
@@ -44,4 +60,10 @@ foreach ($filesAndLinks['files'] as $file) {
     if ($changedLinks > 0) {
         file_put_contents(SEARCH_PATH . $file['path'], $fileContents);
     }
+}
+
+function newGuideUrl(string $fileName = 'GiveYourGuideAName.md') {
+    return 'https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?'
+            . 'filename=' . rawurlencode(basename($fileName))
+            . '&value=' . rawurlencode('Copy content the template from: https://raw.githubusercontent.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/refs/heads/contrib/Documentation/90Contribute/10Template/Index.md');
 }
