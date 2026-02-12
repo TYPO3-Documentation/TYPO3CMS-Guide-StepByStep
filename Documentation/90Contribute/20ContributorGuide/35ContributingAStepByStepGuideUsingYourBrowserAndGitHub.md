@@ -1,6 +1,6 @@
 # Contributing a Step-by-Step Guide Using Your Browser and GitHub
 
-<!-- #Beginner @mabolek -->
+ **Categories:** [Beginner](/Tags/Beginner.md) **Author:** [@mabolek](https://my.typo3.org/u/mabolek)
 
 It's easy to add a new guide to the TYPO3 Step-by-Step Guides. All of the guides are written in plain text using simple formatting instructions called Markdown. You can add a new guide using only your web browser and the tools available on the GitHub website, where the guide files are stored.
 
@@ -28,7 +28,7 @@ Here is the approach we'll take:
 * How to use a web browser
 * How to edit files and make screenshots on the computer you are using
 * Basic understanding of Markdown, as explained in the [Markdown Cheat Sheet](https://docs.typo3.org/permalink/h2document:md-cheat-sheet)
-* How to use the step-by-step guide template, as explained in [Using the Template](30UsingTheTemplate.md).
+* How to use the step-by-step guide template, as explained in [Using the Template](/90Contribute/20ContributorGuide/30UsingTheTemplate.md).
 
 ## Create a GitHub user account
 
@@ -94,7 +94,7 @@ Each collection of files and folders is called a *repository*. In order to edit 
 > ![Blue box with the text "You’re making changes in a project you don’t have write access to. Submitting a change will write it to a new branch in your fork my-username/TYPO3CMS-Guide-StepByStep, so you can send a pull request."](Images/45ContributingAStepByStepGuideUsingYourBrowserAndGitHub/GitHubYouDontHaveAccess.png)
 
 2. Where it says "Enter file contents here" is a text editor. Paste in the step-by-step guide template that you copied previously.
-3. Enter a name for your file in the text box where it says "Name your file…". The [Using the Template](30UsingTheTemplate.md) guide explains exactly what your file name should be, how it should be formatted, and that it must end in ".md".
+3. Enter a name for your file in the text box where it says "Name your file…". The [Using the Template](/90Contribute/20ContributorGuide/30UsingTheTemplate.md) guide explains exactly what your file name should be, how it should be formatted, and that it must end in ".md".
 
 When you are finished, it should look something like in this screenshot:
 
@@ -150,5 +150,5 @@ Now that you have written your guide, you can continue by creating more Step-by-
 ## Resources
 
 * [Markdown Cheat Sheet](https://docs.typo3.org/permalink/h2document:md-cheat-sheet)
-* [Step-by-Step Guide Contributor Guide](Index.md)
-* [Using the Step-by-Step Guide Template](30UsingTheTemplate.md)
+* Step-by-Step Guide Contributor Guide
+* [Using the Step-by-Step Guide Template](/90Contribute/20ContributorGuide/30UsingTheTemplate.md)

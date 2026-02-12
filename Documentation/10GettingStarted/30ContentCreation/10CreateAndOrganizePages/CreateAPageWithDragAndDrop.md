@@ -1,6 +1,6 @@
 # Create a Page with Drag and Drop
 
-<!--#TYPO3v13 #Beginner #Backend @ninaaline -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [Backend](/Tags/Backend.md) **Author:** [@ninaaline](https://my.typo3.org/u/ninaaline)
 
 TYPO3 lets you quickly create new pages directly in the page tree. The drag & drop method is a fast way to add a page exactly where you want it — either as a child of an existing page or as a sibling between two pages.
 
@@ -51,8 +51,8 @@ You created a new TYPO3 page by dragging a page icon from the top of the page tr
 
 Now that you’ve added a page, you might like to:
 
-* [Enable a page](EnablingAndDisablingAPageInThePagetree.md) so it becomes visible in the frontend
-* [Create a page with the context menu](CreateAPageWithTheContextMenu) for more precise placement
+* [Enable a page](/10GettingStarted/20BasicConfiguration/10BackendBasics/EnablingAndDisablingAPageInThePageTree.md) so it becomes visible in the frontend
+* *Create a page with the context menu* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=CreateAPageWithTheContextMenu.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide") for more precise placement
 * [Add content to your page](https://docs.typo3.org/permalink/t3editors:content-creating)
 
 ## Resources

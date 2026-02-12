@@ -1,6 +1,6 @@
 # Add a Payment Method in the Reimbursement Tool
 
-<!-- #Beginner @stefan.busemann @mabolek -->
+ **Categories:** [Beginner](/Tags/Beginner.md) **Author:** [@mabolek](https://my.typo3.org/u/mabolek)
 
 The TYPO3 Reimbursement Tool is the budget and expense management tool for the TYPO3 ecosystem.
 
@@ -16,7 +16,7 @@ In this step-by-step guide you will add bank or PayPal account information to th
 
 * A web browser with internet access.
 * A PayPal account or bank account with [IBAN](https://en.wikipedia.org/wiki/International_Bank_Account_Number) or [BIC/SWIFT](https://en.wikipedia.org/wiki/ISO_9362) information.
-* A My TYPO3 account ([Sign Up for a My TYPO3 Account](SignUpForAMyTypo3Account.md))
+* A My TYPO3 account ([Sign Up for a My TYPO3 Account](/10GettingStarted/05MeetTheCommunity/SignUpForAMyTypo3Account.md))
 
 ### Knowledge and skills
 
@@ -78,8 +78,8 @@ You have now created a payment method and can receive reimbursements from the TY
 
 ## Next steps
 
-* [Create a Regular Reimbursement in the Reimbursement Tool](CreateARegularReimbursementInTheReimbursementTool.md)
-* [Create a Direct Reimbursement in the Reimbursement Tool](CreateADirectReimbursementInTheReimbursementTool.md)
+* [Create a Regular Reimbursement in the Reimbursement Tool](/70ForOfficialRoles/BudgetsAndExpenses/CreateARegularReimbursementInTheReimbursementTool.md)
+* [Create a Direct Reimbursement in the Reimbursement Tool](/70ForOfficialRoles/BudgetsAndExpenses/CreateADirectReimbursementInTheReimbursementTool.md)
 
 ## Resources
 

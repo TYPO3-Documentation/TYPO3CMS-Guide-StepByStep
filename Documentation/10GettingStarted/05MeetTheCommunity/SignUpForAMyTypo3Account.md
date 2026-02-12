@@ -1,6 +1,6 @@
 # Sign Up for a My TYPO3 Account
 
-<!-- #Beginner @mabolek -->
+ **Categories:** [Beginner](/Tags/Beginner.md) **Author:** [@mabolek](https://my.typo3.org/u/mabolek)
 
 By registering for My TYPO3, you create one centralized account for all your activities in the TYPO3 ecosystem. Among other things, you can use ut to create a Slack account, book online certifications, attend training courses, and contribute code.
 
@@ -56,8 +56,8 @@ Congratulations! You have now registered your My TYPO3 account.
 
 Now that you have completed the registration process, you might like to:
 
-* [Sign Up for a TYPO3 Slack Account](SignUpForATypo3SlackAccount.md)
-* [Edit Your Public My TYPO3 Profile](EditYourPublicMyTypo3Profile.md)
+* [Sign Up for a TYPO3 Slack Account](/10GettingStarted/05MeetTheCommunity/SignUpForATypo3SlackAccount.md)
+* [Edit Your Public My TYPO3 Profile](/10GettingStarted/05MeetTheCommunity/EditYourPublicMyTypo3Profile.md)
 
 ## Resources
 

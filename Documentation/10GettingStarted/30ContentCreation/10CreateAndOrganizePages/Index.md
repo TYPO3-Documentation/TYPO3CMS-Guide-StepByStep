@@ -1,3 +1,6 @@
 # Create and Organize Pages
 
-*No content yet.*
+## Guides
+
+* [Create a Page with Drag and Drop](/10GettingStarted/30ContentCreation/10CreateAndOrganizePages/CreateAPageWithDragAndDrop.md)
+

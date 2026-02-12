@@ -1,6 +1,6 @@
 # Sign Up for a TYPO3 Slack Account
 
-<!-- #Beginner @mabolek -->
+ **Categories:** [Beginner](/Tags/Beginner.md) **Author:** [@mabolek](https://my.typo3.org/u/mabolek)
 
 Slack is an instant messaging and team collaboration tool. It is our main channel for communication in the TYPO3 community. This guide explains how to get access to TYPO3’s Slack workspace through your new or existing my.typo3.org user profile.
 
@@ -17,7 +17,7 @@ In this step-by-step guide you will sign up for a TYPO3 Slack account.
 ### Knowledge and skills
 
 * How to use a web browser
-* A My TYPO3 account. See how to [Sign Up for a My TYPO3 Account](SignUpForAMyTypo3Account.md)
+* A My TYPO3 account. See how to [Sign Up for a My TYPO3 Account](/10GettingStarted/05MeetTheCommunity/SignUpForAMyTypo3Account.md)
 
 ## Request a Slack invite
 

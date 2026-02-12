@@ -1,5 +1,5 @@
 # Add CSS and JavaScript to a Fluid Template
-<!-- #TYPO3v13 #Beginner #Templating #Frontend -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [Templating](/Tags/Templating.md) [Frontend](/Tags/Frontend.md)
 
 Adding assets like CSS and JavaScript directly into your Fluid templates is a straightforward way to style and add interactivity to specific parts of your website. This method is ideal when your styles or scripts are tightly coupled with a particular page layout or template.
 
@@ -93,7 +93,7 @@ Congratulations! You have successfully added custom CSS and JavaScript files to 
 
 Now that you know how to include assets in Fluid, you might like to:
 
-*   [Add Global CSS and JavaScript with TypoScript](AddGlobalCssAndJavaScriptWithTypoScript.md)
+*   [Add Global CSS and JavaScript with TypoScript](/20BuildingWebsites/40FrontendDevelopment/40JavaScriptAndCSS/AddGlobalCssAndJavaScriptWithTypoScript.md)
 *   Explore using other ViewHelpers in your templates.
 
 ## Resources

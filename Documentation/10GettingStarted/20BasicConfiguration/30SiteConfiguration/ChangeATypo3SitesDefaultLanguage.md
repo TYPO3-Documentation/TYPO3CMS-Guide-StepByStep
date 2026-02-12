@@ -1,6 +1,6 @@
 # Change A TYPO3 Site's Default Language
 
-<!--#TYPO3v13 #Beginner #Configuration @ninaaline -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [Configuration](/Tags/Configuration.md) **Author:** [@ninaaline](https://my.typo3.org/u/ninaaline)
 
 A TYPO3 site's language configuration controls the primary language for your website content. Changing the default language ensures that your site displays content in the language that matches your target audience. This guide shows you how to modify the default site language in TYPO3 13.4.
 
@@ -18,7 +18,7 @@ In this step-by-step guide you will learn how to change your TYPO3 site's defaul
 
 ### Knowledge and skills
 
-* You know how to [Log in in to the TYPO3 backend](LogInToTheTypo3Backend.md)
+* You know how to *Log in in to the TYPO3 backend* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=LogInInToTheTYPO3Backend.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide")
 * You have a basic understanding of [ISO language codes](https://en.wikipedia.org/wiki/List_of_ISO_639_language_codes) (e.g., "en" for English, "de" for German)
 
 ## Understanding the default language
@@ -77,9 +77,9 @@ You successfully changed your TYPO3 site's default content language by editing t
 
 Now that you've changed the default language, you might like to:
 
-* [Configure additional content languages](../../../20BuildingWebsites/20MultilingualWebsites/10ConfigureContentLanguages/Index.md) to create a multilingual website
-* [Translate existing content](../../../20BuildingWebsites/20MultilingualWebsites/20TranslateContent/Index.md) into your new default language
-* [Manage language fallbacks](../../../20BuildingWebsites/20MultilingualWebsites/30ManageLanguageFallbacks/Index.md) for handling missing translations
+* *Configure additional content languages* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=ConfigureAdditionalContentLanguages.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide") to create a multilingual website
+* *Translate existing content* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=TranslateExistingContent.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide") into your new default language
+* *Manage language fallbacks* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=ManageLanguageFallbacks.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide") for handling missing translations
 
 ## Resources
 

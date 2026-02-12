@@ -1,6 +1,6 @@
 # Edit Your Public My TYPO3 Profile
 
-<!-- #Beginner @mabolek -->
+ **Categories:** [Beginner](/Tags/Beginner.md) **Author:** [@mabolek](https://my.typo3.org/u/mabolek)
 
 Public My TYPO3 profiles are an opportunity to showcase who you are and what you do to the rest of the TYPO3 community and beyond. Your personal profile page allows you to showcase your bio, contact information, and achievements — everything protected by fine-grained privacy settings.
 
@@ -17,7 +17,7 @@ Here's an example of [a real public profile](https://my.typo3.org/u/stefan.busem
 ### Tools and technology
 
 * A computer with a web browser and an internet connection
-* A My TYPO3 account. See how to [Sign Up for a My TYPO3 Account](SignUpForAMyTypo3Account.md)
+* A My TYPO3 account. See how to [Sign Up for a My TYPO3 Account](/10GettingStarted/05MeetTheCommunity/SignUpForAMyTypo3Account.md)
 
 ### Knowledge and skills
 

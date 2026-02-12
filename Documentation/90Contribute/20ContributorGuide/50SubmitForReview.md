@@ -20,7 +20,7 @@ The following sections are optional but strongly encouraged:
 * **Resources** — Links to supporting material
 * **Video** — Embedded video version of the guide (from the official TYPO3 YouTube channel)
 
-Use the [template](../10Template/Index.md) and [writing instructions](30UsingTheTemplate.md) to complete each section.
+Use the template and [writing instructions](/90Contribute/20ContributorGuide/30UsingTheTemplate.md) to complete each section.
 
 All required sections must be complete and free of placeholders like “TBD.”
 

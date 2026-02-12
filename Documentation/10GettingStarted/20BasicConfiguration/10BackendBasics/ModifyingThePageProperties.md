@@ -1,6 +1,6 @@
 # Modifying the page properties
 
-<!-- #TYPO3v13 #Beginner #Backend #Editing #Configuration @philippefekete -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [Backend](/Tags/Backend.md) [Editing](/Tags/Editing.md) [Configuration](/Tags/Configuration.md) **Author:** [@philippefekete](https://my.typo3.org/u/philippefekete)
 
 Modifying page properties in TYPO3 enables you to control how each page of your site behaves, appears, and is structured within the overall site hierarchy. From basic settings like titles, visibility, and URL segments to more advanced options such as access restrictions, metadata, and caching behavior, page properties give you fine-grained control over both the frontend presentation and backend organization of your content.
 
@@ -23,7 +23,7 @@ The same steps will apply if you need to modify other page properties.
 
 ### Knowledge and skills
 
-* You know how to [Log in to the TYPO3 backend](LogInToTheTypo3Backend.md)
+* You know how to *Log in to the TYPO3 backend* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=LogInToTheTYPO3Backend.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide")
 * You know how to open the **Page** module
 
 ## Watch the video

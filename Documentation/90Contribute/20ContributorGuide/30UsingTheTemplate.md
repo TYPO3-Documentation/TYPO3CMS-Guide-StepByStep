@@ -1,11 +1,11 @@
 # Using the template to create a guide
 
-When you create a step-by-step guide or a project guide for TYPO3, you must use the [step-by-step guide template](../10Template/Index.md). Here we explain each section in detail and provide example text to help you.
+When you create a step-by-step guide or a project guide for TYPO3, you must use the step-by-step guide template. Here we explain each section in detail and provide example text to help you.
 
-**[Go to the Step-by-Step Guide template](../10Template/Index.md)**
+**Go to the Step-by-Step Guide template**
 
 > [!TIP]
-> **If you're a beginner**, read through this page, then check out the guide to [Contributing a Step-by-Step Guide Using Your Browser and GitHub](35ContributingAStepByStepGuideUsingYourBrowserAndGitHub.md).
+> **If you're a beginner**, read through this page, then check out the guide to [Contributing a Step-by-Step Guide Using Your Browser and GitHub](/90Contribute/20ContributorGuide/35ContributingAStepByStepGuideUsingYourBrowserAndGitHub.md).
 
 ## Contents
 - [Titles](#titles)
@@ -57,7 +57,7 @@ Provide information that explains what the learner will have, or know, or be abl
 
 One of the first things people want to know when they begin a tutorial is, "What will I be able to do? What knowledge will I gain by completing this tutorial?" Learning objectives describe the specific skills or knowledge people will be able to demonstrate after completing your tutorial.
 
-Be mindful of scope: tutorials should present one clear learning objective. If your tutorial includes more than one learning objective, you may need to [create a project guide](20WhatAreProjectGuides.md). See the information about project guides for more information
+Be mindful of scope: tutorials should present one clear learning objective. If your tutorial includes more than one learning objective, you may need to [create a project guide](/90Contribute/20ContributorGuide/20WhatAreProjectGuides.md). See the information about project guides for more information
 
 **Example simple**
 In this step-by-step guide you will learn how to install and activate an extension.
@@ -109,7 +109,7 @@ They may look easy, but there’s a real art to writing an effective step. Befor
 
 Once you've identified your chunks, give each one a clear name — these will be your headings in the task section. Always start task headings with a verb.
 
-If you're wrestling with too many chunks and find yourself using headings like "Part 1," "Part 2," you're likely writing a project guide — even if it started as a regular step-by-step guide. See the [project guide section](20WhatAreProjectGuides.md) for more information.
+If you're wrestling with too many chunks and find yourself using headings like "Part 1," "Part 2," you're likely writing a project guide — even if it started as a regular step-by-step guide. See the [project guide section](/90Contribute/20ContributorGuide/20WhatAreProjectGuides.md) for more information.
 
 #### Key principles for effective tasks:
 
@@ -165,9 +165,9 @@ In this example, each of the numbered steps link to pre-existing step-by-step gu
 
 *H2* Create a multilingual website
 
-1. [Set up multiple languages](30UsingTheTemplate.md)
-2. [Translate content into other languages](30UsingTheTemplate.md)
-3. [Manage language fallbacks](30UsingTheTemplate.md)
+1. [Set up multiple languages](/90Contribute/20ContributorGuide/30UsingTheTemplate.md)
+2. [Translate content into other languages](/90Contribute/20ContributorGuide/30UsingTheTemplate.md)
+3. [Manage language fallbacks](/90Contribute/20ContributorGuide/30UsingTheTemplate.md)
 
 #### Tips for when you have too many steps
 

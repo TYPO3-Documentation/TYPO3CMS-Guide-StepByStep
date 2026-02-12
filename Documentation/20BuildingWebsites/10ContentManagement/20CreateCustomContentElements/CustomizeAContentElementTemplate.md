@@ -1,6 +1,6 @@
 # Customize a content element template
 
-<!-- #TYPO3v13 #Beginner #ContentElements #Frontend #Templating @mabolek -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [ContentElements](/Tags/ContentElements.md) [Frontend](/Tags/Frontend.md) [Templating](/Tags/Templating.md) **Author:** [@mabolek](https://my.typo3.org/u/mabolek)
 
 TYPO3 is modular by design and organizes content on a page as blocks, called content elements. You can customize how content elements are displayed on your website by overriding the default template.
 
@@ -58,7 +58,7 @@ The sitepackage extension is already configured so TYPO3 will look for custom co
     <f:image image="{page.files.0}" height="250" /\>
     ```
 
-3. Clear TYPO3's cache as described in [Clearing the Frontend Cache in the TYPO3 Backend](ClearingFrontendCacheInTypo3Backend.md)
+3. Clear TYPO3's cache as described in [Clearing the Frontend Cache in the TYPO3 Backend](/10GettingStarted/20BasicConfiguration/10BackendBasics/ClearingFrontendCacheInTypo3Backend.md)
 
 ## Summary
 
@@ -72,7 +72,7 @@ The final result should look something like this:
 
 Now that you have overridden a content element's Fluid template, you might like to:
 
-* [Add custom CSS Styles to a Fluid Template](AddCustomCssStylesToAFluidTemplate.md)
+* *Add custom CSS Styles to a Fluid Template* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=AddCustomCSSStylesToAFluidTemplate.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide")
 
 ## Resources
 
