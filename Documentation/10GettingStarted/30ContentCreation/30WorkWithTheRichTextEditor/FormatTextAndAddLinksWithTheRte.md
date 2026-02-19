@@ -1,5 +1,5 @@
 # Format Text and Add Links with the Rich Text Editor
-**Tested in:** [TYPO3v13](/Tags/TYPO3v13.md)
+**Tested in:** [TYPO3v13](/Tags/TYPO3v13.html)
 **Categories:** [Beginner](/Tags/Beginner.html) [Editing](/Tags/Editing.html) [ContentElements](/Tags/ContentElements.html)
 **Author:** [@csabareanu](https://my.typo3.org/u/csabareanu)
 
