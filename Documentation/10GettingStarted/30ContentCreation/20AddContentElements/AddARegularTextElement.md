@@ -21,7 +21,7 @@ Add and publish a text content element on a page.
 ## Enter and format text
 
 1. Enter your content in the Text field.
-2. Use the toolbar to apply basic formatting (headings, bold/italic, lists).
+2. Use the toolbar to apply basic formatting (headings, bold/italic, lists). [Format Text and Add Links with the Rich Text Editor](/10GettingStarted/30ContentCreation/30WorkWithTheRichTextEditor/FormatTextAndAddLinksWithTheRte.md)
 3. Add links if needed.
 
 ## Save and verify
@@ -34,6 +34,6 @@ Add and publish a text content element on a page.
 You created a text content element, formatted it with the RTE, and saved it so it is visible on the page.
 
 ## Next steps
-Add a Text & Media Element
+* [Add a Text & Media Element](/10GettingStarted/30ContentCreation/20AddContentElements/AddTextAndMediaElement.md)
 
-Reorder, Copy, and Move Content Elements
+* [Reorder, Copy, and Move Content Elements](/10GettingStarted/30ContentCreation/20AddContentElements/ReorderCopyAndMoveContentElements.md)
