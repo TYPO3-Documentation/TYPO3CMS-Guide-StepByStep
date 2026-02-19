@@ -1,6 +1,6 @@
 # Format Text and Add Links with the Rich Text Editor
 **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md)
-**Categories:** [Beginner](/Tags/Beginner.md) [Editing](/Tags/Editing.md) [ContentElements](/Tags/ContentElements.md)
+**Categories:** [Beginner](/Tags/Beginner.html) [Editing](/Tags/Editing.html) [ContentElements](/Tags/ContentElements.html)
 **Author:** [@csabareanu](https://my.typo3.org/u/csabareanu)
 
 The Rich Text Editor (RTE) lets editors write and format content like in a word processor, while still producing clean website-ready HTML.
