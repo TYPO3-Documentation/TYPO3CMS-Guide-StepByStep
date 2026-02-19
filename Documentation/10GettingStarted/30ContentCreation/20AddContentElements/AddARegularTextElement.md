@@ -1,6 +1,6 @@
 # Add a Regular Text Element
-**Tested in:** [TYPO3v13](/Tags/TYPO3v13.md)
-**Categories:** [Beginner](/Tags/Beginner.md) [Editing](/Tags/Editing.md) [ContentElements](/Tags/ContentElements.md)
+**Tested in:** [TYPO3v13](/Tags/TYPO3v13.html)
+**Categories:** [Beginner](/Tags/Beginner.html) [Editing](/Tags/Editing.html) [ContentElements](/Tags/ContentElements.html)
 **Author:** [@csabareanu](https://my.typo3.org/u/csabareanu)
 
 Text content is the most common building block on TYPO3 websites.
