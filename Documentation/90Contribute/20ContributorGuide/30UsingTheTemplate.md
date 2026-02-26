@@ -115,7 +115,7 @@ Once you've identified your chunks, give each one a clear name — these will be
 If you're wrestling with too many chunks and find yourself using headings like "Part 1," "Part 2," you're likely writing a project guide — even if it started as a regular step-by-step guide. See the [project guide section](20WhatAreProjectGuides.md) for more information.
 
 > [!TIP]
-> We recommend watching this video on [how to write effective steps](https://youtu.be/S0HGmJIWRMU?list=PL-sDBIrOKGOb7TvI85WPnmu6XBI7QfF2Y).
+> We recommend watching this video on [how to write effective steps](https://youtu.be/S0HGmJIWRMU).
 
 #### Key principles for effective tasks:
 

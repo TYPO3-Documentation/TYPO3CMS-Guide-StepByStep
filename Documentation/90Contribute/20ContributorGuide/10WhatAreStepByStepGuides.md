@@ -3,7 +3,7 @@
 TYPO3 step-by-step guides are hands-on tutorials designed to help newcomers **accomplish one practical task**.
 
 > [!TIP]
-> This page is also available as a video [introducing TYPO3 Step-by-Step Guides](https://youtu.be/eX2jtqQItG0?list=PL-sDBIrOKGOb7TvI85WPnmu6XBI7QfF2Y).
+> This page is also available as a video [introducing TYPO3 Step-by-Step Guides](https://youtu.be/eX2jtqQItG0).
 
 Inspired by the [Diátaxis framework](https://diataxis.fr/map/#expectations-and-guidance), which emphasizes distinct content types in technical documentation, step-by-step guides map to the *tutorials* category.
 
