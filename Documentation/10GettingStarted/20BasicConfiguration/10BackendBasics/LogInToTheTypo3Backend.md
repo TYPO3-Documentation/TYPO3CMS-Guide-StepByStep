@@ -1,6 +1,6 @@
 # Log In to the TYPO3 Backend
 
-<!-- #TYPO3v13 #TYPO3v14 #Beginner #Backend #Editing @mabolek -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) [TYPO3v14](/Tags/TYPO3v14.md) **Categories:** [Beginner](/Tags/Beginner.md) [Backend](/Tags/Backend.md) [Editing](/Tags/Editing.md) **Author:** [@mabolek](https://my.typo3.org/u/mabolek)
 
 The backend of TYPO3 CMS is the password-protected area where editors and administrators log in to create pages, add content, manage users, and adjust how the website works.
 
@@ -49,9 +49,9 @@ Congratulations! You have now logged in to the TYPO3 backend.
 
 Now that you have logged into TYPO3's backend, you might like to:
 
-* [Create a Page With Drag and Drop](CreateAPageWithDragAndDrop.md)
-* [Add Content to a Page](AddContentToAPage.md)
-* [Modify the Page Properties](ModifyingThePageProperties.md)
+* [Create a Page With Drag and Drop](/10GettingStarted/30ContentCreation/10CreateAndOrganizePages/CreateAPageWithDragAndDrop.md)
+* *Add Content to a Page* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=AddContentToAPage.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide")
+* [Modify the Page Properties](/10GettingStarted/20BasicConfiguration/10BackendBasics/ModifyingThePageProperties.md)
 
 ## Resources
 

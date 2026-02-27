@@ -1,6 +1,6 @@
 # Set Up TYPO3 with DDEV
 
-<!-- #TYPO3v13 #Beginner #Installation @philippefekete -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [Installation](/Tags/Installation.md) **Author:** [@philippefekete](https://my.typo3.org/u/philippefekete)
 
 DDEV enables you to quickly spin up a complete TYPO3 development environment without complex manual setup, providing a ready-to-use, containerized setup that mirrors a real server. Setting up TYPO3 with DDEV helps you start projects faster, ensure consistency across different machines, and streamline your development workflow by automating the configuration of PHP, the web server, and the database — all with just a few simple commands.
 

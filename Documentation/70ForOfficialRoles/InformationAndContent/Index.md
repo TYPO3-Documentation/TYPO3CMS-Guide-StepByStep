@@ -1,3 +1,6 @@
 # Information and Content
 
-*No content yet.*
+## Guides
+
+* [Edit an Official TYPO3 Team or Committee Page](/70ForOfficialRoles/InformationAndContent/EditAnOfficialTypo3TeamOrCommitteePage.md)
+

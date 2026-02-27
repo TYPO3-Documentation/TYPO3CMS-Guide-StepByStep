@@ -1,6 +1,6 @@
 # Enabling and disabling a page in the page properties
 
-<!-- #TYPO3v13 #Beginner #Backend #Editing #PageProperties @mabolek -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [Backend](/Tags/Backend.md) [Editing](/Tags/Editing.md) [PageProperties](/Tags/PageProperties.md) **Author:** [@mabolek](https://my.typo3.org/u/mabolek)
 
 TYPO3 allows you to disable pages. Disabled pages are inaccessible to frontend website visitors, but you can still edit the pages in the backend. Depending on your TYPO3 configuration all pages that you create may be disabled by default. They will need to be enabled in order to be published on your website.
 
@@ -22,14 +22,14 @@ In this step-by-step guide you will disable and enable a page through the page p
 
 * [How to log into the TYPO3 Backend](https://docs.typo3.org/permalink/t3start:backend-login)
 * [Basic knowledge of the TYPO3 backend](https://docs.typo3.org/permalink/t3start:backend)
-* [Modifying the page properties](ModifyingThePageProperties.md)
+* [Modifying the page properties](/10GettingStarted/20BasicConfiguration/10BackendBasics/ModifyingThePageProperties.md)
 
 ## Disable a page
 
 In this step, we will disable a page by setting the page's visibility toggle to *disabled*.
 
 1. In the page tree, choose a page that you would like to disable.
-2. Access the page's page properties as described in [Modifying the page properties](ModifyingThePageProperties.md)
+2. Access the page's page properties as described in [Modifying the page properties](/10GettingStarted/20BasicConfiguration/10BackendBasics/ModifyingThePageProperties.md)
 3. In the page properties interface, choose the "Access" tab.
 
 ![The TYPO3 page properties interface titled "Edit Page Customize" shows tabs like General, SEO, Social media, etc. The Access tab is selected and toggles for Page visible and Page enabled in menus are both switched on.](Images/EnablingAndDisablingAPageInThePageProperties/PagePropertiesAccessTab.png)
@@ -47,7 +47,7 @@ The page tree will update and the page will now have a red-and-white "no entry" 
 In this step, we will enable a page by setting the page's visibility toggle to *enabled*.
 
 1. In the page tree, find the page you disabled previously.
-2. Access the page's page properties as described in [Modifying the page properties](ModifyingThePageProperties.md)
+2. Access the page's page properties as described in [Modifying the page properties](/10GettingStarted/20BasicConfiguration/10BackendBasics/ModifyingThePageProperties.md)
 3. In the page properties interface, choose the "Access" tab.
 
 ![The TYPO3 page properties interface titled "Edit Page Customize" shows tabs like General, SEO, Social media, etc. The Access tab is selected and toggle for Page visible is switched off.](Images/EnablingAndDisablingAPageInThePageProperties/PagePropertiesAccessTabVisibilityDisabled.png)
@@ -68,11 +68,11 @@ You have now disabled and re-enabled a page using TYPO3's page properties interf
 
 A page tree can also be enabled and disabled in other ways than this:
 
-* [Enabling and disabling a page in the page tree](EnablingAndDisablingAPageInThePageTree.md)
-* [Enabling and disabling a page in the List module](EnablingAndDisablingAPageInTheListModule.md)
+* [Enabling and disabling a page in the page tree](/10GettingStarted/20BasicConfiguration/10BackendBasics/EnablingAndDisablingAPageInThePageTree.md)
+* [Enabling and disabling a page in the List module](/10GettingStarted/20BasicConfiguration/10BackendBasics/EnablingAndDisablingAPageInTheListModule.md)
 
 ## Resources
 
-* [Enabling and disabling a page in the page tree](EnablingAndDisablingAPageInThePageTree.md)
-* [Enabling and disabling a page in the List module](EnablingAndDisablingAPageInTheListModule.md)
+* [Enabling and disabling a page in the page tree](/10GettingStarted/20BasicConfiguration/10BackendBasics/EnablingAndDisablingAPageInThePageTree.md)
+* [Enabling and disabling a page in the List module](/10GettingStarted/20BasicConfiguration/10BackendBasics/EnablingAndDisablingAPageInTheListModule.md)
 * [Introduction to the TYPO3 Backend](https://docs.typo3.org/permalink/t3start:backend)

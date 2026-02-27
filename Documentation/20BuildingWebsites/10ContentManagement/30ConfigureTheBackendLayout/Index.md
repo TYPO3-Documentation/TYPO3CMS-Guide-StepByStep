@@ -1,3 +1,6 @@
 # Configure the Backend Layout
 
-*No content yet.*
+## Guides
+
+* [Configure a Backend Layout With Two Columns](/20BuildingWebsites/10ContentManagement/30ConfigureTheBackendLayout/ConfigureABackendLayoutWithTwoColumns.md)
+

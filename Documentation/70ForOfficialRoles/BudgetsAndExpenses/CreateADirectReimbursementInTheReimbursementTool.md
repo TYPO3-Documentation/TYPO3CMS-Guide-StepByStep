@@ -1,6 +1,6 @@
 # Create a Direct Reimbursement in the Reimbursement Tool
 
-<!-- #Beginner @stefan.busemann @mabolek -->
+ **Categories:** [Beginner](/Tags/Beginner.md) **Author:** [@mabolek](https://my.typo3.org/u/mabolek)
 
 The TYPO3 Reimbursement Tool is the budget and expense management tool for the TYPO3 ecosystem.
 
@@ -11,15 +11,15 @@ As a TYPO3 contributor, you can use it to request and track reimbursements for e
 In this step-by-step guide you will request that the TYPO3 Association pays an invoice directly to the issuer using a *Direct Reimbursement*.
 
 > [!NOTE]
-> If you would instead like to reimburse expenses you have paid for, please follow the guide [Create a Regular Reimbursement in the Reimbursement Tool](CreateARegularReimbursementInTheReimbursementTool.md).
+> If you would instead like to reimburse expenses you have paid for, please follow the guide [Create a Regular Reimbursement in the Reimbursement Tool](/70ForOfficialRoles/BudgetsAndExpenses/CreateARegularReimbursementInTheReimbursementTool.md).
 
 ## Prerequisites
 
 ### Tools and technology
 
 * A web browser with internet access.
-* A payment method registered in the TYPO3 Reimbursement Tool. See: [Add a Payment Method in the Reimbursement Tool](AddAPaymentMethodInTheReimbursementTool.md).
-* A My TYPO3 account ([Sign Up for a My TYPO3 Account](SignUpForAMyTypo3Account.md))
+* A payment method registered in the TYPO3 Reimbursement Tool. See: [Add a Payment Method in the Reimbursement Tool](/70ForOfficialRoles/BudgetsAndExpenses/AddAPaymentMethodInTheReimbursementTool.md).
+* A My TYPO3 account ([Sign Up for a My TYPO3 Account](/10GettingStarted/05MeetTheCommunity/SignUpForAMyTypo3Account.md))
 
 ### Knowledge and skills
 

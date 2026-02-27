@@ -1,6 +1,6 @@
 # Configure a Backend Layout With Two Columns
 
-<!-- #TYPO3v13 #Intermediary #Backend #BackendLayout @csabareanu -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Intermediary](/Tags/Intermediary.md) [Backend](/Tags/Backend.md) [BackendLayout](/Tags/BackendLayout.md) **Author:** [@csabareanu](https://my.typo3.org/u/csabareanu)
 
 A *Backend Layout* controls how rows and columns of content elements are displayed in TYPO3’s **Page** module, letting editors place their content in designated areas. Though they don't affect frontend rendering directly, backend layouts usually correspond to specific frontend web page layouts.
 
@@ -18,14 +18,14 @@ They will be displayed as two vertical columns in the **Page → Columns** view 
 ### Tools and technology
 
 * A computer with a local [Composer-based TYPO3 installation](https://docs.typo3.org/permalink/t3coreapi:installation-composer) where you have admin access.
-* Your TYPO3 installation must have an active Site Package as explained in [Create a Site Package](CreateASitePackage.md). This guide assumes your sitepackage is called `sitepackage`.
-* Your site package must include a site set as explained in [Create a Site Set](CreateASiteSet.md).
+* Your TYPO3 installation must have an active Site Package as explained in *Create a Site Package* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=CreateASitePackage.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide"). This guide assumes your sitepackage is called `sitepackage`.
+* Your site package must include a site set as explained in [Create a Site Set](/10GettingStarted/20BasicConfiguration/40UsingSiteSets/CreateASiteSet.md).
 
 ### Knowledge and skills
 
 * [Using the Page Tree](https://docs.typo3.org/permalink/t3start:page-tree)
-* [Modifying the page properties](ModifyingThePageProperties.md)
-* [Adding Page TSconfig to a Site Package](AddingPageTSConfigToASitePackage.md).
+* [Modifying the page properties](/10GettingStarted/20BasicConfiguration/10BackendBasics/ModifyingThePageProperties.md)
+* *Adding Page TSconfig to a Site Package* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=AddingPageTSconfigToASitePackage.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide").
 * Basic understanding of `colPos` property for content columns
 
 ## Define the Backend Layout in Page TSconfig
@@ -69,7 +69,7 @@ You will store Backend Layout definitions in your Site Set’s Page TSconfig.
     This code snippet defines a Backend Layout with ID "two_columns", containing one row with two columns “Left” and “Right”.
 
 4. Save the file.
-5. Clear all caches to apply the changes, as explained in [Clearing All Caches Using the Clear Cache Menu](ClearingAllCachesUsingTheClearCacheMenu.md).
+5. Clear all caches to apply the changes, as explained in *Clearing All Caches Using the Clear Cache Menu* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=ClearingAllCachesUsingTheClearCacheMenu.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide").
 
 Your page layout is now availabe in the page properties of all pages in your site.
 
@@ -77,7 +77,7 @@ Your page layout is now availabe in the page properties of all pages in your sit
 
 1. In the TYPO3 Backend, go to the Page module.
 2. Choose a page with subpages on your site, for example, the root page.
-3. Access the page properties, as explained in [Modifying the page properties](ModifyingThePageProperties.md).
+3. Access the page properties, as explained in [Modifying the page properties](/10GettingStarted/20BasicConfiguration/10BackendBasics/ModifyingThePageProperties.md).
 4. In the page properties, select the *Appearance* tab.
 5. From the *Backend Layout (this page only)* dropdown menu, select the "Site Layout: Two Columns" option. ![A dropdown menu labeled Backend Layout is open, showing options: None and Site Layout: Two Columns. The page is currently using the Default backend layout inherited from a parent page.](Images/ConfigureABackendLayoutWithTwoColumns/SelectBackendLayoutForSinglePage.png)
 6. Save and close the page properties.
@@ -89,7 +89,7 @@ You can click on subpages to confirm that the layout is not applied to them.
 
 Often, you want an entire section of the site to use the same layout automatically.
 
-1. Access the page properties for the page you chose previously, as explained in [Modifying the page properties](ModifyingThePageProperties.md).
+1. Access the page properties for the page you chose previously, as explained in [Modifying the page properties](/10GettingStarted/20BasicConfiguration/10BackendBasics/ModifyingThePageProperties.md).
 2. In the page properties, select the *Appearance* tab.
 3. From the *Backend Layout (subpages of this page)* dropdown menu, select the "Site Layout: Two Columns" option. ![A dropdown menu labeled Backend Layout (subpages of this page) is open, showing options: None, Site Layout: Two Columns (selected), Default, and Subpage.](Images/ConfigureABackendLayoutWithTwoColumns/SelectBackendLayoutForSubpages.png)
 4. Save and close the page properties.
@@ -104,7 +104,7 @@ You have now created a custom Backend Layout with two columns and applied it to 
 
 ## Next steps
 
-* Render the layout in the frontend as explained in [Create a Two-Column Layout With Fluid](CreateATwoColumnLayoutWithFluid.md)
+* Render the layout in the frontend as explained in *Create a Two-Column Layout With Fluid* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=CreateATwoColumnLayoutWithFluid.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide")
 
 ## Resources
 

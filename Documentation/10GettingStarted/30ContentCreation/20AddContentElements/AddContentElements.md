@@ -1,6 +1,6 @@
 # Add Content Elements to a Page
 
-<!-- #TYPO3v13 #Beginner #ContentElements #Backend #Editing #Configuration @ninaaline -->
+ **Tested in:** [TYPO3v13](/Tags/TYPO3v13.md) **Categories:** [Beginner](/Tags/Beginner.md) [ContentElements](/Tags/ContentElements.md) [Backend](/Tags/Backend.md) [Editing](/Tags/Editing.md) [Configuration](/Tags/Configuration.md) **Author:** [@ninaaline](https://my.typo3.org/u/ninaaline)
 
 Once you have created pages on your TYPO3 website, the next step is to fill them with content. TYPO3 uses content elements to build page content in a flexible and modular way. Content elements can be text blocks, images, headers, lists, or more complex components like forms or videos.
 
@@ -17,11 +17,11 @@ In this step-by-step guide, you will add content elements to a page in TYPO3 and
 * A web browser
 * A computer with a local TYPO3 installation or access to a TYPO3 instance
 * A TYPO3 Backend user with editor or administrator privileges
-* At least one existing page where you want to add content (see [Create a Page with Drag and Drop](CreateAPageWithDragAndDrop.md))
+* At least one existing page where you want to add content (see [Create a Page with Drag and Drop](/10GettingStarted/30ContentCreation/10CreateAndOrganizePages/CreateAPageWithDragAndDrop.md))
 
 ### Knowledge and skills
 
-* You know how to [Log In to the TYPO3 Backend](LogInToTheTypo3Backend.md)
+* You know how to [Log In to the TYPO3 Backend](/10GettingStarted/20BasicConfiguration/10BackendBasics/LogInToTheTypo3Backend.md)
 
 ## Open the Page Module
 
@@ -78,7 +78,7 @@ After saving, your new content element appears in the Page module's content area
    ![The frontend of the TYPO3 website displaying the newly added content element.](Images/AddContentElements/FrontendView.png)
 
 > [!NOTE]
-> If your changes do not appear immediately on the frontend, you may need to clear the frontend cache. See [Clearing the Frontend Cache in the TYPO3 Backend](ClearingFrontendCacheInTypo3Backend.md).
+> If your changes do not appear immediately on the frontend, you may need to clear the frontend cache. See [Clearing the Frontend Cache in the TYPO3 Backend](/10GettingStarted/20BasicConfiguration/10BackendBasics/ClearingFrontendCacheInTypo3Backend.md).
 
 ## Summary
 
@@ -88,9 +88,9 @@ You have successfully added a content element to a page in TYPO3. You opened the
 
 Now that you've added content to your page, you might like to:
 
-* [Work with the Rich Text Editor](WorkWithTheRichTextEditor.md) to format your text content
-* [Manage Media Assets](ManageMediaAssets.md) to add images and other media to your content
-* [Create Custom Content Elements](CreateCustomContentElements.md) for more advanced layouts
+* *Work with the Rich Text Editor* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=WorkWithTheRichTextEditor.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide") to format your text content
+* *Manage Media Assets* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=ManageMediaAssets.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide") to add images and other media to your content
+* *Create Custom Content Elements* [(CREATE)](https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-StepByStep/new/contrib/Documentation/00Incoming?filename=CreateCustomContentElements.md&value=Copy%20content%20the%20template%20from%3A%20https%3A%2F%2Fraw.githubusercontent.com%2FTYPO3-Documentation%2FTYPO3CMS-Guide-StepByStep%2Frefs%2Fheads%2Fcontrib%2FDocumentation%2F90Contribute%2F10Template%2FIndex.md "Create this missing step-by-step guide") for more advanced layouts
 
 ## Resources
 
