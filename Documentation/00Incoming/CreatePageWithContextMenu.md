@@ -21,8 +21,8 @@ In this step-by-step guide you will create a new page in the TYPO3 backend with 
 
 ### Knowledge and skills
 
-*You know how to log in into the TYPO3 backend
-*You know how to open the Page module
+*You know how to [log in into the TYPO3 backend](https://docs.typo3.org/m/typo3/guide-step-by-step/main/en-us/10GettingStarted/20BasicConfiguration/10BackendBasics/LogInToTheTypo3Backend.html#log-in-to-the-typo3-backend)
+*You know how to [open the Page module](https://docs.typo3.org/m/typo3/guide-step-by-step/main/en-us/10GettingStarted/30ContentCreation/20AddContentElements/AddContentElements.html#open-the-page-module)
 
 ## Watch the video
 
@@ -34,16 +34,16 @@ Watch this video to follow along with the steps below.
 
 
 1. In the backend, open the Page module from the left-hand menu.
-![Description](PageModule.png)
+![Description](images/PageModule.png)
 
 2. Expand the page tree to locate where you want to add the new page.
 
 3. Right-click the parent page in the page tree
 4. Select More options… > Create New wizard
-![Description](PageCreateContextMenu.png)
+![Description](images/PageCreateContextMenu.png)
 
 5. Select the desired position for the new page using the arrow icons.
-![Description](PageCreateWizard.png)
+![Description](images/PageCreateWizard.png)
 
 6. The Create new Page form opens. Enter a title and configure the page as needed, then click Save.
 
