@@ -1,9 +1,5 @@
 # Manage Media Assets
-
-{The template includes an HTML comment with different tags for categorization (look in the source code). Include the ones you think fits and feel free to add new ones. A tag like #TYPO3v13 indicates that the step-by-step guide has been tested in TYPO3 v13. To credit yourself as author, use "@" followed by your my.typo3.org username (e.g. "@username").}
 <!-- #TYPO3v14 #Beginner #ContentElements #MediaAssets #Backend #Editing @delfynn2kx -->
-
-{Provide a conceptual overview.}
 
 Media assets such as images, PDFs, and videos are stored and managed in the Media module. 
 Organizing files into folders and maintaining clear file names helps keep the system structured and makes content easier to maintain.
