@@ -1,3 +1,3 @@
-# For Official Roles in the TYPO3 Community
+# For Official Roles
 
 *No content yet.*

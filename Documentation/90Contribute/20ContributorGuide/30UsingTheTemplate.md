@@ -5,6 +5,9 @@ When you create a step-by-step guide or a project guide for TYPO3, you must use 
 **[Go to the Step-by-Step Guide template](../10Template/Index.md)**
 
 > [!TIP]
+> You can also watch a [video introduction to using the template](https://youtu.be/gxCoRDgp6zw) on YouTube.
+
+> [!TIP]
 > **If you're a beginner**, read through this page, then check out the guide to [Contributing a Step-by-Step Guide Using Your Browser and GitHub](35ContributingAStepByStepGuideUsingYourBrowserAndGitHub.md).
 
 ## Contents
@@ -111,6 +114,9 @@ Once you've identified your chunks, give each one a clear name — these will be
 
 If you're wrestling with too many chunks and find yourself using headings like "Part 1," "Part 2," you're likely writing a project guide — even if it started as a regular step-by-step guide. See the [project guide section](20WhatAreProjectGuides.md) for more information.
 
+> [!TIP]
+> We recommend watching this video on [how to write effective steps](https://youtu.be/S0HGmJIWRMU).
+
 #### Key principles for effective tasks:
 
 * Break down processes into logical chunks
@@ -153,7 +159,7 @@ Creating a custom page type allows you to define special layouts and functionali
 1. Configure the page type in your TypoScript setup. `{Code block.}`
 2. In the backend, click "Clear all caches".
 
-Great! Your new page type will now display in the "Page Types" dropdown. Let’s go and  create a new page based on this page type.
+Great! Your new page type will now display in the "Page Types" dropdown. Let’s go and create a new page based on this page type.
 
 *H2* Create a page based on the new page type
 

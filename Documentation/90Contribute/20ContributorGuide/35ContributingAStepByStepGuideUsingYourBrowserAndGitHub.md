@@ -30,6 +30,10 @@ Here is the approach we'll take:
 * Basic understanding of Markdown, as explained in the [Markdown Cheat Sheet](https://docs.typo3.org/permalink/h2document:md-cheat-sheet)
 * How to use the step-by-step guide template, as explained in [Using the Template](30UsingTheTemplate.md).
 
+## Watch the video
+
+You can also watch a [video tutorial on how to create a Step-by-Step guide](https://youtu.be/2fzwxB10sTc) on YouTube.
+
 ## Create a GitHub user account
 
 > [!NOTE]
@@ -101,14 +105,14 @@ When you are finished, it should look something like in this screenshot:
 ![Screenshot of a GitHub interface showing a Markdown file titled "CreatingAGuide.md" being edited. The file contains a template for a TYPO3 step-by-step guide, with instructional text and placeholders.](Images/45ContributingAStepByStepGuideUsingYourBrowserAndGitHub/GitHubNewGuideFileWithContent.png)
 ## Write the guide
 
-Here is the point in the process when you write the step-by-step guide. See [Using the Template] 30UsingTheTemplate.md) for help to write each section of the guide. 
+Here is the point in the process when you write the step-by-step guide. See [Using the Template] 30UsingTheTemplate.md) for help to write each section of the guide.
 
 ## Commit your changes
 
 Committing your changes means the same as saving them, but you also add a message saying what changes your save action includes.
 
 > [!TIP]
-> You don't have to wait until you've finished writing the guide to do one big commit. You can do lots of small commits to save as you go. You are working in your fork of the repository, so nobody knows about your work yet but you. 
+> You don't have to wait until you've finished writing the guide to do one big commit. You can do lots of small commits to save as you go. You are working in your fork of the repository, so nobody knows about your work yet but you.
 
 1. Click the green "Commit changes…" button. A dialog titled "Propose Changes" will appear.
 
@@ -124,7 +128,7 @@ Committing your changes means the same as saving them, but you also add a messag
 
 ## Open a pull request
 
-When you're finished writing your guide, you're ready to ask for it to be copied from your fork into the official step-by-step guide repository. 
+When you're finished writing your guide, you're ready to ask for it to be copied from your fork into the official step-by-step guide repository.
 
 To tell the Step-by-Step Guide maintainers that you have new things to contribute, you must open a *pull request*. Basically a request to "please, pull in my changes."
 
