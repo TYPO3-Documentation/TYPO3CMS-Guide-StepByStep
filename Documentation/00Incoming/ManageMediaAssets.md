@@ -33,29 +33,29 @@ In this step-by-step guide you will learn how to:
 
 ## How to manage Media Assets
 
-1.  In the backend, open the **Media** module from the left-hand menu.
+1.  In the backend, open the **Media** module from the left-hand menu. <br>
 ![Description](images/PageMedia.png)
 
 ## Create a Folder
 Folders help organize your media files and keep the Media module structured.
-2. Click the **New folder** button or you can select the parent folder where you want to create a new folder.
+2. Click the **New folder** button or you can select the parent folder where you want to create a new folder. <br> 
 ![Description](images/NewFolder.png)
 
 3. In the dialog box that opens, enter a name for the folder.
-4. Click **Create.**
+4. Click **Create.** <br> 
 ![Description](images/AddNewFile.png)
 
 
 ## Upload a File
 You can upload images, PDFs, and other media files to use on your pages.
 1. Select the folder where you want to upload the file.
-2. Click the **New file** button.
+2. Click the **New file** button. <br> 
 ![Description](images/NewFile.png)
 
 3.In the dialog box that opens, you have 3 options: 
  a. **Upload files:** Select one or more files from your computer.
  b. **Add new media asset:** Paste a media URL.
- c. **Create new textfile:** This option allows you to create a text-based file (such as .txt or .csv) directly in TYPO3. This feature is mainly used for technical purposes and is rarely needed for regular media uploads.
+ c. **Create new textfile:** This option allows you to create a text-based file (such as .txt or .csv) directly in TYPO3. This feature is mainly used for technical purposes and is rarely needed for regular media uploads. <br> 
 ![Description](images/DialogBox-NewFile.png)
 
 4. The file(s) will be automatically uploaded to the folder.
@@ -66,10 +66,10 @@ You can upload images, PDFs, and other media files to use on your pages.
 Renaming files helps maintain consistency and makes files easier to find.
 Navigate to the file you want to rename.
 **Option 1:** 
- a. If you are in **thumbnail view**, right-click the file and choose **Rename** 
+ a. If you are in **thumbnail view**, right-click the file and choose **Rename**  <br> 
 ![Description](images/Rename-option1-a.png)
 **Option 2:**
- b. If you are in **list view**, click the **three-dot menu (More actions menu)** next to the file and choose **Rename**.
+ b. If you are in **list view**, click the **three-dot menu (More actions menu)** next to the file and choose **Rename**. <br> 
 ![Description](images/Rename-option2-b.png)
 
 Enter the new file name.
@@ -79,11 +79,11 @@ Click **Rename** to save.
 Moving files helps keep your folders organized and ensures files are stored in the correct location.
 1. Navigate to the file you want to move.
 2. Select the file using the checkbox next to it.
-3. Click the **three-dot menu** next to the file and choose **Cut**.
+3. Click the **three-dot menu** next to the file and choose **Cut**. <br> 
 ![Description](images/move-1.png)
 
 Navigate to the new folder you want to move your file.
-Click **Paste in clipboard content** and confirm the move.
+Click **Paste in clipboard content** and confirm the move. <br> 
 ![Description](images/move-2.png)
 
 **Tip:**
@@ -93,7 +93,7 @@ Moving a file does not break existing references. Files that are already used on
 Replacing a file allows you to update an existing file without changing its references on pages.
 This is especially useful when updating documents such as PDFs or replacing images that are already used on the website.
 1. Navigate to the file you want to replace.
-2. Click the **three-dot menu (More actions menu)** next to the file and choose **Replace**.
+2. Click the **three-dot menu (More actions menu)** next to the file and choose **Replace**. <br> 
 ![Description](images/replace-1.png)
 3. Select the new file from your computer.
 4. Click **Replace** to confirm.
@@ -109,12 +109,12 @@ You have 2 options:
 **Option 1:**
  1. In your folder, select the file(s) to delete.
  2. Choose **Delete** button.
- 3. Confirm the deletion.
+ 3. Confirm the deletion. <br> 
    ![Description](images/delete-1.png)
 
 **Option 2:**
 1. Select individually **Delete** icon next to the file.
-2. Confirm the deletion.
+2. Confirm the deletion. <br> 
  ![Description](images/delete-2.png)
 
 **Important:** 
