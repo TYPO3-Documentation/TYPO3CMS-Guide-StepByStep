@@ -20,16 +20,16 @@ In this step-by-step guide you will create a new page in the TYPO3 backend with 
 
 ##Create a page using context menu
 
-1. In the backend, open the Page module from the left-hand menu.
+1. In the backend, open the Page module from the left-hand menu.<br>
 ![Description](images/PageModule.png)
 
 2. Expand the page tree to locate where you want to add the new page.
 
 3. Right-click the parent page in the page tree
-4. Select More options… > Create New wizard
+4. Select More options… > Create New wizard<br>
 ![Description](images/PageCreateContextMenu.png)
 
-5. Select the desired position for the new page using the arrow icons.
+5. Select the desired position for the new page using the arrow icons.<br>
 ![Description](images/PageCreateWizard.png)
 
 6. The Create new Page form opens. Enter a title and configure the page as needed, then click Save.
