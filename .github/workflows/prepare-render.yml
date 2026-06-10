@@ -14,7 +14,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.APP_ID }}
           ref: contrib
 
       - name: Install PHP
@@ -49,4 +49,4 @@ jobs:
           git commit -m "Pre-render: $(git show -s --format='%s')"
           git push origin contrib:main --force
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.APP_ID }}
