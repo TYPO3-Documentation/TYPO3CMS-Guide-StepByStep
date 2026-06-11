@@ -21,7 +21,7 @@ In this step-by-step guide you will sign up for a TYPO3 Slack account.
 
 ## Request a Slack invite
 
-1. Log in to your My TYPO3 account at [my.typo3.org/login] (https://my.typo3.org/login>). After logging in, you will be directed to your profile page.
+1. Log in to your My TYPO3 account at [my.typo3.org/login](https://my.typo3.org/login). After logging in, you will be directed to your profile page.
 2. On your profile page, look for the Connected Services section.
 3. Click on the *Invite Me* button. An email with an invitation link will be sent to your email.
 
