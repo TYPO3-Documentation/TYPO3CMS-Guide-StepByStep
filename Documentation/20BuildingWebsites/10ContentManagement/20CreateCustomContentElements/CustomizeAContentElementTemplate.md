@@ -58,7 +58,7 @@ The sitepackage extension is already configured so TYPO3 will look for custom co
     <f:image image="{page.files.0}" height="250" /\>
     ```
 
-3. Clear TYPO3's cache as described in [Clearing the Frontend Cache in the TYPO3 Backend](ClearingTheFrontendCacheInTheTypo3Backend.md)
+3. Clear TYPO3's cache as described in [Clearing the Frontend Cache in the TYPO3 Backend](ClearingFrontendCacheInTypo3Backend.md)
 
 ## Summary
 

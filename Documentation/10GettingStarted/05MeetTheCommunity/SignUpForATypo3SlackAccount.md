@@ -4,6 +4,9 @@
 
 Slack is an instant messaging and team collaboration tool. It is our main channel for communication in the TYPO3 community. This guide explains how to get access to TYPO3’s Slack workspace through your new or existing my.typo3.org user profile.
 
+> [!WARNING]
+> Invitations to TYPO3 Slack are currently unavailable. Work on resolving the issue is in progress, but there is no definite ETA. We apologize for the inconvenience. Please return to this guide later.
+
 ## Learning objective
 
 In this step-by-step guide you will sign up for a TYPO3 Slack account.
@@ -21,7 +24,7 @@ In this step-by-step guide you will sign up for a TYPO3 Slack account.
 
 ## Request a Slack invite
 
-1. Log in to your My TYPO3 account at [my.typo3.org/login] (https://my.typo3.org/login>). After logging in, you will be directed to your profile page.
+1. Log in to your My TYPO3 account at [my.typo3.org/login](https://my.typo3.org/login). After logging in, you will be directed to your profile page.
 2. On your profile page, look for the Connected Services section.
 3. Click on the *Invite Me* button. An email with an invitation link will be sent to your email.
 

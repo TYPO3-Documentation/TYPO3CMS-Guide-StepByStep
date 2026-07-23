@@ -36,7 +36,7 @@ generate-tos: ## Generates table of contents in all Index.md files
 
 .PHONY: expand-tags
 expand-tags: ## Expands tags into Markdown
-	docker run --rm -v "$(shell pwd)":/app php:8.3-cli php app/bin/expand-tags
+	docker run --user $(shell id -u):$(shell id -g) --rm -v "$(shell pwd)":/app php:8.3-cli php app/bin/expand-tags
 
 .PHONY: prepare-docs ## Prepares files for rendering: Backing up, generating TOS, expanding tags, etc.
 prepare-docs: stage-docs index-files expand-links generate-tos expand-tags
